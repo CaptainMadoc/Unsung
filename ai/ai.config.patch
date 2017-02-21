@@ -1,0 +1,10 @@
+[{
+		"op" : "add",
+		"path" : "/species/unsung",
+		"value" : {
+			"aiFrames" : "unsungAI.png",
+			"portraitFrames" : "portraits/unsungportrait.png",
+			"staticFrames" : "staticunsung.png"	
+		}
+	}
+]

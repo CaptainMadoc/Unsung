@@ -1,0 +1,9 @@
+{
+  "name" : "purple",
+  "category" : "unsungpet",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "purple.png"
+  }
+}

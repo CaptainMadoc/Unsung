@@ -1,0 +1,10 @@
+{
+  "author" : "Joshua Madoc",
+  "description" : "Adds a species of werewolves electing to refer to themselves as 'The Unsung'.",
+  "friendlyName" : "Unsung",
+  "link" : "",
+  "name" : "Unsung",
+  "path" : ".",
+  "steamContentId" : "",
+  "version" : "0.1 - Starbound 1.1"
+}

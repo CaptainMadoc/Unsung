@@ -1,0 +1,9 @@
+{
+  "name" : "orange",
+  "category" : "unsungpet",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "orange.png"
+  }
+}

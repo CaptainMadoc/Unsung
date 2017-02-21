@@ -1,0 +1,9 @@
+{
+  "name" : "beige",
+  "category" : "unsungpet",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "beige.png"
+  }
+}

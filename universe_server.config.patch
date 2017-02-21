@@ -1,0 +1,16 @@
+[
+	{ "op" : "add",
+		"path" : "/speciesShips/unsung",
+		"value" : [
+		    "/ships/unsung/unsungt0.structure",
+			"/ships/unsung/unsungt1.structure",
+			"/ships/unsung/unsungt2.structure",
+			"/ships/unsung/unsungt3.structure",
+			"/ships/unsung/unsungt4.structure",
+			"/ships/unsung/unsungt5.structure",
+			"/ships/unsung/unsungt6.structure",
+			"/ships/unsung/unsungt7.structure",
+			"/ships/unsung/unsungt8.structure"
+		]
+	}
+]

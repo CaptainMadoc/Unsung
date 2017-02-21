@@ -1,0 +1,204 @@
+{
+  "kind" : "unsung",
+	"charCreationTooltip" : {
+	"title" : "Unsung",
+	"subTitle" : "U",
+	"description" : "Werewolves who look to the infinite after accepting that their past may never be discovered. They have a love for motorcycles and other open-roof vehicles, and their long lives have led to their penchant for juxtaposing the ancient and the contemporary."
+  },
+  
+  "humanoidConfig" : "/species/unsunghumanoid.config",
+  "nameGen" : [ "/species/unsungmalenamegen.config:names", "/species/unsungfemalenamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/unsungmalehurt.ogg", "/sfx/humanoid/unsungfemalehurt.ogg" ],
+  "charGenTextLabels" : [ "Fur colour", "Hair style", "Shirt", "Legwear", "Underfur Colour", "Hair colour", "Shirt colour", "Legwear colour", "Unsung", "Personality" ],
+  "skull" : "/humanoid/unsung/dead.png",
+  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffea63FF?replace=31a6ffFF=f5bc00FF",
+  "defaultBlueprints" : {
+    "tier1" : [
+	
+  // Empty Hands
+      { "item" : "flagunsung" },
+	    
+// Anvil
+      { "item" : "humantier1head" },
+      { "item" : "humantier1chest" },
+      { "item" : "humantier1pants" },
+      { "item" : "humantier2head" },
+      { "item" : "humantier2chest" },
+      { "item" : "humantier2pants" },
+      { "item" : "unsungsword" },
+      { "item" : "ironshortsword" },
+      { "item" : "ironbroadsword" },
+      { "item" : "tungstenaxe" },
+      { "item" : "tungstenhammer" },
+// Anvil2
+      { "item" : "humantier3head" },
+      { "item" : "humantier3chest" },
+      { "item" : "humantier3pants" },
+      { "item" : "humantier4head" },
+      { "item" : "humantier4chest" },
+      { "item" : "humantier4pants" },
+      { "item" : "titaniumdagger" },
+      { "item" : "titaniumspear" },
+      { "item" : "durasteelbroadsword" },
+      { "item" : "durasteelshortsword" },
+// Anvil3
+      { "item" : "humantier5ahead" },
+      { "item" : "humantier5achest" },
+      { "item" : "humantier5apants" },
+      { "item" : "humantier6ahead" },
+      { "item" : "humantier6achest" },
+      { "item" : "humantier6apants" },
+      { "item" : "humantier5mhead" },
+      { "item" : "humantier5mchest" },
+      { "item" : "humantier5mpants" },
+      { "item" : "humantier6mhead" },
+      { "item" : "humantier6mchest" },
+      { "item" : "humantier6mpants" },
+      { "item" : "humantier5shead" },
+      { "item" : "humantier5schest" },
+      { "item" : "humantier5spants" },
+      { "item" : "humantier6shead" },
+      { "item" : "humantier6schest" },
+      { "item" : "humantier6spants" },
+      { "item" : "aegisaltpistol" },
+      { "item" : "aegisaltbow" },
+      { "item" : "feroziumwand" },
+      { "item" : "feroziumstaff" },
+      { "item" : "violiumshortsword" },
+      { "item" : "violiumbroadsword" },
+// Furniture Table 2
+      { "item" : "humanstoragelocker" },
+      { "item" : "unsungshipdoor" },
+      { "item" : "unsungshiphatch" },
+// Spinning Wheel
+      { "item" : "unsungoutfit1chest" },
+      { "item" : "unsungoutfit1legs" },
+      { "item" : "unsungoutfit2chest" },
+      { "item" : "unsungoutfit2legs" },
+      { "item" : "unsungoutfit3chest" },
+      { "item" : "unsungoutfit3legs" },
+      { "item" : "unsungoutfit4chest" },
+      { "item" : "unsungoutfit4legs" }
+	  ]
+  },
+  
+  "altOptionAsUndyColor" : true,
+  "headOptionAsHairColor" : true,
+  "altOptionAsHairColor" : true,
+  "hairColorAsBodySubColor" : true,
+  "genders" : [
+    {
+       "name" : "male",
+      "image" : "/interface/title/male.png",
+      "characterImage" : "/interface/title/unsungmale.png",
+      "hair" : [ "male1", "male2", "male3", "male4", "male5", "male6", "male7", "male8", "male9", "male10", "male11", "male12", "male13", "male14", "male15", "male16", "male17", "male18", "male19", "male21", "male22", "male23", "male24", "male25", "male26", "male27", "male28", "male29", "male30", "male31", "male32", "male33", "male34", "male35", "male36", "male37", "male38", "male39", "male40", "male41", "male42", "male43", "male44", "male45", "male46", "male47", "male48", "male49", "male50", "male51", "male52", "male53", "male54", "male55", "male56", "male57", "male58", "male59", "male60", "male61", "male62", "male63", "male64" ],
+      "shirt" : [ "unsungoutfit1chest", "unsungoutfit2chest", "unsungoutfit3chest", "unsungoutfit4chest" ],
+      "pants" : [ "unsungoutfit1legs", "unsungoutfit2legs", "unsungoutfit3legs", "unsungoutfit4legs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "ears",
+      "facialMask" : [ "ears1a", "ears1b", "ears1c", "ears1d", "ears1e", "ears1f", "ears1g", "ears1h", "ears1i", "ears2a", "ears2b", "ears2c", "ears2d", "ears2e", "ears2f", "ears2g", "ears2h", "ears2i", "ears3a", "ears3b", "ears3c", "ears3d", "ears3e", "ears3f", "ears3g", "ears3h", "ears3i", "ears4a", "ears4b", "ears4c", "ears4d", "ears4e", "ears4f", "ears4g", "ears4h", "ears4i", "ears5a", "ears5b", "ears5c", "ears5d", "ears5e", "ears5f", "ears5g", "ears5h", "ears5i", "ears6a", "ears6b", "ears6c", "ears6d", "ears6e", "ears6f", "ears6g", "ears6h", "ears6i", "ears7a", "ears7b", "ears7c", "ears7d", "ears7e", "ears7f", "ears7g", "ears7h", "ears7i", "ears8a", "ears8b", "ears8c", "ears8d", "ears8e", "ears8f", "ears8g", "ears8h", "ears8i" ]
+    },
+    {
+      "name" : "female",
+      "image" : "/interface/title/female.png",
+      "characterImage" : "/interface/title/unsungfemale.png",
+      "hair" : [ "fem1", "fem2", "fem3", "fem4", "fem5", "fem6", "fem7", "fem8", "fem9", "fem10", "fem11", "fem12", "fem13", "fem14", "fem15", "fem16", "fem17", "fem18", "fem19", "fem20", "fem21", "fem22", "fem23", "fem24", "fem25", "fem26", "fem27", "fem28", "fem29", "fem30", "fem31", "fem32", "fem33", "fem34", "fem35", "fem36", "fem37", "fem38", "fem39", "fem40", "fem41", "fem42", "fem43", "fem44", "fem45", "fem46", "fem47", "fem48", "fem49", "fem50", "fem51", "fem52", "fem53", "fem54", "fem55", "fem56", "fem57", "fem58", "fem59", "fem60", "fem61", "fem62", "fem63", "fem64" ],
+      "shirt" : [ "unsungoutfit1chest", "unsungoutfit2chest", "unsungoutfit3chest", "unsungoutfit4chest" ],
+      "pants" : [ "unsungoutfit1legs", "unsungoutfit2legs", "unsungoutfit3legs", "unsungoutfit4legs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "ears",
+      "facialMask" : [ "ears1a", "ears1b", "ears1c", "ears1d", "ears1e", "ears1f", "ears1g", "ears1h", "ears1i", "ears2a", "ears2b", "ears2c", "ears2d", "ears2e", "ears2f", "ears2g", "ears2h", "ears2i", "ears3a", "ears3b", "ears3c", "ears3d", "ears3e", "ears3f", "ears3g", "ears3h", "ears3i", "ears4a", "ears4b", "ears4c", "ears4d", "ears4e", "ears4f", "ears4g", "ears4h", "ears4i", "ears5a", "ears5b", "ears5c", "ears5d", "ears5e", "ears5f", "ears5g", "ears5h", "ears5i", "ears6a", "ears6b", "ears6c", "ears6d", "ears6e", "ears6f", "ears6g", "ears6h", "ears6i", "ears7a", "ears7b", "ears7c", "ears7d", "ears7e", "ears7f", "ears7g", "ears7h", "ears7i", "ears8a", "ears8b", "ears8c", "ears8d", "ears8e", "ears8f", "ears8g", "ears8h", "ears8i" ]
+    }
+  ],
+  "bodyColor" : [
+    { "e0975c" : "5A5A5A", "a85636" : "303030", "6f2919" : "000000", "195F6F" : "5F3105", "3688A8" : "EAA321", "5CA5E0" : "FFE063" }, // Coal Grey-Black with Yellow eyes
+    { "e0975c" : "5A5A5A", "a85636" : "303030", "6f2919" : "000000", "195F6F" : "003059", "3688A8" : "0080C1", "5CA5E0" : "00C2FD" }, // Coal Grey-Black with Blue eyes
+	{ "e0975c" : "5A5A5A", "a85636" : "303030", "6f2919" : "000000", "195F6F" : "600A03", "3688A8" : "AC1A09", "5CA5E0" : "FF4436" }, // Coal Grey-Black with Red eyes
+    { "e0975c" : "5A5A5A", "a85636" : "303030", "6f2919" : "000000", "195F6F" : "873408", "3688A8" : "ED6117", "5CA5E0" : "FFA560" }, // Coal Grey-Black with Orange eyes
+    { "e0975c" : "5A5A5A", "a85636" : "303030", "6f2919" : "000000", "195F6F" : "000000", "3688A8" : "303030", "5CA5E0" : "5A5A5A" }, // Coal Grey-Black with Black eyes
+    { "e0975c" : "5A5A5A", "a85636" : "303030", "6f2919" : "000000", "195F6F" : "002F02", "3688A8" : "007D11", "5CA5E0" : "66FA64" }, // Coal Grey-Black with Green eyes
+    { "e0975c" : "5A5A5A", "a85636" : "303030", "6f2919" : "000000", "195F6F" : "310A59", "3688A8" : "8424C0", "5CA5E0" : "C787FC" }, // Coal Grey-Black with Purple eyes
+    { "e0975c" : "5A5A5A", "a85636" : "303030", "6f2919" : "000000", "195F6F" : "303030", "3688A8" : "808080", "5CA5E0" : "C3C3C3" }, // Coal Grey-Black with Grey eyes
+
+	{ "e0975c" : "CD5F14", "a85636" : "873408", "6f2919" : "330301", "195F6F" : "5F3105", "3688A8" : "EAA321", "5CA5E0" : "FFE063" }, // Brunette with Yellow eyes
+    { "e0975c" : "CD5F14", "a85636" : "873408", "6f2919" : "330301", "195F6F" : "003059", "3688A8" : "0080C1", "5CA5E0" : "00C2FD" }, // Brunette with Blue eyes
+    { "e0975c" : "CD5F14", "a85636" : "873408", "6f2919" : "330301", "195F6F" : "600A03", "3688A8" : "AC1A09", "5CA5E0" : "FF4436" }, // Brunette with Red eyes
+    { "e0975c" : "CD5F14", "a85636" : "873408", "6f2919" : "330301", "195F6F" : "873408", "3688A8" : "ED6117", "5CA5E0" : "FFA560" }, // Brunette with Orange eyes
+    { "e0975c" : "CD5F14", "a85636" : "873408", "6f2919" : "330301", "195F6F" : "000000", "3688A8" : "303030", "5CA5E0" : "5A5A5A" }, // Brunette with Black eyes
+    { "e0975c" : "CD5F14", "a85636" : "873408", "6f2919" : "330301", "195F6F" : "002F02", "3688A8" : "007D11", "5CA5E0" : "66FA64" }, // Brunette with Green eyes
+    { "e0975c" : "CD5F14", "a85636" : "873408", "6f2919" : "330301", "195F6F" : "310A59", "3688A8" : "8424C0", "5CA5E0" : "C787FC" }, // Brunette with Purple eyes
+    { "e0975c" : "CD5F14", "a85636" : "873408", "6f2919" : "330301", "195F6F" : "303030", "3688A8" : "808080", "5CA5E0" : "C3C3C3" }, // Brunette with Grey eyes
+
+	{ "e0975c" : "FF6437", "a85636" : "CE3B10", "6f2919" : "881306", "195F6F" : "5F3105", "3688A8" : "EAA321", "5CA5E0" : "FFE063" }, // Redhead with Yellow eyes
+    { "e0975c" : "FF6437", "a85636" : "CE3B10", "6f2919" : "881306", "195F6F" : "003059", "3688A8" : "0080C1", "5CA5E0" : "00C2FD" }, // Redhead with Blue eyes
+    { "e0975c" : "FF6437", "a85636" : "CE3B10", "6f2919" : "881306", "195F6F" : "600A03", "3688A8" : "AC1A09", "5CA5E0" : "FF4436" }, // Redhead with Red eyes
+    { "e0975c" : "FF6437", "a85636" : "CE3B10", "6f2919" : "881306", "195F6F" : "873408", "3688A8" : "ED6117", "5CA5E0" : "FFA560" }, // Redhead with Orange eyes
+    { "e0975c" : "FF6437", "a85636" : "CE3B10", "6f2919" : "881306", "195F6F" : "000000", "3688A8" : "303030", "5CA5E0" : "5A5A5A" }, // Redhead with Black eyes
+    { "e0975c" : "FF6437", "a85636" : "CE3B10", "6f2919" : "881306", "195F6F" : "002F02", "3688A8" : "007D11", "5CA5E0" : "66FA64" }, // Redhead with Green eyes
+    { "e0975c" : "FF6437", "a85636" : "CE3B10", "6f2919" : "881306", "195F6F" : "310A59", "3688A8" : "8424C0", "5CA5E0" : "C787FC" }, // Redhead with Purple eyes
+    { "e0975c" : "FF6437", "a85636" : "CE3B10", "6f2919" : "881306", "195F6F" : "303030", "3688A8" : "808080", "5CA5E0" : "C3C3C3" }, // Redhead with Grey eyes
+
+	{ "e0975c" : "FFC33F", "a85636" : "EC831C", "6f2919" : "873408", "195F6F" : "5F3105", "3688A8" : "EAA321", "5CA5E0" : "FFE063" }, // Blond with Yellow eyes
+    { "e0975c" : "FFC33F", "a85636" : "EC831C", "6f2919" : "873408", "195F6F" : "003059", "3688A8" : "0080C1", "5CA5E0" : "00C2FD" }, // Blond with Blue eyes
+    { "e0975c" : "FFC33F", "a85636" : "EC831C", "6f2919" : "873408", "195F6F" : "600A03", "3688A8" : "AC1A09", "5CA5E0" : "FF4436" }, // Blond with Red eyes
+    { "e0975c" : "FFC33F", "a85636" : "EC831C", "6f2919" : "873408", "195F6F" : "873408", "3688A8" : "ED6117", "5CA5E0" : "FFA560" }, // Blond with Orange eyes
+    { "e0975c" : "FFC33F", "a85636" : "EC831C", "6f2919" : "873408", "195F6F" : "000000", "3688A8" : "303030", "5CA5E0" : "5A5A5A" }, // Blond with Black eyes
+    { "e0975c" : "FFC33F", "a85636" : "EC831C", "6f2919" : "873408", "195F6F" : "002F02", "3688A8" : "007D11", "5CA5E0" : "66FA64" }, // Blond with Green eyes
+    { "e0975c" : "FFC33F", "a85636" : "EC831C", "6f2919" : "873408", "195F6F" : "310A59", "3688A8" : "8424C0", "5CA5E0" : "C787FC" }, // Blond with Purple eyes
+    { "e0975c" : "FFC33F", "a85636" : "EC831C", "6f2919" : "873408", "195F6F" : "303030", "3688A8" : "808080", "5CA5E0" : "C3C3C3" }, // Blond with Grey eyes
+
+    { "e0975c" : "F6B060", "a85636" : "B37F34", "6f2919" : "6D5013" },
+    { "e0975c" : "C7AE76", "a85636" : "94824F", "6f2919" : "5A512B" },
+    { "e0975c" : "D8D077", "a85636" : "A09E4E", "6f2919" : "5F6229" },
+    { "e0975c" : "A4D66B", "a85636" : "6F9E47", "6f2919" : "426D26" },
+    { "e0975c" : "82AB5F", "a85636" : "547A3C", "6f2919" : "2D4F1D" },
+    { "e0975c" : "72DD7E", "a85636" : "4AA559", "6f2919" : "266535" },
+    { "e0975c" : "72DDB3", "a85636" : "4AA586", "6f2919" : "266554" },
+    { "e0975c" : "5DD1EC", "a85636" : "3491AA", "6f2919" : "196072" },
+    { "e0975c" : "758BF8", "a85636" : "4A5BA5", "6f2919" : "272665" },
+    { "e0975c" : "B374D4", "a85636" : "7C4992", "6f2919" : "4B2655" },
+    { "e0975c" : "F1AFDF", "a85636" : "D67EC1", "6f2919" : "AF579A" },
+    { "e0975c" : "EAB2B5", "a85636" : "CC8288", "6f2919" : "A55B61" },
+    { "e0975c" : "967E6E", "a85636" : "654D43", "6f2919" : "372720" },
+    { "e0975c" : "767162", "a85636" : "3F3C2E", "6f2919" : "1E1400" },
+    { "e0975c" : "D7D5DB", "a85636" : "8E8E9B", "6f2919" : "6D6D6D" }
+  ],
+  "undyColor" : [
+    { "f32200" : "FFDCC4", "dc1f00" : "FFB98F", "be1b00" : "C1695F", "951500" : "7E3F38" },
+    { "f32200" : "FFFFE7", "dc1f00" : "FFE48E", "be1b00" : "C1AA5C", "951500" : "7C7135" },
+    { "f32200" : "F6F0D3", "dc1f00" : "DAD39B", "be1b00" : "A7A270", "951500" : "6B6B47" },
+    { "f32200" : "FFFFE0", "dc1f00" : "E7EFA1", "be1b00" : "ABB573", "951500" : "697447" },
+    { "f32200" : "EEFFDC", "dc1f00" : "B1E994", "be1b00" : "7CAD69", "951500" : "4F7B43" },
+    { "f32200" : "C7DEBC", "dc1f00" : "90BC80", "be1b00" : "648B5A", "951500" : "3A5D35" },
+    { "f32200" : "DAFFE5", "dc1f00" : "97ECB0", "be1b00" : "6BB383", "951500" : "417356" },
+    { "f32200" : "DBFFFE", "dc1f00" : "99EEDB", "be1b00" : "6DB4A9", "951500" : "427470" },
+    { "f32200" : "D4FDFF", "dc1f00" : "85CCF5", "be1b00" : "558DB2", "951500" : "36627C" },
+    { "f32200" : "D0D0FF", "dc1f00" : "9290F8", "be1b00" : "6060A9", "951500" : "43396B" },
+    { "f32200" : "FFD1FF", "dc1f00" : "D191DE", "be1b00" : "95629C", "951500" : "603B61" },
+    { "f32200" : "FFF4FF", "dc1f00" : "FFCDEA", "be1b00" : "E19CC4", "951500" : "B8739B" },
+    { "f32200" : "FFFAF6", "dc1f00" : "FBD5CF", "be1b00" : "D9A49E", "951500" : "B07B74" },
+    { "f32200" : "CECBC2", "dc1f00" : "A89B89", "be1b00" : "74665A", "951500" : "463D34" },
+    { "f32200" : "B4B3AD", "dc1f00" : "8A897A", "be1b00" : "4E4F42", "951500" : "2C2915" },
+    { "f32200" : "FFFFFF", "dc1f00" : "F2EFF3", "be1b00" : "A6A4AE", "951500" : "818181" }
+  ],
+  "hairColor" : [
+    { "f7e7b2" : "FFB0A3", "d9c189" : "FC8469", "a38d59" : "BE424D", "735e3a" : "782027" },
+    { "f7e7b2" : "FFEBC2", "d9c189" : "F6B060", "a38d59" : "B37F34", "735e3a" : "6D5013" },
+    { "f7e7b2" : "DFCFB3", "d9c189" : "C7AE76", "a38d59" : "94824F", "735e3a" : "5A512B" },
+    { "f7e7b2" : "F1EABB", "d9c189" : "D8D077", "a38d59" : "A09E4E", "735e3a" : "5F6229" },
+    { "f7e7b2" : "DBF4B8", "d9c189" : "A4D66B", "a38d59" : "6F9E47", "735e3a" : "426D26" },
+    { "f7e7b2" : "B3C89E", "d9c189" : "82AB5F", "a38d59" : "547A3C", "735e3a" : "2D4F1D" },
+    { "f7e7b2" : "B8F4BB", "d9c189" : "72DD7E", "a38d59" : "4AA559", "735e3a" : "266535" },
+    { "f7e7b2" : "B8F4D9", "d9c189" : "72DDB3", "a38d59" : "4AA586", "735e3a" : "266554" },
+    { "f7e7b2" : "B1F1FE", "d9c189" : "5DD1EC", "a38d59" : "3491AA", "735e3a" : "196072" },
+    { "f7e7b2" : "B5C2FA", "d9c189" : "758BF8", "a38d59" : "4A5BA5", "735e3a" : "272665" },
+    { "f7e7b2" : "E2B2FF", "d9c189" : "B374D4", "a38d59" : "7C4992", "735e3a" : "4B2655" },
+    { "f7e7b2" : "FDD8F2", "d9c189" : "F1AFDF", "a38d59" : "D67EC1", "735e3a" : "AF579A" },
+    { "f7e7b2" : "F9D9DA", "d9c189" : "EAB2B5", "a38d59" : "CC8288", "735e3a" : "A55B61" },
+    { "f7e7b2" : "B8B0A8", "d9c189" : "967E6E", "a38d59" : "654D43", "735e3a" : "372720" },
+    { "f7e7b2" : "9E9B94", "d9c189" : "767162", "a38d59" : "3F3C2E", "735e3a" : "1E1400" },
+    { "f7e7b2" : "FFFFFF", "d9c189" : "D7D5DB", "a38d59" : "8E8E9B", "735e3a" : "6D6D6D" }
+  ]
+}
