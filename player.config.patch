@@ -1,3 +1,4 @@
 [
-{ "op" : "add", "path" : "/defaultCodexes/unsung", "value" : [ "protectorate1", "protectorate2", "unsungdiary" ] }
+{ "op" : "add", "path" : "/defaultCodexes/unsung", "value" : [ "protectorate1", "protectorate2", "unsungdiary" ] },
+{ "op" : "add", "path" : "/deploymentConfig/speciesStarterMechBody/unsung", "value": "mechbodyhumanproto"}
 ]
