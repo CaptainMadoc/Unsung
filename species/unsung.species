@@ -9,7 +9,7 @@
   "humanoidConfig" : "/species/unsunghumanoid.config",
   "nameGen" : [ "/species/unsungmalenamegen.config:names", "/species/unsungfemalenamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/unsungmalehurt.ogg", "/sfx/humanoid/unsungfemalehurt.ogg" ],
-  "charGenTextLabels" : [ "Fur colour", "Hair style", "Shirt", "Legwear", "Underfur Colour", "Hair colour", "Shirt colour", "Legwear colour", "Unsung", "Personality" ],
+  "charGenTextLabels" : [ "Fur colour", "Hair style", "Shirt", "Legwear", "Ears", "Hair colour", "Shirt colour", "Legwear colour", "Unsung", "Personality" ],
   "skull" : "/humanoid/unsung/dead.png",
   "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffea63FF?replace=31a6ffFF=f5bc00FF",
   "defaultBlueprints" : {
@@ -82,23 +82,20 @@
 	  ]
   },
   
-  "altOptionAsUndyColor" : true,
+  "altOptionAsFacialMask" : true,
   "headOptionAsHairColor" : true,
-  "altOptionAsHairColor" : true,
-  "hairColorAsBodySubColor" : true,
   "genders" : [
     {
        "name" : "male",
       "image" : "/interface/title/male.png",
       "characterImage" : "/interface/title/unsungmale.png",
-      "hair" : [ "hairm000a", "hairm000b", "hairm000c", "hairm000d", "hairm000e", "hairm000f", 
-				"hairm001a", "hairm001b", "hairm001c", "hairm001d", "hairm001e", "hairm001f" ],
+      "hair" : [ "hairm000", "hairm001" ],
       "shirt" : [ "unsungoutfit1chest", "unsungoutfit2chest", "unsungoutfit3chest", "unsungoutfit4chest" ],
       "pants" : [ "unsungoutfit1legs", "unsungoutfit2legs", "unsungoutfit3legs", "unsungoutfit4legs" ],
       "facialHairGroup" : "",
       "facialHair" : [ ],
       "facialMaskGroup" : "ears",
-      "facialMask" : [ "ears1a", "ears1b", "ears1c", "ears1d", "ears1e", "ears1f", "ears1g", "ears1h", "ears1i", "ears2a", "ears2b", "ears2c", "ears2d", "ears2e", "ears2f", "ears2g", "ears2h", "ears2i", "ears3a", "ears3b", "ears3c", "ears3d", "ears3e", "ears3f", "ears3g", "ears3h", "ears3i", "ears4a", "ears4b", "ears4c", "ears4d", "ears4e", "ears4f", "ears4g", "ears4h", "ears4i", "ears5a", "ears5b", "ears5c", "ears5d", "ears5e", "ears5f", "ears5g", "ears5h", "ears5i", "ears6a", "ears6b", "ears6c", "ears6d", "ears6e", "ears6f", "ears6g", "ears6h", "ears6i", "ears7a", "ears7b", "ears7c", "ears7d", "ears7e", "ears7f", "ears7g", "ears7h", "ears7i", "ears8a", "ears8b", "ears8c", "ears8d", "ears8e", "ears8f", "ears8g", "ears8h", "ears8i" ]
+      "facialMask" : [ "ears001", "ears002", "ears003", "ears004", "ears005", "ears006"   ]
     },
     {
       "name" : "female",
