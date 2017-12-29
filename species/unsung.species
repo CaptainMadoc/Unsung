@@ -112,7 +112,12 @@
       "facialHairGroup" : "",
       "facialHair" : [ ],
       "facialMaskGroup" : "ears",
-      "facialMask" : [ "ears001", "ears002", "ears003", "ears004", "ears005", "ears006" ]
+      "facialMask" : [  "ears001a", "ears001b", "ears001c", "ears001d", "ears001e", 
+						"ears002a", "ears002b", "ears002c", "ears002d", "ears002e", 
+						"ears003a", "ears003b", "ears003c", "ears003d", "ears003e", 
+						"ears004a", "ears004b", "ears004c", "ears004d", "ears004e", 
+						"ears005a", "ears005b", "ears005c", "ears005d", "ears005e", 
+						"ears006a", "ears006b", "ears006c", "ears006d", "ears006e" ]
     }
   ],
   "bodyColor" : [
