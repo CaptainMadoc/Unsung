@@ -3,7 +3,7 @@
 	"charCreationTooltip" : {
 	"title" : "Unsung",
 	"subTitle" : "U",
-	"description" : "Werewolves who look to the infinite after accepting that their past may never be discovered. They have a love for motorcycles and other open-roof vehicles, and their long lives have led to their penchant for juxtaposing the ancient and the contemporary."
+	"description" : "Werewolves who took up the mantle of all manner of supernatural creatures, to hide their true nature to the Earth, aided by or aiding their human counterparts; the Hunters that forged friendships with them throughout history's hardships that befell them all tens of centuries ago."
   },
   
   "humanoidConfig" : "/species/unsunghumanoid.config",
@@ -89,7 +89,7 @@
        "name" : "male",
       "image" : "/interface/title/male.png",
       "characterImage" : "/interface/title/unsungmale.png",
-      "hair" : [ "hairm000", "hairm001", "hairm002", "hairm003", "hairm004" ],
+      "hair" : [ "hair000", "hair001", "hair002", "hair003", "hair004", "hair005", "hair006", "hair007", "hair008", "hair009", "hair010" ],
       "shirt" : [ "unsungoutfit1chest", "unsungoutfit2chest", "unsungoutfit3chest", "unsungoutfit4chest" ],
       "pants" : [ "unsungoutfit1legs", "unsungoutfit2legs", "unsungoutfit3legs", "unsungoutfit4legs" ],
       "facialHairGroup" : "",
@@ -106,7 +106,7 @@
       "name" : "female",
       "image" : "/interface/title/female.png",
       "characterImage" : "/interface/title/unsungfemale.png",
-      "hair" : [ "hairf000", "hairf001", "hairf002", "hairf003", "hairf004" ],
+      "hair" : [ "hair000", "hair001", "hair002", "hair003", "hair004", "hair005", "hair006", "hair007", "hair008", "hair009", "hair010" ],
       "shirt" : [ "unsungoutfit1chest", "unsungoutfit2chest", "unsungoutfit3chest", "unsungoutfit4chest" ],
       "pants" : [ "unsungoutfit1legs", "unsungoutfit2legs", "unsungoutfit3legs", "unsungoutfit4legs" ],
       "facialHairGroup" : "",
