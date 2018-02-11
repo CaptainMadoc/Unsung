@@ -77,12 +77,12 @@ function realUpdate(dt)
 	}
 	local shift = (-0.0625) * (30 / data["maxMagazine"])
 	if data["load"] == "table" then
-		localAnimator.addDrawable({image = "/gunsbound/ui/ammo.png", position = vec2.add(position, {0, -3}), transformation = matt, fullbright = true}, "overlay")
+		localAnimator.addDrawable({image = "/Unsung-gunsbound/ui/ammo.png", position = vec2.add(position, {0, -3}), transformation = matt, fullbright = true}, "overlay")
 		shift = 0
 	end
 	
 	for i = 1,data["magazine"] do
-		localAnimator.addDrawable({image = "/gunsbound/ui/ammo.png", position = vec2.add(position, {((3.75 / data["maxMagazine"]) * i) + shift, -3.25}), transformation = matt, fullbright = true}, "overlay")
+		localAnimator.addDrawable({image = "/Unsung-gunsbound/ui/ammo.png", position = vec2.add(position, {((3.75 / data["maxMagazine"]) * i) + shift, -3.25}), transformation = matt, fullbright = true}, "overlay")
 	end
 	
 	local distance = (math.abs(data["muzzleDistance"][2]) + math.abs(data["muzzleDistance"][1])) / 2

@@ -24,7 +24,7 @@ function weapon:init()
 	self.stats = config.getParameter("gunStats")
 	self.load = config.getParameter("gunLoad")
 	self.animations = config.getParameter("gunAnimations")
-	activeItem.setCursor("/gunsbound/crosshair/white.cursor")
+	activeItem.setCursor("/Unsung-gunsbound/crosshair/white.cursor")
 end
 
 function weapon:activate(fireMode, shiftHeld)

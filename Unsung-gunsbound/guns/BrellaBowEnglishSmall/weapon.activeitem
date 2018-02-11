@@ -8,12 +8,12 @@
 	"inventoryIcon" : "icon.png",
 
 	//scripts
-	"scriptClass" : "/gunsbound/scriptlist/default.json",
+	"scriptClass" : "/Unsung-gunsbound/scriptlist/default.json",
 
 	//vanilla scripts
-	"scripts" : ["/gunsbound/scripts/main.lua"],
+	"scripts" : ["/Unsung-gunsbound/scripts/main.lua"],
 	"scriptDelta" : 1,
-	"animationScripts" : ["/gunsbound/ui/main.lua"],
+	"animationScripts" : ["/Unsung-gunsbound/ui/main.lua"],
 
 	//item settings
 	"rarity" : "common",
@@ -22,7 +22,7 @@
 	"twoHanded" : true,
 	"compatibleAmmo" : ["BrellaBowEnglishSmall"],
 	
-	"animationStances" : "/gunsbound/stances/default.stances",
+	"animationStances" : "/Unsung-gunsbound/stances/default.stances",
 	
 	"attachements" : {
 		//"muzzle" : {
@@ -32,7 +32,7 @@
 		//		"parameters" : {
 		//			"attachement" : {
 		//				"scale" : 1.0,
-		//				"image" : "/gunsbound/attachements/muzzle/silencer/silencer.png"
+		//				"image" : "/Unsung-gunsbound/attachements/muzzle/silencer/silencer.png"
 		//			}
 		//		}
 		//	},
@@ -63,7 +63,7 @@
 		"reload" : "reload"
 	},
 	
-	"animation" : "/gunsbound/guns/base.animation",
+	"animation" : "/Unsung-gunsbound/guns/base.animation",
 	"animationParts" : {},
 	"animationCustom" : {
 		"sounds" : {

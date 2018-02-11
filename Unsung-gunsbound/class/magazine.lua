@@ -5,7 +5,7 @@ magazine = {
 }
 
 function magazine:insert()
-	for i,v in pairs(config.getParameter("compatibleAmmo", root.assetJson("/gunsbound/compatibleAmmo/default.json"))) do
+	for i,v in pairs(config.getParameter("compatibleAmmo", root.assetJson("/Unsung-gunsbound/compatibleAmmo/default.json"))) do
 		if #self.storage < weapon.stats.maxMagazine then
 			if player.hasItem({name = v, count = 1}) then
 				local con = player.consumeItem({name = v, count = weapon.stats.maxMagazine - #self.storage}, true)
