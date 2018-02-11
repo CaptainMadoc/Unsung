@@ -1,0 +1,56 @@
+    [
+      {
+        "op" : "add",
+        "path" : "/BrellaBowEnglishSmallBolt",
+        "value" : {
+					"mass" : 1.0,
+					"gravityMultiplier" : 0.3,
+					"bounceFactor" : 0.0,
+					"maxMovementPerStep" : 0.4,
+					"collisionPoly" : [ [0.3, -0.1], [0.5, -0.1], [0.3, 0.1], [0.5, 0.1] ],
+					"ignorePlatformCollision" : true,
+					"stickyCollision" : false,
+					"stickyForce" : 20.0,
+					"airFriction" : 0.0,
+					"liquidFriction" : 8.0,
+					"groundFriction" : 15.0,
+					"maximumCorrection" : 0.75
+        }
+      },
+	  {
+        "op" : "add",
+        "path" : "/BrellaBowEnglishMedBolt",
+        "value" : {
+					"mass" : 1.0,
+					"gravityMultiplier" : 0.2,
+					"bounceFactor" : 0.0,
+					"maxMovementPerStep" : 0.4,
+					"collisionPoly" : [ [0.3, -0.1], [0.5, -0.1], [0.3, 0.1], [0.5, 0.1] ],
+					"ignorePlatformCollision" : true,
+					"stickyCollision" : false,
+					"stickyForce" : 20.0,
+					"airFriction" : 0.0,
+					"liquidFriction" : 8.0,
+					"groundFriction" : 15.0,
+					"maximumCorrection" : 0.75
+        }
+      },
+	  {
+        "op" : "add",
+        "path" : "/BrellaBowEnglishLargeBolt",
+        "value" : {
+					"mass" : 1.0,
+					"gravityMultiplier" : 0.1,
+					"bounceFactor" : 0.0,
+					"maxMovementPerStep" : 0.4,
+					"collisionPoly" : [ [0.3, -0.1], [0.5, -0.1], [0.3, 0.1], [0.5, 0.1] ],
+					"ignorePlatformCollision" : true,
+					"stickyCollision" : false,
+					"stickyForce" : 20.0,
+					"airFriction" : 0.0,
+					"liquidFriction" : 8.0,
+					"groundFriction" : 15.0,
+					"maximumCorrection" : 0.75
+        }
+      }
+    ]

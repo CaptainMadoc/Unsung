@@ -1,0 +1,208 @@
+{
+	//UIinfo
+	"itemName" : "BrellaBowEnglishSmall",
+	"shortdescription" : "Short Gamp Bow",
+	"description" : "description here",
+	"category" : "EM-A Crossbow",
+	"tooltipKind" : "base",
+	"inventoryIcon" : "icon.png",
+
+	//scripts
+	"scriptClass" : "/gunsbound/scriptlist/default.json",
+
+	//vanilla scripts
+	"scripts" : ["/gunsbound/scripts/main.lua"],
+	"scriptDelta" : 1,
+	"animationScripts" : ["/gunsbound/ui/main.lua"],
+
+	//item settings
+	"rarity" : "common",
+	"maxStack" : 1,
+	"price" : 0,
+	"twoHanded" : true,
+	"compatibleAmmo" : ["BrellaBowEnglishSmall"],
+	
+	"animationStances" : "/gunsbound/stances/default.stances",
+	
+	"attachements" : {
+		//"muzzle" : {
+		//	"item" : {
+		//		"name" : "silencer",
+		//		"count" : 1,
+		//		"parameters" : {
+		//			"attachement" : {
+		//				"scale" : 1.0,
+		//				"image" : "/gunsbound/attachements/muzzle/silencer/silencer.png"
+		//			}
+		//		}
+		//	},
+		//	"transformationGroup" : "attachement_muzzle",
+		//	"part" : "attachement_muzzle"
+		//}
+	},
+	
+	"gunStats" : {
+		"maxMagazine" : 10,
+		"aimLookRatio" : 0.125, // 0 to 0.75 recommended not over
+		"burst" : 3,
+		"fireTypes" : ["auto", "burst", "semi"],
+		"recoil" : 4,
+		"recoilRecovery" : 12,
+		"movingInaccuracy" : 25, //as its going by 14 velocity.
+		"standingInaccuracy" : 1,
+		"crouchInaccuracyMultiplier" : 0.25,
+		
+		"gunPart" : "gun" //make sure it has muzzle_begin and muzzle_end
+	},
+	
+	"gunAnimations" : {
+		"shoot" : "shoot",
+		"cock"  : "cock",
+		"dry"	: "dry",
+		"init"	: "init",
+		"reload" : "reload"
+	},
+	
+	"animation" : "/gunsbound/guns/base.animation",
+	"animationParts" : {},
+	"animationCustom" : {
+		"sounds" : {
+			"fireSounds" : ["/sfx/gun/ar4.ogg"]
+		},
+		"animatedParts" : {
+			"parts" : {
+				"gunbg" : {
+					"properties" : {
+						"zLevel" : 14,
+						"centered" : false,
+						"image" : "gunbg.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["gun", "R_hand", "R_a2", "R_a1", "base"]
+					}
+				},
+				"mag" : {
+					"properties" : {
+						"zLevel" : 17,
+						"centered" : false,
+						"image" : "mag.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["mag", "gun", "R_hand", "R_a2", "R_a1", "base"]
+					}
+				},
+				"gunlever" : {
+					"properties" : {
+						"zLevel" : 18,
+						"centered" : false,
+						"image" : "lever1.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["lever", "gun", "R_hand", "R_a2", "R_a1", "base"]
+					}
+				},
+				"gun" : {
+					"properties" : {
+						"zLevel" : 19,
+						"centered" : false,
+						"image" : "gun.png",
+						"offset" : [0.0, 0.0],
+						"muzzle_begin" : [13.7500, 3.6250],
+						"muzzle_end" : [19, 3.6250],
+						"transformationGroups" : ["gun", "R_hand", "R_a2", "R_a1", "base"]
+					}
+				},
+				"gunlever2" : {
+					"properties" : {
+						"zLevel" : 15,
+						"centered" : false,
+						"image" : "lever2.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["lever2", "gun", "R_hand", "R_a2", "R_a1", "base"]
+					}
+				},
+				
+				"attachement_muzzle" : {
+					"properties" : {
+						"zLevel" : 23,
+						"centered" : false,
+						"image" : "<selfimage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["attachement_muzzle", "gun", "R_hand", "R_a2", "R_a1", "base"]
+					}
+				}
+			}
+		},
+		"transformationGroups" : {
+			"gun" : {
+				"interpolated" : false,
+				"smoothness" : 4,
+				"position" : [-0.875, 1.675],
+				"setposition" : [-0.875, 1.675],
+				"rotation" : 0,
+				"setrotation" : 0,
+				"rPoint" : [0, 0],
+				"setrPoint" : [0, 0],
+				"scale" : [1, 1],
+				"sPoint" : [0, 0],
+				"setscale" : [0.25,0.25],
+				"setsPoint" : [0, 0]
+			},
+			"lever" : {
+				"interpolated" : false,
+				"smoothness" : 4,
+				"position" : [0, 0],
+				"setposition" : [0, 0],
+				"rotation" : 0,
+				"setrotation" : 0,
+				"rPoint" : [0, 0],
+				"setrPoint" : [0, 0],
+				"scale" : [1, 1],
+				"sPoint" : [0, 0],
+				"setscale" : [1, 1],
+				"setsPoint" : [0, 0]
+			},
+			"lever2" : {
+				"interpolated" : false,
+				"smoothness" : 4,
+				"position" : [0, 0],
+				"setposition" : [0, 0],
+				"rotation" : 0,
+				"setrotation" : 0,
+				"rPoint" : [0, 0],
+				"setrPoint" : [0, 0],
+				"scale" : [1, 1],
+				"sPoint" : [0, 0],
+				"setscale" : [1, 1],
+				"setsPoint" : [0, 0]
+			},
+			"mag" : {
+				"interpolated" : false,
+				"smoothness" : 4,
+				"position" : [0, 0],
+				"setposition" : [0, 0],
+				"rotation" : 0,
+				"setrotation" : 0,
+				"rPoint" : [0, 0],
+				"setrPoint" : [0, 0],
+				"scale" : [1, 1],
+				"sPoint" : [0, 0],
+				"setscale" : [1, 1],
+				"setsPoint" : [0, 0]
+			},
+			
+			"attachement_muzzle" : {
+				"interpolated" : false,
+				"smoothness" : 4,
+				"position" : [0, 0],
+				"setposition" : [0, 0],
+				"rotation" : 0,
+				"setrotation" : 0,
+				"rPoint" : [0, 0],
+				"setrPoint" : [0, 0],
+				"scale" : [1, 1],
+				"sPoint" : [0, 0],
+				"setscale" : [1, 1],
+				"setsPoint" : [0, 0]
+			}
+		}
+	}
+
+}

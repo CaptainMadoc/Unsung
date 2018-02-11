@@ -1,0 +1,12 @@
+[
+	"/gunsbound/class/weapon.lua",
+	"/gunsbound/class/attachement.lua",
+	"/gunsbound/class/magazine.lua",
+	"/gunsbound/class/camera.lua",
+	"/gunsbound/class/aim.lua",
+	"/gunsbound/class/arms.lua",
+	"/gunsbound/class/drawable.lua",
+	"/gunsbound/class/portraitprocessor.lua",
+	"/gunsbound/class/stance.lua",
+	"/gunsbound/class/uimanager.lua"
+]

@@ -1,0 +1,525 @@
+{
+	"globalTagDefaults" : {},
+	"animatedParts" : {
+		"parts" : {
+			"R_a1" : {
+				"properties" : {
+					"zLevel" : 160,
+					"centered" : false,
+					"image" : "<R_a1>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["R_a1", "base"]
+				},
+				"partStates" : {
+					"right" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 160
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 5
+							}
+						}
+					},
+					"r_fullbright" : {
+						"on" : {
+							"properties" : {
+								"fullbright" : true
+							}
+						},
+						"off" : {
+							"properties" : {
+								"fullbright" : false
+							}
+						}
+					}
+				}
+			},
+			"R_af1" : {
+				"properties" : {
+					"zLevel" : 170,
+					"centered" : false,
+					"image" : "<R_af1>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["R_a1", "base"]
+				},
+				"partStates" : {
+					"right" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 170
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 6
+							}
+						}
+					}
+				}
+			},
+			"R_a2" : {
+				"properties" : {
+					"zLevel" : 140,
+					"centered" : false,
+					"image" : "<R_a2>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["R_a2", "R_a1", "base"]
+				},
+				"partStates" : {
+					"right" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 140
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 3
+							}
+						}
+					},
+					"r_fullbright" : {
+						"on" : {
+							"properties" : {
+								"fullbright" : true
+							}
+						},
+						"off" : {
+							"properties" : {
+								"fullbright" : false
+							}
+						}
+					}
+				}
+			},
+			"R_af2" : {
+				"properties" : {
+					"zLevel" : 150,
+					"centered" : false,
+					"image" : "<R_af2>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["R_a2", "R_a1", "base"]
+				},
+				"partStates" : {
+					"right" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 150
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 4
+							}
+						}
+					}
+				}
+			},
+			"R_hand" : {
+				"properties" : {
+					"zLevel" : 120,
+					"centered" : false,
+					"image" : "<R_hand>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["R_hand", "R_a2", "R_a1", "base"]
+				},
+				"partStates" : {
+					"right" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 120
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 1
+							}
+						}
+					},
+					"r_fullbright" : {
+						"on" : {
+							"properties" : {
+								"fullbright" : true
+							}
+						},
+						"off" : {
+							"properties" : {
+								"fullbright" : false
+							}
+						}
+					}
+				}
+			},
+			"R_handf" : {
+				"properties" : {
+					"zLevel" : 130,
+					"centered" : false,
+					"image" : "<R_handf>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["R_hand", "R_a2", "R_a1", "base"]
+				},
+				"partStates" : {
+					"right" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 130
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 2
+							}
+						}
+					}
+				}
+			},
+			"L_a1" : {
+				"properties" : {
+					"zLevel" : 5,
+					"centered" : false,
+					"image" : "<L_a1>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["L_a1", "base"]
+				},
+				"partStates" : {
+					"left" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 160
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 5
+							}
+						}
+					},
+					"l_fullbright" : {
+						"on" : {
+							"properties" : {
+								"fullbright" : true
+							}
+						},
+						"off" : {
+							"properties" : {
+								"fullbright" : false
+							}
+						}
+					}
+				}
+			},
+			"L_af1" : {
+				"properties" : {
+					"zLevel" : 6,
+					"centered" : false,
+					"image" : "<L_af1>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["L_a1", "base"]
+				},
+				"partStates" : {
+					"left" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 170
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 6
+							}
+						}
+					}
+				}
+			},
+			"L_a2" : {
+				"properties" : {
+					"zLevel" : 3,
+					"centered" : false,
+					"image" : "<L_a2>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["L_a2", "L_a1", "base"]
+				},
+				"partStates" : {
+					"left" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 140
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 3
+							}
+						}
+					},
+					"l_fullbright" : {
+						"on" : {
+							"properties" : {
+								"fullbright" : true
+							}
+						},
+						"off" : {
+							"properties" : {
+								"fullbright" : false
+							}
+						}
+					}
+				}
+			},
+			"L_af2" : {
+				"properties" : {
+					"zLevel" : 4,
+					"centered" : false,
+					"image" : "<L_af2>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["L_a2", "L_a1", "base"]
+				},
+				"partStates" : {
+					"left" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 150
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 4
+							}
+						}
+					}
+				}
+			},
+			"L_hand" : {
+				"properties" : {
+					"zLevel" : 1,
+					"centered" : false,
+					"image" : "<L_hand>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["L_hand", "L_a2", "L_a1", "base"]
+				},
+				"partStates" : {
+					"left" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 120
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 1
+							}
+						}
+					},
+					"l_fullbright" : {
+						"on" : {
+							"properties" : {
+								"fullbright" : true
+							}
+						},
+						"off" : {
+							"properties" : {
+								"fullbright" : false
+							}
+						}
+					}
+				}
+			},
+			"L_handf" : {
+				"properties" : {
+					"zLevel" : 2,
+					"centered" : false,
+					"image" : "<L_handf>",
+					"offset" : [0.0, 0.0],
+					"transformationGroups" : ["L_hand", "L_a2", "L_a1", "base"]
+				},
+				"partStates" : {
+					"left" : {
+						"front" : {
+							"properties" : {
+								"zLevel" : 130
+							}
+						},
+						"back" : {
+							"properties" : {
+								"zLevel" : 2
+							}
+						}
+					}
+				}
+			}
+		},
+		"stateTypes" : {
+			"left" : {
+				"default" : "back",
+				"states" : {
+					"back" : {
+						"frames" : 1,
+						"mode" : "end",
+						"cycle" : 0.1
+					},
+					"front" : {
+						"frames" : 1,
+						"mode" : "end",
+						"cycle" : 0.1
+					}
+				}
+			},
+			"right" : {
+				"default" : "front",
+				"states" : {
+					"back" : {
+						"frames" : 1,
+						"mode" : "end",
+						"cycle" : 0.1
+					},
+					"front" : {
+						"frames" : 1,
+						"mode" : "end",
+						"cycle" : 0.1
+					}
+				}
+			},
+
+			"r_fullbright" : {
+				"default" : "off",
+				"states" : {
+					"off" : {
+						"frames" : 1,
+						"mode" : "end",
+						"cycle" : 0.1
+					},
+					"on" : {
+						"frames" : 1,
+						"mode" : "end",
+						"cycle" : 0.1
+					}
+				}
+			},
+
+			"l_fullbright" : {
+				"default" : "off",
+				"states" : {
+					"off" : {
+						"frames" : 1,
+						"mode" : "end",
+						"cycle" : 0.1
+					},
+					"on" : {
+						"frames" : 1,
+						"mode" : "end",
+						"cycle" : 0.1
+					}
+				}
+			}
+		}
+	},
+	"particleEmitters" : {},
+	"sounds" : {
+		"dry" : ["/sfx/gun/reload/machinepistol_reload_clip2.ogg"],
+		"fireSounds" : []
+	},
+	"transformationGroups" : {
+		"base" : {
+			"interpolated" : true,
+			"smoothness" : 4,
+			"position" : [0, 0],
+			"setposition" : [0, 0],
+			"rotation" : 0,
+			"setrotation" : 0,
+			"rPoint" : [0, 0],
+			"setrPoint" : [0, 0],
+			"scale" : [1, 1],
+			"sPoint" : [0, 0],
+			"setscale" : [1, 1],
+			"setsPoint" : [0, 0]
+		},
+		"R_hand" : {
+			"interpolated" : true,
+			"smoothness" : 4,
+			"position" : [0.375, 0],
+			"setposition" : [0.375, 0],
+			"rotation" : 0,
+			"setrotation" : 0,
+			"rPoint" : [0, 2.2500],
+			"setrPoint" : [0, 2.2500],
+			"scale" : [1, 1],
+			"sPoint" : [0, 0],
+			"setscale" : [1, 1],
+			"setsPoint" : [0, 0]
+		},
+		"R_a2" : {
+			"interpolated" : true,
+			"smoothness" : 4,
+			"position" : [2.8750, 0],
+			"setposition" : [2.8750, 0],
+			"rotation" : 0,
+			"setrotation" : 0,
+			"rPoint" : [0, 2.2500],
+			"setrPoint" : [0, 2.2500],
+			"scale" : [1, 1],
+			"sPoint" : [0, 0],
+			"setscale" : [1, 1],
+			"setsPoint" : [0, 0]
+		},
+		"R_a1" : {
+			"interpolated" : true,
+			"smoothness" : 4,
+			"position" : [-3.6875, -2.3125],
+			"setposition" : [-3.6875, -2.3125],
+			"rotation" : 0,
+			"setrotation" : 0,
+			"rPoint" : [2.3750, 2.5000],
+			"setrPoint" : [2.3750, 2.5000],
+			"scale" : [1, 1],
+			"sPoint" : [0, 0],
+			"setscale" : [1, 1],
+			"setsPoint" : [0, 0]
+		},
+		"L_hand" : {
+			"interpolated" : true,
+			"smoothness" : 4,
+			"position" : [0.375, 0],
+			"setposition" : [0.375, 0],
+			"rotation" : 0,
+			"setrotation" : 0,
+			"rPoint" : [0, 2.2500],
+			"setrPoint" : [0, 2.2500],
+			"scale" : [1, 1],
+			"sPoint" : [0, 0],
+			"setscale" : [1, 1],
+			"setsPoint" : [0, 0]
+		},
+		"L_a2" : {
+			"interpolated" : true,
+			"smoothness" : 4,
+			"position" : [2.8750, 0],
+			"setposition" : [2.8750, 0],
+			"rotation" : 0,
+			"setrotation" : 0,
+			"rPoint" : [0, 2.2500],
+			"setrPoint" : [0, 2.2500],
+			"scale" : [1, 1],
+			"sPoint" : [0, 0],
+			"setscale" : [1, 1],
+			"setsPoint" : [0, 0]
+		},
+		"L_a1" : {
+			"interpolated" : true,
+			"smoothness" : 4,
+			"position" : [-3.25, -2.3125],
+			"setposition" : [-3.25, -2.3125],
+			"rotation" : 0,
+			"setrotation" : 0,
+			"rPoint" : [2.3750, 2.5000],
+			"setrPoint" : [2.3750, 2.5000],
+			"scale" : [1, 1],
+			"sPoint" : [0, 0],
+			"setscale" : [1, 1],
+			"setsPoint" : [0, 0]
+		}
+	},
+	"lights" : {}
+}
