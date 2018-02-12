@@ -36,7 +36,7 @@
 			],
 			"reload" : [
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : -0.25},
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25},	//REPLACE MAG
 					"step" : 10,
 					"sound" : {}
 				},
@@ -66,12 +66,12 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armangle" : 0},
+					"value" : {"mag_y" : 0, "armangle" : 0},	//REPLACE MAG END
 					"step" : 5,
 					"sound" : {}
 				},
 				{
-					"value" : {},
+					"value" : {},	//COCK
 					"step" : 5,
 					"sound" : {}
 				},
@@ -96,7 +96,7 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},
+					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},	//COCK END
 					"step" : 5,
 					"sound" : {}
 				}

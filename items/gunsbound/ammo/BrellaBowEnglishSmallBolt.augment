@@ -4,7 +4,7 @@
 	"category" : "Ammo",
 	"price" : 0,
 	"maxStack" : 10000,
-	"inventoryIcon" : "/items/gunsbound/sprite/shells/45ACP.png",
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/BrellaBowEnglishSmallBolt.png",
 	"description" : "",
 	"shortdescription" : "Short Gamp Bolt",
 	
