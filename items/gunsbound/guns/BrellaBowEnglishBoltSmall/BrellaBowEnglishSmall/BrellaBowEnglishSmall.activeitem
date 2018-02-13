@@ -46,27 +46,27 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0.125, "mag_x" : -1.5, "armback_x": 0.625, "armback_rotation": -20},
+					"value" : {"mag_y" : -0.5, "mag_x" : 0, "armback_x": 0.625, "armback_rotation": -20},
 					"step" : 5,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armback_rotation": -55},
+					"value" : {"mag_y" : -1.5, "armback_rotation": -55},
 					"step" : 3,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armback_rotation": -60},
+					"value" : {"mag_y" : -2, "armback_rotation": -60},
 					"step" : 2,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armback_rotation": -65},
+					"value" : {"mag_y" : -1.95, "armback_rotation": -65},
 					"step" : 2,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armback_rotation": -60},
+					"value" : {"mag_y" : -1.5, "armback_rotation": -60},
 					"step" : 2,
 					"sound" : {}
 				},
