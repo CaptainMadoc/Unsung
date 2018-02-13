@@ -47,14 +47,41 @@ function GunFire:update(dt, fireMode, shiftHeld)
     		local percent = self.ammoConfig.magazineCurrent/self.ammoConfig.magazineMax
     		--world.sendEntityMessage(activeItem.ownerEntityId(),"setBar",config.getParameter("itemName")..self.barUUID,percent,{255-math.ceil(255*percent),127+math.ceil(128*percent),0,255})
     	else
-    		--world.sendEntityMessage(activeItem.ownerEntityId(),"setBar",config.getParameter("itemName")..self.barUUID,1-cooldown/self.gunConfig.reloadCooldown,{255,128,0,255})
+    		--world.sendEntityMessage(activeItem.ownerEntityId(),"setBar",config.getParameter("itemName")..self.barUUID,1-cooldown/self.ammoConfig.reloadCooldown,{255,128,0,255})
     	end
     end
   
 end
 
 function GunFire:consumeAmmo()
-
+  if self.ammoConfig.compatibleAmmo and not self.reloading then
+  	
+  	local itemammo = nil
+  	
+  	if self.ammoConfig.magazineMax then
+  		if self.ammoConfig.magazineCurrent > 0 then
+  			self.ammoConfig.magazineCurrent = self.ammoConfig.magazineCurrent - 1
+  			itemammo = true
+  		elseif player.hasItem(self.ammoConfig.compatibleAmmo[1]) and cooldown <= 0 then
+  			magreload()
+  			return
+  		else
+  			if self.ammoConfig.magazineCurrent == 0 then
+  				cooldown = 0.5
+  			end
+  			return
+  		end
+  	else
+  		itemammo = player.consumeItem(self.ammoConfig.compatibleAmmo[1])
+  	end
+  	
+  	if itemammo then --Ammo found!!
+  		if self.ammoConfig.magazineCurrent == 0 then
+  			cooldown = 0.1
+  		end
+  	end
+  	
+  end
 end
 
 function GunFire:auto()
@@ -94,13 +121,13 @@ end
         activeItem.takeOwnerItem(self.ammoConfig.compatibleAmmo[1])
         self.ammoConfig.magazineCurrent = self.ammoConfig.magazineCurrent + 1
     end
-    if self.gunConfig.reloadCooldown then
-        cooldown = self.gunConfig.reloadCooldown
+    if self.ammoConfig.reloadCooldown then
+        cooldown = self.ammoConfig.reloadCooldown
     end
     if animator.hasSound("reload") then
         animator.playSound("reload")
     end
-    self.gunConfig.reloadForce = false
+    self.ammoConfig.reloadForce = false
     self.reloading = true
 end
 
