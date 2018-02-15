@@ -1,15 +1,15 @@
 {
-	"itemName" : "9mmParabellum",
+	"itemName" : "testyammo",
 	"rarity" : "common",
 	"category" : "Ammo",
 	"price" : 0,
 	"maxStack" : 10000,
 	"inventoryIcon" : "/items/gunsbound/sprite/shells/9mmParabellum.png",
-	"description" : "",
-	"shortdescription" : "9mm Parabellum Ammo",
+	"description" : "ffffffff",
+	"shortdescription" : "Testy Ammo",
 	
 	"gunConfig" : {	
-		"compatibleAmmo" 	: [ "9mmParabellum" , "9mmParabellum" ],
+		"compatibleAmmo" 	: [ "testyammo" , "testyammo" ],
 		"projectileConfig" 	: {"speed" : 75, "power" : 5},
 		"projectileType" 	: "bullet-2"
 	},

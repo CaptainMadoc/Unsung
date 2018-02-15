@@ -11,12 +11,12 @@
   "itemTags" : ["weapon","ranged","pistol"],
   "level" : 1,
 
-  "inventoryIcon" : "ironrevolver.png",
+  "inventoryIcon" : "testymctester.png",
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "ironrevolver.png",
+    "middle" : "testymctester.png",
     "barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
@@ -78,9 +78,12 @@
       }
     },
 
-    "gunConfig" : {
+    "ammoConfig" : {
     //ammo bullet
-    "compatibleAmmo" 	: [ "9mmParabellum" ]
+    "compatibleAmmo" : [ "testyammo" ],
+	"magazineMax" : 1,
+	"magazineCurrent" : 1,
+    "consumeAmmo" : 1
     }
   },
 

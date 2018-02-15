@@ -36,87 +36,37 @@
 			],
 			"reload" : [
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : -0.25},	//Replace Mag
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25},	//REPLACE MAG
 					"step" : 10,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : -0.25, "armangle" : -5, "armback_x": 0.625, "armback_y": -0.125, "armback_rotation": -10},
+					"value" : {"mag_y" : -0.25, "armangle" : -5, "armback_x": 0.5, "armback_y": -0.125},
 					"step" : 1,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : -0.5, "mag_x" : 0, "armback_x": 0.625, "armback_rotation": -20},
-					"step" : 5,
+					"value" : {"mag_y" : 0},
+					"step" : 9,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : -1.5, "armback_rotation": -55},
-					"step" : 3,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" : -2, "armback_rotation": -60},
-					"step" : 2,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" : -1.95, "armback_rotation": -65},
-					"step" : 2,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" : -1.5, "armback_rotation": -60},
-					"step" : 2,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" :  -0.5, "mag_x" : 0, "armback_x": 0.625, "armback_rotation": -10},
+					"value" : {"mag_y" : 0.125, "mag_x" : -1.5, "armback_x": -0.75},
 					"step" : 10,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armangle" : 10, "armback_y": 0, "armback_rotation": 0},
+					"value" : {"mag_y" :  -0.5, "mag_x" : 0, "armback_x": 0.5},
 					"step" : 10,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armangle" : 0, "armback_x": 0.625, "armback_rotation": 0},	//Replace Mag END
-					"step" : 5,
+					"value" : {"mag_y" : 0, "armangle" : 10, "armback_y": 0},
+					"step" : 10,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armangle" : 0, "armback_x": 0.625, "armback_rotation": 0},	//Replace Mag END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" : 0, "armangle" : 0, "armback_x": 0.625, "armback_rotation": 0},	//Replace Mag END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" : 0, "armangle" : 0, "armback_x": 0.625, "armback_rotation": 0},	//Replace Mag END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" : 0, "armangle" : 0, "armback_x": 0.625, "armback_rotation": 0},	//Replace Mag END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" : 0, "armangle" : 0, "armback_x": 0.625, "armback_rotation": 0},	//Replace Mag END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" : 0, "armangle" : 0, "armback_x": 0.625, "armback_rotation": 0},	//Replace Mag END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"mag_y" : 0, "armangle" : 0, "armback_x": 0.625, "armback_rotation": 0},	//Replace Mag END
+					"value" : {"mag_y" : 0, "armangle" : 0},	//REPLACE MAG END
 					"step" : 5,
 					"sound" : {}
 				}
@@ -209,7 +159,7 @@
 		
 		//ammo bullet
 		"compatibleAmmo" 	: [ "BrellaBowEnglishSmallBolt" ],
-		"projectileConfig" 	: {"speed" : 90, "power" : 5},
+		"projectileConfig" 	: {"speed" : 50, "power" : 7},
 		"projectileType" 	: "BrellaBowEnglishSmallBolt",
 		
 		//visual sfx
@@ -222,7 +172,7 @@
 		"magToHideTransform": "hidemag",	//For mags attachments
 		
 		//mechanics
-		"fireSpeed" 		: 0.25,			//atataatatatatata
+		"fireSpeed" 		: 0.175,			//atataatatatatata
 		"fireMode" 			: "auto", 		//auto, burst, semi
 		"burstAmount" 		: 5,
 		"burstCooldown" 	: 0.8,
