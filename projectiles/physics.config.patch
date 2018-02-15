@@ -4,7 +4,7 @@
         "path" : "/BrellaBowEnglishSmallBolt",
         "value" : {
 					"mass" : 1.0,
-					"gravityMultiplier" : 0.3,
+					"gravityMultiplier" : 0.1,
 					"bounceFactor" : 0.0,
 					"maxMovementPerStep" : 0.4,
 					"collisionPoly" : [ [0.3, -0.1], [0.5, -0.1], [0.3, 0.1], [0.5, 0.1] ],
@@ -40,7 +40,7 @@
         "path" : "/BrellaBowEnglishLargeBolt",
         "value" : {
 					"mass" : 1.0,
-					"gravityMultiplier" : 0.1,
+					"gravityMultiplier" : 0.3,
 					"bounceFactor" : 0.0,
 					"maxMovementPerStep" : 0.4,
 					"collisionPoly" : [ [0.3, -0.1], [0.5, -0.1], [0.3, 0.1], [0.5, 0.1] ],

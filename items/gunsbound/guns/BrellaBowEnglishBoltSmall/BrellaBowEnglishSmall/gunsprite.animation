@@ -105,7 +105,7 @@
 				"properties" : {
 					"zLevel" : 6,
 					"centered" : false,
-					"offset" : [0.45, 0.55],
+					"offset" : [0.7, 0.55],
 					"transformationGroups" : ["gun", "offset"],
 					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/gun.png"
 				}
@@ -115,7 +115,7 @@
 				"properties" : {
 					"zLevel" : 2,
 					"centered" : false,
-					"offset" : [0.45, 0.55],
+					"offset" : [0.7, 0.55],
 					"transformationGroups" : ["gunbg", "gun", "offset"],
 					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/gunbg.png"
 				}
@@ -125,7 +125,7 @@
 				"properties" : {
 					"zLevel" : 4,
 					"centered" : false,
-					"offset" : [0.45, 0.55],
+					"offset" : [0.7, 0.55],
 					"transformationGroups" : ["hidemag", "mag", "gun", "offset"],
 					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/mag.png"
 				}
@@ -135,7 +135,7 @@
 				"properties" : {
 					"zLevel" : 3,
 					"centered" : false,
-					"offset" : [0.45, 0],
+					"offset" : [0.7, 0],
 					"transformationGroups" : ["bullet", "mag", "gun", "offset"],
 					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/bullet.png"
 				}
@@ -145,7 +145,7 @@
 				"properties" : {
 					"zLevel" : 5,
 					"centered" : false,
-					"offset" : [0.45, 0.55],
+					"offset" : [0.7, 0.55],
 					"transformationGroups" : ["lever1", "gun", "offset"],
 					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/lever1.png"
 				}
@@ -155,7 +155,7 @@
 				"properties" : {
 					"zLevel" : 7,
 					"centered" : false,
-					"offset" : [0.45, 0.55],
+					"offset" : [0.7, 0.55],
 					"transformationGroups" : ["lever2", "gun", "offset"],
 					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/lever2.png"
 				}

@@ -56,7 +56,7 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" :  -0.5, "mag_x" : 0, "armback_x": 0.5},
+					"value" : {"mag_y" :  -0.5, "mag_x" : 0, "armback_x": 0.625},
 					"step" : 10,
 					"sound" : {}
 				},
@@ -155,7 +155,7 @@
 	
 	//The higher, The more harder to control
 	"gunConfig" : {	
-		"inaccuracy" 		: 0, //Your random number generator
+		"inaccuracy" 		: 7, //Your random number generator
 		
 		//ammo bullet
 		"compatibleAmmo" 	: [ "BrellaBowEnglishSmallBolt" ],
