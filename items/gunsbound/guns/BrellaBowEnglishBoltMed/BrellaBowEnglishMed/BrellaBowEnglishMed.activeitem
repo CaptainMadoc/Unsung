@@ -1,15 +1,15 @@
 {
-	"itemName" : "BrellaBowEnglishSmall",
+	"itemName" : "BrellaBowEnglishMed",
 	"price" : 0,
 	"maxStack" : 1,
 	"rarity" : "common",
 	"category" : "EM-A Crossbow",
 	"description" : "",
-	"shortdescription" : "Short Gamp Bow",
+	"shortdescription" : "Gamp Bow",
 	"tooltipKind" : "base",
 	"twoHanded" : true,
 	
-	"inventoryIcon" : "/items/gunsbound/sprite/guns/BrellaBowEnglishSmallBolt/BrellaBowEnglishSmall/icon.png",
+	"inventoryIcon" : "/items/gunsbound/sprite/guns/BrellaBowEnglishMedBolt/BrellaBowEnglishMed/icon.png",
 	
 	"animation" : "gunsprite.animation",
 	"animationParts" : { },
@@ -36,28 +36,28 @@
 			],
 			"reload" : [
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : -0.25},	//REPLACE MAG
-					"step" : 10,
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "armback_rotation" : -3},	//REPLACE MAG
+					"step" : 15,
 					"sound" : {}
 				},
 				{
 					"value" : {"mag_y" : -0.25, "armangle" : -5, "armback_x": 0.5, "armback_y": -0.125},
-					"step" : 1,
+					"step" : 2,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0},
-					"step" : 9,
+					"value" : {"mag_y" : -0.25, "armback_rotation" : 0},
+					"step" : 14,
 					"sound" : {}
 				},
 				{
 					"value" : {"mag_y" : 0.125, "mag_x" : -1.5, "armback_x": -0.75},
-					"step" : 10,
+					"step" : 15,
 					"sound" : {}
 				},
 				{
 					"value" : {"mag_y" :  -0.5, "mag_x" : 0, "armback_x": 0.625},
-					"step" : 10,
+					"step" : 15,
 					"sound" : {}
 				},
 				{
@@ -66,7 +66,7 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armangle" : 0},	//REPLACE MAG END
+					"value" : {"mag_y" : 0, "armangle" : 0, "armback_rotation" : 0},	//REPLACE MAG END
 					"step" : 5,
 					"sound" : {}
 				}
@@ -106,7 +106,7 @@
 		},
 		"fixed" : false,
 		"doneplaying" : "",
-		"step" : 30,
+		"step" : 35,
 		"currentstep" : 1
 	}, 
 	"parts" : {
@@ -155,30 +155,30 @@
 	
 	//The higher, The more harder to control
 	"gunConfig" : {	
-		"inaccuracy" 		: 15, //Your random number generator
+		"inaccuracy" 		: 7, //Your random number generator
 		
 		//ammo bullet
-		"compatibleAmmo" 	: [ "BrellaBowEnglishSmallBolt" ],
-		"projectileConfig" 	: {"speed" : 50, "power" : 10},
-		"projectileType" 	: "BrellaBowEnglishSmallBolt",
+		"compatibleAmmo" 	: [ "BrellaBowEnglishMedBolt" ],
+		"projectileConfig" 	: {"speed" : 90, "power" : 20},
+		"projectileType" 	: "BrellaBowEnglishMedBolt",
 		
 		//visual sfx
 		"muzzleEffect" 		: false,
 		"smokeEffect" 		: false,
 		"shellEffect" 		: false,
-		"fireOffset" 		: [2, 0.675],			//the projectile pos
+		"fireOffset" 		: [2.5, 0.675],			//the projectile pos
 		"shellOffset" 		: [0.625, 0.375], 		//the falling shell init pos
 		"gunSounds" 		: ["fire"], 		//Sounds from .animation
 		"magToHideTransform": "hidemag",	//For mags attachments
 		
 		//mechanics
-		"fireSpeed" 		: 0.1,			//atataatatatatata
+		"fireSpeed" 		: 0.25,			//atataatatatatata
 		"fireMode" 			: "semi", 		//auto, burst, semi
 		"burstAmount" 		: 5,
 		"burstCooldown" 	: 0.8,
 		"recoilPower" 		: 1,			//The higher, The more harder to control
 		"recoilRecovery" 	: 1, 		//Higher the slower
-		"magazineMax" 		: 10,
+		"magazineMax" 		: 8,
 		"magazineCurrent"	: 0,
 		"reloadCooldown" 	: 2,
 		
