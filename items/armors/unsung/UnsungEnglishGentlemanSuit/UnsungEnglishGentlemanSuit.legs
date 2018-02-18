@@ -5,11 +5,18 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "legwear",
-  "description" : "These are perfect whether you're working out or just eating pizza in front of the TV. So versatile",
-  "shortdescription" : "Sweatpants",
+  "description" : "Manners Maketh Man.",
+  "shortdescription" : "English Genteel Suit",
   "tooltipKind" : "armor",
-  "maleFrames" : "pants.png",
+  
+  "maleFrames" : {
+    "body" : "pants.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+  
   "femaleFrames" : "pants.png",
+  
   "colorOptions" : [
     // BLUE
     { "ffca8a" : "96cbe7", "e0975c" : "5588d4", "a85636" : "344495", "6f2919" : "1a1c51" },
