@@ -9,11 +9,7 @@
   "shortdescription" : "English Genteel Suit",
   "tooltipKind" : "armor",
   
-  "maleFrames" : {
-    "body" : "pants.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
-  },
+  "maleFrames" : "pants.png",
   
   "femaleFrames" : "pants.png",
   
