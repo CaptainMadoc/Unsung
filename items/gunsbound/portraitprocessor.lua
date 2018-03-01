@@ -267,6 +267,24 @@ species = {
 			["/humanoid/avali/frontarm.png"] = "FrontArmHumanoid"
 		}
 	},
+	kemono = {
+		male = {
+			["/humanoid/kemono/malehead.png"] = "HeadHumanoid",
+			["/humanoid/kemono/emote.png"] = "FaceHumanoid",
+			["/humanoid/kemono/hair/"] = "HairHumanoid",
+			["/humanoid/kemono/malebody.png"] = "BodyHumanoid",
+			["/humanoid/kemono/backarm.png"] = "BackArmHumanoid",
+			["/humanoid/kemono/frontarm.png"] = "FrontArmHumanoid"
+		},
+		female = {
+			["/humanoid/kemono/femalehead.png"] = "HeadHumanoid",
+			["/humanoid/kemono/emote.png"] = "FaceHumanoid",
+			["/humanoid/kemono/hair/"] = "HairHumanoid",
+			["/humanoid/kemono/femalebody.png"] = "BodyHumanoid",
+			["/humanoid/kemono/backarm.png"] = "BackArmHumanoid",
+			["/humanoid/kemono/frontarm.png"] = "FrontArmHumanoid"
+		}
+	},
 	unsung = {
 		male = {
 			["/humanoid/unsung/malehead.png"] = "HeadHumanoid",
