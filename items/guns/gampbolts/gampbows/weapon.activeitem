@@ -8,7 +8,7 @@
 	"inventoryIcon" : "icon.png",
 
 	//API scripts
-	"scriptClass" : "/gunsboundunsung/base/scripts.json",
+	"scriptClass" : "/gunsboundunsung/base/scriptssmallweapon.json",
 	"scripts" : ["/gunsboundunsung/scripts/main.lua"],
 	"scriptDelta" : 1,
 
