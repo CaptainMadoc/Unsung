@@ -1,7 +1,7 @@
     [
       {
         "op" : "add",
-        "path" : "/BrellaBowEnglishSmallBolt",
+        "path" : "/gampboltsphys",
         "value" : {
 					"mass" : 1.0,
 					"gravityMultiplier" : 0.1,
