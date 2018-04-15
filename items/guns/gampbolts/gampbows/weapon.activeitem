@@ -35,7 +35,7 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 16,
+		"maxMagazine" : 8,
 		"aimLookRatio" : 0.125,
 		"burst" : 4,
 		"burstCooldown" : 0.2,
@@ -54,7 +54,6 @@
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
-		"cock" : "cock",
 		"dry" : "dry",
 		"reload" : "reload",
 		
