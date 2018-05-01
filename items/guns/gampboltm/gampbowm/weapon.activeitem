@@ -19,7 +19,7 @@
 	"twoHanded" : true,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/40SW.json",
+	"compatibleAmmo" : "/items/ammoGroup/gampboltm.json",
 
 	"attachments" : {
 		"grip" : {
@@ -71,13 +71,13 @@
 		"maxMagazine" : 12,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 2,
-		"recoilRecovery" : 2,
-		"movingInaccuracy" : 5,
-		"standingInaccuracy" : 2,
+		"recoil" : 3,
+		"recoilRecovery" : 1,
+		"movingInaccuracy" : 4,
+		"standingInaccuracy" : 0,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 650
+		"rpm" : 150
 	},
 
 	"fireSounds" : ["/items/guns/gampbolts/gampbows/gampbowsshoot.ogg"],
@@ -94,7 +94,7 @@
 		"reload_dry" : "reload_dry"
 	},
 
-	"animation" : "/items/guns/gampboltm/gampbowm/gampboltm.animation",
+	"animation" : "/items/guns/gampboltm/gampbowm/gampbowm.animation",
 	"animationCustom" : {
 		"globalTagDefaults" : {
 			"magazine" : "mag.png"
@@ -143,8 +143,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [2.8750, 1.12500],
-						"muzzle_end" : [3, 1.12500], 
+						"muzzle_begin" : [2.8750, 0.875],
+						"muzzle_end" : [3, 0.875], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -223,15 +223,20 @@
 			
 			"L_offset" : {
 				"transform" : {
-					"position" : [1.21875, 0.15625]
+					"position" : [1.125, 0]
 				}
 			},
 			"R_arm1" : {
 				"transform" : {
-					"rotation" : 15
+					"rotation" : 0
 				}
 			},
 			"R_arm2" : {
+				"transform" : {
+					"rotation" : 15
+				}
+			},
+			"R_hand" : {
 				"transform" : {
 					"rotation" : -15
 				}
@@ -252,7 +257,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.375, -0.65625]
+					"position" : [-2.15625, -0.3125]
 				}
 			},
 			"lever" : {
@@ -261,8 +266,8 @@
 			"mag" : {
 				"interpolated" : false,
 				"transform" : {
-					"position" : [1.125, 0.375],
-					"rotationPoint" : [0.25, 0.125]
+					"position" : [0.5, 0],
+					"rotationPoint" : [2.5, 0.5]
 				}
 			},
 

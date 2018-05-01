@@ -8,5 +8,5 @@
 	"description" : "test",
 	"shortdescription" : "Gamp Bolts",
 	"projectile" : "gampboltmproj",
-	"projectileConfig" : {"speed" : 100, "power" : 25}
+	"projectileConfig" : {"speed" : 140, "power" : 25}
 }

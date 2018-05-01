@@ -99,11 +99,11 @@
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"attachment_muzzle_pos" : [2.25, 0.85],
-						"attachment_muzzle_end" : [2.7500, 0.85],
+						"attachment_muzzle_pos" : [2.25, 0.95],
+						"attachment_muzzle_end" : [2.7500, 0.95],
 
-						"muzzle_begin" : [2.250, 0.85],
-						"muzzle_end" : [2.7500, 0.85], 
+						"muzzle_begin" : [2.250, 0.95],
+						"muzzle_end" : [2.7500, 0.95], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -190,7 +190,7 @@
 			
 			"gun" : {
 				"interpolated" : false,
-				"transform" : {"position" : [-0.59375, -0.21875]}
+				"transform" : {"position" : [-0.59375, -0.34375]}
 			},
 			"lever" : {
 				"interpolated" : false
