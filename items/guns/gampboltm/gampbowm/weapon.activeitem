@@ -89,7 +89,6 @@
 		"dry" : "dry",
 		"reload" : "reload",
 		
-		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
 	},
@@ -143,8 +142,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [2.8750, 0.875],
-						"muzzle_end" : [3, 0.875], 
+						"muzzle_begin" : [4.8750, 0.95],
+						"muzzle_end" : [5, 0.95], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
