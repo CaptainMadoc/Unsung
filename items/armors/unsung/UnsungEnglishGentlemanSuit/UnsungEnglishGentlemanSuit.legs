@@ -9,9 +9,9 @@
   "shortdescription" : "English Genteel Suit",
   "tooltipKind" : "armor",
   
-  "maleFrames" : "pants.png",
+  "maleFrames" : "Pants.png",
   
-  "femaleFrames" : "pants.png",
+  "femaleFrames" : "PantsF.png",
   
   "colorOptions" : [
     // BLUE
