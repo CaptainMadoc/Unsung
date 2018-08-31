@@ -1,29 +1,21 @@
 {
-  "itemName" : "UnsungEnglishGentlemanSleeves",
-  "price" : 50,
-  "inventoryIcon" : "icons.png:chest",
+  "itemName" : "unsungenglishgenteelsuit",
+  "price" : 100,
+  "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Common",
-  "category" : "chestarmour",
+  "category" : "legwear",
   "description" : "Manners Maketh Man.",
-  "shortdescription" : "English Genteel Sleeves",
+  "shortdescription" : "English Genteel Suit",
   "tooltipKind" : "armor",
-
-  "maleFrames" : {
-    "body" : "chestm.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
-  },
-
-  "femaleFrames" : {
-    "body" : "chestf.png",
-    "backSleeve" : "bsleeve.png",
-    "frontSleeve" : "fsleeve.png"
-  },
-
+  
+  "maleFrames" : "Pants.png",
+  
+  "femaleFrames" : "PantsF.png",
+  
   "colorOptions" : [
-    // OLIVE
-    { "ffca8a" : "b5b5b5", "e0975c" : "808080", "a85636" : "4f563c", "6f2919" : "2c3712" },
+    // BLUE
+    { "ffca8a" : "96cbe7", "e0975c" : "5588d4", "a85636" : "344495", "6f2919" : "1a1c51" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY
