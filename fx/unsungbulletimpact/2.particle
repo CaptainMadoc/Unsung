@@ -1,5 +1,5 @@
 {
-  "kind" : "gbbulletimpact2",
+  "kind" : "unsungbulletimpact2",
   "definition" : {
     "type" : "ember",
     "size" : 0.75,
