@@ -3,7 +3,7 @@ aim = {
 	target = 0,
 	dir = 1,
 	disabled = false,
-	anglesmooth = 2,
+	anglesmooth = 1,
 	armoffset = 0
 }
 

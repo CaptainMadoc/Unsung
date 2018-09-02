@@ -13,5 +13,6 @@
 	"/gunsboundunsung/modules/portraitprocessor.lua",
 	"/gunsboundunsung/modules/flashlightmanager.lua",
 	"/gunsboundunsung/modules/lasermanager.lua",
-	"/gunsboundunsung/modules/uimanager.lua"
+	"/gunsboundunsung/modules/uimanager.lua",
+	"/gunsboundunsung/modules/requireUni.lua"
 ]

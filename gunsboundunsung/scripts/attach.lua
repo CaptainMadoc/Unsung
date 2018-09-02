@@ -7,12 +7,15 @@ function apply(input)
 	local attachType = config.getParameter("attachmentType")
 	local oItem = whole(input)
 	if not input.parameters.attachments and oItem.attachments then
-		input.parameters.attachments = oItem.attachments
+		input.parameters.attachments = {} -- oItem.attachments
 	end
 	for i,v in pairs(oItem.attachments) do
 		if not input.parameters.attachments[i] then
-			input.parameters.attachments[i] = v
+			input.parameters.attachments[i] = {}
 		end
+		--if not input.parameters.attachments[i].item then
+		--	input.parameters.attachments[i].item = v.item
+		--end
 	end
 	
 	if input.parameters.attachments[attachType] then

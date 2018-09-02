@@ -23,6 +23,14 @@ function pSound(sounddata) --Single Sound by projectile
 	)
 end
 
+function whichhigh(a,b)
+	if a > b then
+		return a
+	else
+		return b
+	end
+end
+
 function strStarts(str, start)
 	return string.sub(str,1,string.len(start)) == start
 end
@@ -85,6 +93,13 @@ function itemDir(str)
 	return itemConfig.directory..str
 end
 
+function vDir(str, dir)
+	if string.sub(str,1,1) == "/" then
+		return str
+	end
+	return dir..str
+end
+
 function better(v1, v2)
 	if math.abs(v1) > math.abs(v2) then
 		return math.abs(v1)
@@ -99,18 +114,35 @@ function projectileAngle(at) --Aim angle imported from chucklefish weapons, {1 ,
 	return aimVector
 end
 
-function copycat(var)
-	if type(var) == "number" then
-		return 0 + var
+function default(val,defs)
+	local t = type(val)
+	if t ~= "nil" then
+		if t == "table" then
+			for i,v in pairs(defs) do
+				if not val[i] then
+					val[i] = v
+				end
+			end
+			return val
+		else
+			return val
+		end
+	else
+		return defs
 	end
+end
+
+function copycat(var)
 	if type(var) == "table" then
 		local newtab = {}
 		for i,v in pairs(var) do
-			newtab[i] = v
+			newtab[i] = copycat(v)
 		end
+		setmetatable(newtab, getmetatable(var))
 		return newtab
+	else
+		return var
 	end
-	return var
 end
 
 

@@ -1,4 +1,5 @@
 magazine = {
+	type = "rotating",
 	storage = {
 	},
 	selected = 1
@@ -151,14 +152,24 @@ function magazine:take()
 	return nil
 end
 
+function magazine:count()
+	local c = 0
+	for i,v in pairs(self.storage) do
+		c = c + v.count
+	end
+	return c
+end
+
+
 function magazine:update(dt)
 	activeItem.setScriptedAnimationParameter("magazine", self.storage)
+	activeItem.setScriptedAnimationParameter("magazineType", self.type)
 	activeItem.setScriptedAnimationParameter("selected", self.selected)
 	activeItem.setScriptedAnimationParameter("maxMagazine", weapon.stats.maxMagazine or 30)
 end
 
 function magazine:uninit()
-	activeItem.setInstanceValue("magazine", self.storage)
+	self:saveData()
 end
 
 addClass("magazine", -2)

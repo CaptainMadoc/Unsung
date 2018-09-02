@@ -28,7 +28,9 @@ function camera:update(dt)
 end
 
 function camera:uninit()
-	world.callScriptedEntity(self.projID, "projectile.die")
+	if type(self.projID) == "number" and world.entityExists(self.projID) then
+		world.callScriptedEntity(self.projID, "projectile.die")
+	end
 end
 
 function camera:respawnProjectile()

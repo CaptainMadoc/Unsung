@@ -1,0 +1,23 @@
+{
+	"itemName" : "unsungscope",
+	"rarity" : "common",
+	"category" : "Attachments | Sight",
+	"price" : 0,
+	"attachment" : {
+		"offset" : [-1.25,0],
+		"scale" : [0.375,0.375],
+		"image" : "scope.png",
+		"stats" : {
+			"aimLookRatio" : 1
+		},
+		"script" : "/attachments/change_stats.lua"
+	},
+	"attachmentType" : "sight",
+	"maxStack" : 1,
+
+	"inventoryIcon" : "scope.png",
+	"description" : "",
+	"shortdescription" : "8x Scope",
+	"scripts" : ["/gunsboundunsung/scripts/attach.lua"]
+}
+ 

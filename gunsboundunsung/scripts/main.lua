@@ -87,7 +87,7 @@ function update(dt, fireMode, shiftHeld, moves)
 		end
 		selfItem.hasLateInited = true
 	end
-	
+		
 	for i,v in ipairs(selfItem.condensedClasses) do
 		if _ENV[v] and _ENV[v].update then
 			_ENV[v]:update(updateInfo.dt, fireMode, shiftHeld, moves)
@@ -95,7 +95,6 @@ function update(dt, fireMode, shiftHeld, moves)
 	end
 	
 	updateLast = {dt = updateInfo.dt, fireMode = updateInfo.fireMode, shiftHeld = shiftHeld, moves = moves}
-	world.debugText("deltaTime = "..updateInfo.dt, "", mcontroller.position(), "green")
 	_Delta = os.clock()
 end
 

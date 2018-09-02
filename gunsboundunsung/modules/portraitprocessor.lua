@@ -212,24 +212,6 @@ portrait.species = {
 			["/humanoid/glitch/backarm.png"] = "BackArmHumanoid",
 			["/humanoid/glitch/frontarm.png"] = "FrontArmHumanoid"
 		}
-	},
-	unsung = {
-		male = {
-			["/humanoid/unsung/malehead.png"] = "HeadHumanoid",
-			["/humanoid/unsung/emote.png"] = "FaceHumanoid",
-			["/humanoid/unsung/hair/"] = "HairHumanoid",
-			["/humanoid/unsung/malebody.png"] = "BodyHumanoid",
-			["/humanoid/unsung/backarm.png"] = "BackArmHumanoid",
-			["/humanoid/unsung/frontarm.png"] = "FrontArmHumanoid"
-		},
-		female = {
-			["/humanoid/unsung/femalehead.png"] = "HeadHumanoid",
-			["/humanoid/unsung/emote.png"] = "FaceHumanoid",
-			["/humanoid/unsung/hair/"] = "HairHumanoid",
-			["/humanoid/unsung/femalebody.png"] = "BodyHumanoid",
-			["/humanoid/unsung/backarm.png"] = "BackArmHumanoid",
-			["/humanoid/unsung/frontarm.png"] = "FrontArmHumanoid"
-		}
 	}
 }
 

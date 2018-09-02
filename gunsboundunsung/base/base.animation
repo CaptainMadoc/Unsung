@@ -1,5 +1,19 @@
 {
-	"globalTagDefaults" : {},
+	"globalTagDefaults" : {
+		"R_a1" : "/assetmissing.png",
+		"R_a2" : "/assetmissing.png",
+		"R_af1" : "/assetmissing.png",
+		"R_af2" : "/assetmissing.png",
+		"R_hand" : "/assetmissing.png",
+		"R_handf" : "/assetmissing.png",
+		"L_a1" : "/assetmissing.png",
+		"L_a2" : "/assetmissing.png",
+		"L_af1" : "/assetmissing.png",
+		"L_af2" : "/assetmissing.png",
+		"L_hand" : "/assetmissing.png",
+		"L_handf" : "/assetmissing.png",
+		"selfimage" : "/assetmissing.png"
+	},
 	"animatedParts" : {
 		"parts" : {
 			"R_arm1"	: {
@@ -59,7 +73,7 @@
 						"frames" : 3,
 						"mode" : "transition",
 						"transition" : "off",
-						"cycle" : 0.05,
+						"cycle" : 0.1,
 						"properties" : {
 							"lightsOn" : ["muzzleFlash"]
 						}

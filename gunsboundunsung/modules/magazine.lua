@@ -1,4 +1,5 @@
 magazine = {
+	type = "normal",
 	storage = {
 	}
 }
@@ -16,25 +17,29 @@ function magazine:insert(co)
 		compat = processDirectory(compat)
 	end
 	if not co then
-		co = weapon.stats.maxMagazine - #self.storage
+		co = weapon.stats.maxMagazine - self:count()
 	end
 	for i,v in pairs(self:processCompatible(compat)) do
 		if co > 0 then
 			if player.hasItem({name = v, count = 1}) then
 				local con = player.consumeItem({name = v, count = co}, true)
-				
-				for i = 1,con.count do
-					table.insert(self.storage, {name = v, count = 1, parameters = con.parameters or {}})
-					co = co - 1
-				end
+				table.insert(self.storage, con)
+				co = co - con.count
 			end
 		end
 	end
 	activeItem.setInstanceValue("magazine", self.storage)
 end
 
-function magazine:playerHasAmmo()
+function magazine:count()
+	local c = 0
+	for i,v in pairs(self.storage) do
+		c = c + v.count
+	end
+	return c
+end
 
+function magazine:playerHasAmmo()
 	local compat = config.getParameter("compatibleAmmo", jarray())
 	if type(compat) == "string" then
 		compat = processDirectory(compat)
@@ -47,8 +52,9 @@ function magazine:playerHasAmmo()
 	return false
 end
 
-function magazine:remove()
+function magazine:remove(specific)
 	local togive = jarray()
+	local toremove = specific or self:count() -- todo
 	for i,v in pairs(self.storage) do
 		if #togive == 0 then
 			table.insert(togive,v)
@@ -74,20 +80,27 @@ end
 
 function magazine:init()
 	self.storage = config.getParameter("magazine", jarray())
-	
 end
 
 function magazine:lateinit()
 	animation:addEvent("insert_mag", function() magazine:insert() end)
 	animation:addEvent("insert_bullet", function() magazine:insert(1) end)
 	animation:addEvent("remove_mag", function() magazine:remove() end)
+	if self:count() > weapon.stats.maxMagazine then
+		self:remove()
+	end
 end
 
 function magazine:take()
-	if #self.storage > 0 then
-		local ammoPull = self.storage[#self.storage]
-		table.remove(self.storage,#self.storage)
+	if self:count() > 0 then
+		local ammoPull = copycat(self.storage[#self.storage])
+		if ammoPull.count <= 1 then
+			table.remove(self.storage,#self.storage)
+		else
+			self.storage[#self.storage].count = self.storage[#self.storage].count - 1
+		end
 		activeItem.setInstanceValue("magazine", self.storage)
+		ammoPull.count = 1
 		return ammoPull
 	end
 	return nil
@@ -95,6 +108,7 @@ end
 
 function magazine:update(dt)
 	activeItem.setScriptedAnimationParameter("magazine", self.storage)
+	activeItem.setScriptedAnimationParameter("magazineType", self.type)
 	activeItem.setScriptedAnimationParameter("maxMagazine", weapon.stats.maxMagazine or 30)
 end
 

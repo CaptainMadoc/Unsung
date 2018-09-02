@@ -1,0 +1,7 @@
+[
+    {
+        "path" : "/defaultBlueprints/tier1/-",
+        "op" : "add",
+        "value" : {"item" : "gbguncrafterstandard"}
+    }
+]

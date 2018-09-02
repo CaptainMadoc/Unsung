@@ -3,6 +3,14 @@ uimanager = {}
 function uimanager:init()
 end
 
+function uimanager:lateinit()
+	local uiShell =  config.getParameter("uiShell")
+	if uiShell then
+		activeItem.setScriptedAnimationParameter("uiShell", vDir(uiShell, selfItem.rootDirectory))
+		
+	end
+end
+
 function uimanager:update(dt)
 	
 	activeItem.setScriptedAnimationParameter("load", type(weapon.load))
@@ -22,6 +30,7 @@ function uimanager:update(dt)
 	
 	activeItem.setScriptedAnimationParameter("fireSelect",  weapon.fireTypes[weapon.fireSelect])
 	activeItem.setScriptedAnimationParameter("inAccuracy",  weapon:getInAccuracy())
+	activeItem.setScriptedAnimationParameter("althanded",  activeItem.hand() == "alt")
 	activeItem.setScriptedAnimationParameter("muzzleDistance",  world.distance(activeItem.ownerAimPosition(),weapon:rel(animator.partPoint("gun", "muzzle_begin"))))
 
 end

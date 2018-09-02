@@ -11,7 +11,7 @@ animation = {
 	}
 }
 
-function randomHash()
+function animation:randomHash()
 	local str1 = ""
 	for i = 1,8 do
 		str1 = str1..string.format("%X", math.random(255))
@@ -21,11 +21,11 @@ end
 
 function animation:interpolateTransforms(tr, timing)
 	if self.current then
-		self.from = dp(self.current)
+		self.from = copycat(self.current)
 	end
 	animation:initTC()
 	
-	self.to = sb.jsonMerge(transforms.original, dp(tr))
+	self.to = sb.jsonMerge(transforms.original, copycat(tr))
 	
 	for i,v in pairs(self.to) do
 		self.to[i].time = timing
@@ -34,12 +34,12 @@ end
 
 function animation:forceTransforms(tr, timing)
 	animation:initTC()
-	self.current = sb.jsonMerge(self.current, dp(tr))
+	self.current = sb.jsonMerge(self.current, copycat(tr))
 	for i,v in pairs(self.current) do
 		self.current[i].time = 0
 	end
-	self.from = dp(tr)
-	self.to = dp(tr)
+	self.from = copycat(tr)
+	self.to = copycat(tr)
 	
 	for i,v in pairs(self.to) do
 		self.to[i].time = timing
@@ -50,14 +50,30 @@ function animation:forceTransforms(tr, timing)
 end
 
 function animation:initTC()
-	self.current = dp(transforms.original)
+	self.current = copycat(transforms.original)
 	for i,v in pairs(self.current) do
 		self.current[i].time = 0
 	end
 end
 
 function animation:initTF()
-	self.from = dp(transforms.original)
+	self.from = copycat(transforms.original)
+end
+
+function animation:validate(k)
+	local newkf = {}
+	for i,frame in ipairs(k) do
+		table.insert(newkf, {
+			transforms = frame.transforms or {},
+			playSounds = frame.playSounds or jarray(),
+			animationState = frame.animationState or {},
+			burstParticle = frame.burstParticle or jarray(),
+			lights = frame.lights or {},
+			fireEvents = frame.fireEvents or jarray(),
+			wait = frame.wait or 0.1,
+		})
+	end
+	return newkf
 end
 
 function animation:add(name, keyFrames, delete)
@@ -67,13 +83,13 @@ function animation:add(name, keyFrames, delete)
 		current = 1,
 		waiting = 0,
 		deleteOnFinished = delete,
-		keyFrames = keyFrames
+		keyFrames = self:validate(keyFrames)
 	}
-end
+end	
 
 function animation:play(str)
 	if type(str) == "table" then
-		local randhash = randomHash()
+		local randhash = self:randomHash()
 		animation:add(randhash, str, true)
 		animation:play(randhash)
 		return randhash
@@ -81,7 +97,7 @@ function animation:play(str)
 
 	if not self.list[str] then return end
 	if not self.list[str].keyFrames then sb.logWarn("keyFrames is nil") return end
-	if #self.list[str].keyFrames == 0 then sb.logWarn("keyFrames contains nothing") return end
+	if #self.list[str].keyFrames == 0 then  return end
 
 	if self.list[str].playing then self:skip(str) end --Skip since its already playing
 
@@ -114,6 +130,7 @@ end
 
 function animation:addEvent(str,func)
 	self.events[str] = func
+	sb.logInfo("new animation event: "..str)
 end
 
 function animation:fireEvent(str)
@@ -125,7 +142,7 @@ end
 function animation:applykeyFrames(key,timing,force)
 	self.transforms = {}
 	if not key then return end
-	for transformName,transform in pairs(key.transforms) do
+	for transformName,transform in pairs(key.transforms or {}) do
 		if not self.transforms[transformName] then self.transforms[transformName] = {} end
 		for property, value in pairs(transform) do
 			self.transforms[transformName][property] = value
@@ -133,9 +150,9 @@ function animation:applykeyFrames(key,timing,force)
 	end
 
 	if force then
-		self:forceTransforms(dp(key.transforms), timing)
+		self:forceTransforms(copycat(key.transforms or {}) , timing)
 	else
-		self:interpolateTransforms(dp(key.transforms), timing)
+		self:interpolateTransforms(copycat(key.transforms or {}), timing)
 	end
 	
 	for i,v in pairs(key.playSounds or {}) do
@@ -193,53 +210,21 @@ end
 
 function animation:init()
 	local ani = config.getParameter("animationsKeyFrames", {})
+	
 	if type(ani) == "string" then
 		ani = root.assetJson(pD(ani), {})
 	end
+
 	for i,v in pairs(ani) do
 		self:add(i,v)
 	end
-	
-	local configanimation = config.getParameter("animation")
-	local animations = {}
-	
-	if configanimation then
-		animations = root.assetJson(itemDir(configanimation), {})
-	end
-	local animationCustom = config.getParameter("animationCustom", {})
-	local animationTranformationGroup = sb.jsonMerge(animationCustom, animations).transformationGroups or {} 
-	
-	for i,v in pairs(animationTranformationGroup) do
-		if not v.ignore then
-			local newtrans = {position = {0,0}, scale = {1,1}, scalePoint = {0,0}, rotation = 0, rotationPoint = {0,0}}
-			if v.transform then
-				newtrans = sb.jsonMerge(newtrans, v.transform)
-			end
-			transforms:add(i, newtrans,
-				function(name,thisTransform, dt) 
-					if animator.hasTransformationGroup(name) then --Check to prevent crashing
-						local setting  = transforms.calculateTransform({
-							position = thisTransform.position or {0,0},
-							scale = thisTransform.scale or {1,1},
-							scalePoint = thisTransform.scalePoint or {0,0},
-							rotation = thisTransform.rotation or 0,
-							rotationPoint = thisTransform.rotationPoint or {0,0}
-						})
-						
-						animator.resetTransformationGroup(name) 
-						animator.scaleTransformationGroup(name, setting.scale, setting.scalePoint)
-						animator.rotateTransformationGroup(name, util.toRadians(setting.rotation), setting.rotationPoint)
-						animator.translateTransformationGroup(name, setting.position)
-					end
-				end
-			)
-		end
-	end
-
 
 	message.setHandler("play", function(_, loc, tr) if loc then self:play(tr) end end)
 	message.setHandler("isAnyPlaying", function(_, loc) if loc then return self:isAnyPlaying() end end)
 	message.setHandler("setTransforms", function(_, loc, tr) if loc then self:forceTransforms(tr, 0) end end)
+end
+
+function animation:lateinit()
 end
 
 function animation:update(dt)
@@ -274,17 +259,17 @@ function animation:update(dt)
 	
 	for i,v in pairs(self.current) do
 		if not self.to[i] then
-			self.to[i] = dp(transforms.original[i])
+			self.to[i] = copycat(transforms.original[i])
 			self.to[i].time = 1
 		end
 		if not self.from[i] then
-			self.from[i] = dp(transforms.original[i])
+			self.from[i] = copycat(transforms.original[i])
 			self.from[i].time = 1
 		end
 		
 		if self.to[i] then
 			self.current[i].time = math.min(self.current[i].time + dt, self.to[i].time)
-			local timeRatio = (self.current[i].time / self.to[i].time) ^ (self.to[i].curve or 0)
+			local timeRatio = (self.current[i].time / self.to[i].time) ^ (self.to[i].curve or 1)
 			for property, value in pairs(v) do
 				if property ~= "time" and property ~= "curve" and self.from[i][property] then
 					if not self.to[i][property] then
