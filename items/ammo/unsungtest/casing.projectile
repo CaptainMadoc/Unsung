@@ -1,6 +1,6 @@
 {
   "projectileName" : "unsungtest_casing",
-  "image" : "gbtestcasing.png",
+  "image" : "unsungtestcasing.png",
   
   "physics" : "grenade",
   

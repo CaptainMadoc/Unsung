@@ -4,7 +4,7 @@
     { "item" : "goldbar", "count" : 15 }
   ],
   "output" : {
-    "item" : "gbunsungammobox",
+    "item" : "unsungammobox",
     "count" : 1
   },
   "duration" : 2.5,

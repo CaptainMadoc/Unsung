@@ -1,5 +1,5 @@
 {
-    "objectName": "gbunsungammobox",
+    "objectName": "unsungammobox",
 
     "price": 30,
     "description": "Remaining dispenses: ^green;10",

@@ -1,7 +1,7 @@
 [
 	"/gunsboundunsung/modules/weapon.lua",
 	"/gunsboundunsung/modules/attachment.lua",
-	//"/gunsboundunsung/modules/magazine.lua",
+	"/gunsboundunsung/modules/magazine.lua",
 	"/gunsboundunsung/modules/rotatingMagazine.lua",
 	"/gunsboundunsung/modules/camera.lua",
 	"/gunsboundunsung/modules/aim.lua",

@@ -4,7 +4,7 @@
 	"rarity" : "common",
 	"maxStack" : 25000,
 	"category" : "craftingMaterial",
-	"inventoryIcon" : "gbtestammo.png",
+	"inventoryIcon" : "unsungtestammo.png",
 	"description" : "actually testing",
 	"shortdescription" : "test ammo",
 	"casingProjectile" : "unsungtest_casing",

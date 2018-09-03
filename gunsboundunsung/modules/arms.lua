@@ -4,7 +4,7 @@ arms = {
 	twohand_current = false,
 	twohand_target = false,
 	cropA1 = "?crop=0;0;26;43",
-	cropA2 = "?crop=25;0;31;43",
+	cropA2 = "?crop=25;0;30;43",
 	cropA3 = "?crop=30;0;43;43",
 }
 
@@ -98,8 +98,8 @@ function arms:init()
 		function(name,thisTransform, dt) 
 			if animator.hasTransformationGroup(name) then --Check to prevent crashing
 				local setting  = transforms.calculateTransform({
-					position = {23 * 0.125,0},
-					rotationPoint = {0,17 * 0.125 + 0.0625},
+					position = {25 * 0.125,0},
+					rotationPoint = {0,24 * 0.125 + 0.0625},
 					
 					rotation = thisTransform.rotation or 0,
 					
@@ -119,8 +119,8 @@ function arms:init()
 		function(name,thisTransform, dt) 
 			if animator.hasTransformationGroup(name) then --Check to prevent crashing
 				local setting  = transforms.calculateTransform({
-					position = {0.375,0},
-					rotationPoint = {0.125,18 * 0.125},
+					position = {0.625,0},
+					rotationPoint = {0,25 * 0.125},
 					
 					rotation = thisTransform.rotation or 0,
 					
@@ -161,8 +161,8 @@ function arms:init()
 		function(name,thisTransform, dt) 
 			if animator.hasTransformationGroup(name) then --Check to prevent crashing
 				local setting  = transforms.calculateTransform({
-					position = {23 * 0.125,0},
-					rotationPoint = {0,17 * 0.125 + 0.0625},
+					position = {25 * 0.125,0},
+					rotationPoint = {0,24 * 0.125 + 0.0625},
 					
 					rotation = thisTransform.rotation or 0,
 					
@@ -182,8 +182,8 @@ function arms:init()
 		function(name,thisTransform, dt) 
 			if animator.hasTransformationGroup(name) then --Check to prevent crashing
 				local setting  = transforms.calculateTransform({
-					position = {0.375,0},
-					rotationPoint = {0.125,18 * 0.125},
+					position = {0.625,0},
+					rotationPoint = {0,25 * 0.125},
 					
 					rotation = thisTransform.rotation or 0,
 					

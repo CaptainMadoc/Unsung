@@ -22,7 +22,7 @@
 	"uiShell" : "ammo.png",
 
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/unsung762x39mm.json",
+	"compatibleAmmo" : "/items/ammoGroup/unsung762x39mm.json",
 
 	"attachments" : {
 		"grip" : {
@@ -95,7 +95,7 @@
 		"rpm" : 600
 	},
 
-	"fireSounds" : ["sounds/762x39mm.ogg"],
+	"fireSounds" : ["/items/guns/astrifle/unsungak47/sounds/762x39mm.ogg"],
 	"fireTypes" : ["auto", "semi"],
 	"gunPart" : "gun",
 
