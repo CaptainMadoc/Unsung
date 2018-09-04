@@ -150,6 +150,33 @@
 						"transformationGroups" : ["lever", "gun", "base"]
 					}
 				},
+				"gunleverfolded" : {
+					"properties" : {
+						"zLevel" : 18,
+						"centered" : false,
+						"image" : "leverfolded.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["leverfolded", "gun", "base"]
+					}
+				},
+				"barrel" : {
+					"properties" : {
+						"zLevel" : 18,
+						"centered" : false,
+						"image" : "barrel.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["barrel", "gun", "base"]
+					}
+				},
+				"gunfolded" : {
+					"properties" : {
+						"zLevel" : 18,
+						"centered" : false,
+						"image" : "gunfolded.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["gunfolded", "gun", "base"]
+					}
+				},
 				
 				"gun" : {
 					"properties" : {
@@ -362,14 +389,19 @@
 					"position" : [1.15625, 0.15625]
 				}
 			},
+			"R_offset" : {
+				"transform" : {
+					"position" : [0.25, 0.0625]
+				}
+			},
 			"R_arm1" : {
 				"transform" : {
-					"rotation" : 15
+					"rotation" : 0
 				}
 			},
 			"R_arm2" : {
 				"transform" : {
-					"rotation" : -15
+					"rotation" : 0
 				}
 			},
 			"L_arm1" : {
@@ -388,10 +420,19 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.25, -0.50625]
+					"position" : [-0.4375, -0.25]
 				}
 			},
+			"gunfolded" : {
+				"interpolated" : false
+			},
 			"lever" : {
+				"interpolated" : false
+			},
+			"barrel" : {
+				"interpolated" : false
+			},
+			"leverfolded" : {
 				"interpolated" : false
 			},
 			"mag" : {
