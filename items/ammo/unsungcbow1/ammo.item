@@ -1,0 +1,13 @@
+{
+	"itemName" : "unsungcbow1ammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "unsungcbow1ammo.png",
+	"description" : "actually cbow1ing",
+	"shortdescription" : "cbow1 ammo",
+	"casingProjectile" : "unsungcbow1_casing",
+	"projectile" : "unsungcbow1proj",
+	"projectileConfig" : {"speed" : 10, "power" : 10000}
+}
