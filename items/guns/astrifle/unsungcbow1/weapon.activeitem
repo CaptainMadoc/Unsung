@@ -2,7 +2,7 @@
 	//UIinfo
 	"itemName" : "unsungcbow1",
 	"shortdescription" : "Unsung C'bow 1",
-	"description" : "It's just a bow crossed on a thicc hunka wood",
+	"description" : "It's just a bow crossed on a thicc hunka wood.",
 	"category" : "base",
 	"tooltipKind" : "base",
 	"inventoryIcon" : "icon.png",
@@ -156,7 +156,7 @@
 						"centered" : false,
 						"image" : "gun2.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["gun", "base"]
+						"transformationGroups" : ["gun2", "base"]
 					}
 				},
 				
@@ -368,27 +368,42 @@
 			
 			"L_offset" : {
 				"transform" : {
-					"position" : [1.15625, 0.15625]
+					"position" : [1.125, 0.125]
+				}
+			},
+			"R_offset" : {
+				"transform" : {
+					"position" : [0.25, 0.125]
 				}
 			},
 			"R_arm1" : {
 				"transform" : {
-					"rotation" : 15
+					"rotation" : -35
 				}
 			},
 			"R_arm2" : {
 				"transform" : {
-					"rotation" : -15
+					"rotation" : 75
+				}
+			},
+			"R_hand" : {
+				"transform" : {
+					"rotation" : -40
 				}
 			},
 			"L_arm1" : {
 				"transform" : {
-					"rotation" : -5
+					"rotation" : -25
 				}
 			},
 			"L_arm2" : {
 				"transform" : {
-					"rotation" : 15
+					"rotation" : 50
+				}
+			},
+			"L_hand" : {
+				"transform" : {
+					"rotation" : -20
 				}
 			},
 			
@@ -397,7 +412,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.25, -0.50625]
+					"position" : [-0.9375, -1.0625]
 				}
 			},
 			"gun2" : {
