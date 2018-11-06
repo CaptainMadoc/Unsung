@@ -422,7 +422,10 @@
 				}
 			},
 			"lever" : {
-				"interpolated" : false
+				"interpolated" : false,
+				"transform" : {
+					"scale" : [1, 1]
+				}
 			},
 			"mag" : {
 				"interpolated" : false
