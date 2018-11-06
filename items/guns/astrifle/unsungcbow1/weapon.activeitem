@@ -143,20 +143,29 @@
 				},
 				"gunlever" : {
 					"properties" : {
-						"zLevel" : 18,
+						"zLevel" : 20,
 						"centered" : false,
 						"image" : "lever.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["lever", "gun", "base"]
+						"transformationGroups" : ["lever", "base"]
 					}
 				},
-				"gun2" : {
+				"gundrawn" : {
 					"properties" : {
 						"zLevel" : 19,
 						"centered" : false,
-						"image" : "gun2.png",
+						"image" : "gundrawn.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["gun2", "base"]
+						"transformationGroups" : ["gundrawn", "gun", "base"]
+					}
+				},
+				"gunreleased" : {
+					"properties" : {
+						"zLevel" : 19,
+						"centered" : false,
+						"image" : "gunreleased.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["gunreleased", "gun", "base"]
 					}
 				},
 				
@@ -411,20 +420,29 @@
 			"gun" : {
 				"interpolated" : false,
 				"transform" : {
-					"rotationPoint" : [1.5625, 0.8125],
+					"rotationPoint" : [-0.5, 0.25],
+					"position" : [0, 0]
+				}
+			},
+			"gundrawn" : {
+				"interpolated" : false,
+				"transform" : {
+					"scale" : [1, 1],
 					"position" : [-0.9375, -1.0625]
 				}
 			},
-			"gun2" : {
+			"gunreleased" : {
 				"interpolated" : false,
 				"transform" : {
-					"scale" : [0, 0]
+					"scale" : [0, 0],
+					"position" : [-0.9375, -1.0625]
 				}
 			},
 			"lever" : {
 				"interpolated" : false,
 				"transform" : {
-					"scale" : [1, 1]
+					"scale" : [1, 1],
+					"position" : [-0.4375, 0.4375]
 				}
 			},
 			"mag" : {
