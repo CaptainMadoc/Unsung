@@ -133,11 +133,11 @@ function realUpdate(dt)
 	end
 	--ammo Display
 	local matt = {
-		{15 / data["maxMagazine"],0,0},
+		{1 / data["maxMagazine"],0,0},
 		{0,1,0},
 		{0,0,1}
 	}
-	local shift = (-0.0625) * (30 / data["maxMagazine"])
+	local shift = (-0.0625) * (10 / data["maxMagazine"])
 	
 	local ratio1 = 1
 	if data["fired"] == true then
@@ -159,12 +159,12 @@ function realUpdate(dt)
 			local extraShift = 0
 			countedAmmo = countedAmmo + 1
 			if data.selected and countedAmmo > data.selected then
-				extraShift = ((3.75 / data["maxMagazine"]))
+				extraShift = ((-3.75 / data["maxMagazine"]))
 			end
 			if v.parameters.fired then
-				localAnimator.addDrawable({image = data["uiShell"], position = vec2.add(position, {((3.75 / data["maxMagazine"]) * countedAmmo) + shift + extraShift, -3.25}), transformation = matt, fullbright = true, color = {255,255 / 2,255 / 2,255}}, "overlay")
+				localAnimator.addDrawable({image = data["uiShell"], position = vec2.add(position, {((1.25 / data["maxMagazine"]) * countedAmmo) + shift + extraShift, -3}), transformation = matt, fullbright = true, color = {255,255 / 2,255 / 2,255}}, "overlay")
 			else                                                                                                                                       
-				localAnimator.addDrawable({image = data["uiShell"], position = vec2.add(position, {((3.75 / data["maxMagazine"]) * countedAmmo) + shift + extraShift, -3.25}), transformation = matt, fullbright = true}, "overlay")
+				localAnimator.addDrawable({image = data["uiShell"], position = vec2.add(position, {((1.25 / data["maxMagazine"]) * countedAmmo) + shift + extraShift, -3}), transformation = matt, fullbright = true}, "overlay")
 			end
 		end
 	end

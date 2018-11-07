@@ -10,7 +10,7 @@
 	//API scripts
 	"scriptClass" : "/gunsboundunsung/base/scripts.json",
 	"scripts" : ["/gunsboundunsung/scripts/main.lua"],
-	"animationScripts" : ["/gunsboundunsung/gunUI/main.lua"],
+	"animationScripts" : ["/items/guns/astrifle/unsungcbow1/ui.lua"],
 	"scriptDelta" : 1,
 
 	//item settings
