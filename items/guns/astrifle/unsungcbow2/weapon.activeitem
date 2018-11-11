@@ -1,8 +1,8 @@
 {
 	//UIinfo
-	"itemName" : "unsungcbow1",
-	"shortdescription" : "Unsung C'bow 1",
-	"description" : "It's just a bow crossed on a thicc hunka wood.",
+	"itemName" : "unsungcbow2",
+	"shortdescription" : "Unsung C'bow 2",
+	"description" : "Ha, real wolves don't need no spinny cranky thing!",
 	"category" : "base",
 	"tooltipKind" : "base",
 	"inventoryIcon" : "icon.png",
@@ -10,7 +10,7 @@
 	//API scripts
 	"scriptClass" : "/gunsboundunsung/base/scripts.json",
 	"scripts" : ["/gunsboundunsung/scripts/main.lua"],
-	"animationScripts" : ["/items/guns/astrifle/unsungcbow1/ui.lua"],
+	"animationScripts" : ["/items/guns/astrifle/unsungcbow2/ui.lua"],
 	"scriptDelta" : 1,
 
 	//item settings
@@ -22,7 +22,7 @@
 	"uiShell" : "ammo.png",
 
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/items/ammoGroup/unsungcbow1.json",
+	"compatibleAmmo" : "/items/ammoGroup/unsungcbow2.json",
 
 	"attachments" : {
 		"grip" : {
@@ -83,20 +83,20 @@
 	"gunStats" : {
 		"damageMultiplier" : 2,
 
-		"maxMagazine" : 1,
+		"maxMagazine" : 10,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 2,
-		"recoilRecovery" : 16,
+		"recoil" : 1,
+		"recoilRecovery" : 6,
 		"movingInaccuracy" : 5,
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
 		"rpm" : 600
 	},
-
+	"bypassShellEject" : true,
 	"fireSounds" : ["/items/guns/astrifle/unsungcbow1/sounds/762x39mm.ogg"],
-	"fireTypes" : ["auto", "semi"],
+	"fireTypes" : ["auto"],
 	"gunPart" : "gun",
 
 	"gunAnimations" : {
@@ -104,10 +104,8 @@
 		"cock" : "cock",
 		"dry" : "dry",
 		"reload" : "reload",
-		
-		"cock_dry" : "cock_dry",
-		"shoot_dry" : "shoot_dry",
-		"reload_dry" : "reload_dry"
+		"reloadLoop" : "reloadLoop",
+		"reloadEnd" : "reloadEnd"
 	},
 
 	"casing" : {
@@ -143,11 +141,11 @@
 				},
 				"gunlever" : {
 					"properties" : {
-						"zLevel" : 20,
+						"zLevel" : 17,
 						"centered" : false,
 						"image" : "lever.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["lever", "base"]
+						"transformationGroups" : ["lever", "gun", "base"]
 					}
 				},
 				"gundrawn" : {
@@ -421,7 +419,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [-0.5, 0.25],
-					"position" : [0, 0]
+					"position" : [-0.375, -0.125]
 				}
 			},
 			"gundrawn" : {
@@ -442,11 +440,14 @@
 				"interpolated" : false,
 				"transform" : {
 					"scale" : [1, 1],
-					"position" : [-0.4375, 0.4375]
+					"position" : [-0.9375, -1.0625]
 				}
 			},
 			"mag" : {
-				"interpolated" : false
+				"interpolated" : false,
+				"transform" : {
+					"position" : [0.1875, 0.6875]
+				}
 			},
 
 			//attachments

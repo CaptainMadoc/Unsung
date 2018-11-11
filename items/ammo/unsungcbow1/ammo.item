@@ -9,5 +9,5 @@
 	"shortdescription" : "cbow1 ammo",
 	"casingProjectile" : "unsungcbow1_casing",
 	"projectile" : "unsungcbow1proj",
-	"projectileConfig" : {"speed" : 10, "power" : 10000}
+	"projectileConfig" : {"speed" : 60, "power" : 10000}
 }
