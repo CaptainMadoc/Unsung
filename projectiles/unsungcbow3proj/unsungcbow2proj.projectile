@@ -1,0 +1,16 @@
+{
+  "projectileName" : "unsungcbow2proj",
+  "image" : "unsungcbow2proj.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/fx/unsungbulletimpact/action.config"
+    }
+  ],
+  "power" : 20.0
+}
+
+
