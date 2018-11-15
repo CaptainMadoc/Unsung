@@ -2,8 +2,114 @@ magazine = {
 	type = "rotating",
 	storage = {
 	},
+	disableUI = false,
 	selected = 1
 }
+
+		--CallBacks
+
+function magazine:init()
+	
+	dataManager:load("compatibleAmmo")
+	
+	self.storage = config.getParameter("magazine", jarray())
+	self.selected = config.getParameter("selected", 1)
+	self.elementID = ui:newElement(self:createElement())
+end
+
+function magazine:lateinit()
+	animation:addEvent("insert_mag", function() magazine:insert() end)
+	animation:addEvent("insert_bullet", function() magazine:insert(1) end)
+	animation:addEvent("remove_mag", function() magazine:remove() end)
+	animation:addEvent("rotate_mag", function() magazine:rotate() end)
+	animation:addEvent("resetSelect_mag", function() magazine.selected = 1 magazine:saveData() end)
+	self:verify()
+end
+
+function magazine:update(dt)
+	activeItem.setScriptedAnimationParameter("magazine", self.storage)
+	activeItem.setScriptedAnimationParameter("magazineType", self.type)
+	activeItem.setScriptedAnimationParameter("selected", self.selected)
+	activeItem.setScriptedAnimationParameter("maxMagazine", data.gunStats.maxMagazine or 30)
+end
+
+function magazine:uninit()
+	self:saveData()
+end
+
+
+--ui.lua needed
+function magazine:createElement()
+	
+	local element = {
+		lerpingVar1 = 0
+	}
+
+	function element:init()
+		
+	end
+
+	function element:draw()
+		local todraw = {}
+		if magazine.disableUI then return todraw end
+		local direction = -1
+		if activeItem.hand() == "alt" then direction = 1 end
+
+
+		local lines = {}
+		local angleperammo = 360/magazine.size
+
+		if self.lerpingVar1 > (magazine.size - 1) * angleperammo and magazine.selected == 1 then
+			self.lerpingVar1 = self.lerpingVar1 - 360
+		end
+
+		self.lerpingVar1 = lerpr(self.lerpingVar1, magazine.selected * angleperammo, 0.125)
+
+		for i=1,magazine.size do
+			local a = {0,0.5}
+			local b = {0,1}
+			
+			local ang =  math.rad((angleperammo * i) - self.lerpingVar1)
+	
+			local color = {255,255,255}
+			if not magazine.storage[i] and i ~= magazine.selected or i == magazine.selected and type(data.gunLoad) ~= "table" then
+				color = {0,0,0}
+			elseif  magazine.storage[i] and magazine.storage[i].parameters and magazine.storage[i].parameters.fired or i == magazine.selected and (data.gunLoad and data.gunLoad.parameters.fired) then
+				color = {255,0,0}
+			end
+	
+			table.insert(
+				lines,
+				{
+					line = {
+						vec2.add( vec2.rotate(a,ang), {3 * direction, -5}),
+						vec2.add( vec2.rotate(b,ang), {3 * direction, -5})
+					},
+					position = mcontroller.position(),
+					width = 2,
+					color = color,
+					fullbright = true
+				}
+			)
+		end
+	
+		for i,v in pairs(lines) do
+			table.insert(todraw, {
+				func = "addDrawable",
+				args = {v, "overlay"}
+			}
+		)
+		end
+		
+
+		return todraw
+	end
+
+	return element
+end
+
+
+		--API
 
 function magazine:processCompatible(a)
 	if type(a) == "string" then
@@ -15,7 +121,38 @@ end
 function magazine:saveData()
 	activeItem.setInstanceValue("magazine", self.storage)
 	activeItem.setInstanceValue("selected", self.selected)
-	activeItem.setInstanceValue("gunLoad", weapon.load)
+	activeItem.setInstanceValue("gunLoad", data.gunLoad)
+end
+
+
+function magazine:insert(co)
+	local compat = config.getParameter("compatibleAmmo", jarray())
+	if type(compat) == "string" then
+		compat = processDirectory(compat)
+	end
+	if not co then --variable 'co' is how much we take from player inventory
+		co = self.size - self:count()
+	end
+	for i,v in pairs(self:processCompatible(compat)) do
+		if co > 0 then
+			local finditem = {name = v, count = 1}
+			if type(v) == "table" then
+				finditem = v
+				finditem.count = co
+			end
+
+			if player.hasItem(finditem) then
+				local con = player.consumeItem(finditem, true, true)
+				if con then
+					table.insert(self.storage, con)
+					co = co - con.count
+				end
+			end
+		else
+			break
+		end
+	end
+	activeItem.setInstanceValue("magazine", self.storage)
 end
 
 function magazine:insert(co)
@@ -24,23 +161,33 @@ function magazine:insert(co)
 		compat = processDirectory(compat)
 	end
 	if not co then
-		co = weapon.stats.maxMagazine - #self.storage
+		co = data.gunStats.maxMagazine - #self.storage
 	end
 	for i,v in pairs(self:processCompatible(compat)) do
 		if co > 0 then
-			if player.hasItem({name = v, count = 1}) then
-				local con = player.consumeItem({name = v, count = co}, true)
-				
-				for i = 1,con.count do
-					table.insert(self.storage, {name = v, count = 1, parameters = con.parameters or {}})
-					co = co - 1
+			local finditem = {name = v, count = 1}
+			if type(v) == "table" then
+				finditem = v
+				finditem.count = 1
+			end
+
+			if player.hasItem(finditem) then
+				finditem.count = co
+				local con = player.consumeItem(finditem, true, true)
+				if con then
+					for i = 1,con.count do
+						table.insert(self.storage, {name = con.name,count = 1, parameters = con.parameters})
+						co = co - 1
+					end
 				end
 			end
+		else
+			break
 		end
 	end
 	
 	if self.storage[self.selected] then
-		weapon.load = self.storage[self.selected]
+		data.gunLoad = self.storage[self.selected]
 		self.storage[self.selected] = nil
 	end
 	
@@ -48,16 +195,16 @@ function magazine:insert(co)
 end
 
 function magazine:rotate()
-	if weapon.load then
-		self.storage[self.selected] = weapon.load
-		weapon.load = nil
+	if data.gunLoad then
+		self.storage[self.selected] = data.gunLoad
+		data.gunLoad = nil
 	end
 	self.selected = self.selected + 1
-	if self.selected > weapon.stats.maxMagazine then
+	if self.selected > data.gunStats.maxMagazine then
 		self.selected = 1
 	end
 	if self.storage[self.selected] then
-		weapon.load = self.storage[self.selected]
+		data.gunLoad = self.storage[self.selected]
 		self.storage[self.selected] = nil
 	end
 	magazine:saveData()
@@ -69,7 +216,9 @@ function magazine:playerHasAmmo()
 		compat = processDirectory(compat)
 	end
 	for i,v in pairs(self:processCompatible(compat)) do
-		if player.hasItem({name = v, count = 1}) then
+		local finditem = {name = v, count = 1}
+		if type(v) == "table" then finditem = v end
+		if player.hasItem(finditem, true) then
 			return true
 		end
 	end
@@ -79,9 +228,9 @@ end
 function magazine:remove()
 	local togive = jarray()
 	
-	if weapon.load then
-		self.storage[self.selected] = weapon.load
-		weapon.load = nil
+	if data.gunLoad then
+		self.storage[self.selected] = data.gunLoad
+		data.gunLoad = nil
 	end
 	
 	for i,v in pairs(self.storage) do
@@ -89,7 +238,7 @@ function magazine:remove()
 			if v.parameters.casingProjectile then
 				world.spawnProjectile(
 					v.parameters.casingProjectile, 
-					weapon:casingPosition(), 
+					gun:casingPosition(), 
 					activeItem.ownerEntityId(), 
 					vec2.rotate({0,1}, math.rad(math.random(90) - 45)), 
 					false,
@@ -120,26 +269,13 @@ function magazine:remove()
 	magazine:saveData()
 end
 
-function magazine:init()
-	self.storage = config.getParameter("magazine", jarray())
-	self.selected = config.getParameter("selected", 1)
-end
 
 function magazine:verify()
 	for i,v in pairs(self.storage) do
-		if i > weapon.stats.maxMagazine then
+		if i > data.gunStats.maxMagazine then
 			self.storage[i] = nil
 		end
 	end
-end
-
-function magazine:lateinit()
-	animation:addEvent("insert_mag", function() magazine:insert() end)
-	animation:addEvent("insert_bullet", function() magazine:insert(1) end)
-	animation:addEvent("remove_mag", function() magazine:remove() end)
-	animation:addEvent("rotate_mag", function() magazine:rotate() end)
-	animation:addEvent("resetSelect_mag", function() magazine.selected = 1 magazine:saveData() end)
-	magazine:verify()
 end
 
 function magazine:take()
@@ -155,21 +291,20 @@ end
 function magazine:count()
 	local c = 0
 	for i,v in pairs(self.storage) do
+		if not v.parameters or (v.parameters and not v.parameters.fired) then
+			c = c + v.count
+		end
+	end
+	return c
+end
+
+function magazine:rawcount()
+	local c = 0
+	for i,v in pairs(self.storage) do
 		c = c + v.count
 	end
 	return c
 end
 
 
-function magazine:update(dt)
-	activeItem.setScriptedAnimationParameter("magazine", self.storage)
-	activeItem.setScriptedAnimationParameter("magazineType", self.type)
-	activeItem.setScriptedAnimationParameter("selected", self.selected)
-	activeItem.setScriptedAnimationParameter("maxMagazine", weapon.stats.maxMagazine or 30)
-end
-
-function magazine:uninit()
-	self:saveData()
-end
-
-addClass("magazine", -2)
+addClass("magazine")

@@ -5,25 +5,19 @@ camera = {
 	projID = nil
 }
 
-function camera:lerp(value, to, speed)
-	return value + ((to - value ) / speed ) 
-end
-
-function camera:init()
-	
-end
+function camera:init() end
 
 function camera:update(dt) 
 	self.current = {
-		self:lerp(self.current[1], self.target[1],self.smooth),
-		self:lerp(self.current[2], self.target[2],self.smooth)
+		lerp(self.current[1], self.target[1],self.smooth),
+		lerp(self.current[2], self.target[2],self.smooth)
 	}
 	
 	if self.projID and world.entityExists(self.projID) then
 		world.callScriptedEntity(self.projID, "mcontroller.setPosition", vec2.add(mcontroller.position(), self.current))
 		world.callScriptedEntity(self.projID, "mcontroller.setVelocity", {0,0})
 	else
-		camera:respawnProjectile()
+		self:respawnProjectile()
 	end
 end
 
@@ -53,4 +47,4 @@ function camera:respawnProjectile()
 	activeItem.setCameraFocusEntity(self.projID)
 end
 
-addClass("camera", -47)
+addClass("camera")

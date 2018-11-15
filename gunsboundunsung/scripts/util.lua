@@ -81,6 +81,10 @@ function lerp(value, to, speed)
 	return value + ((to - value ) / speed ) 
 end
 
+function lerpr(value, to, speed)
+	return value + ((to - value ) * speed ) 
+end
+
 function aimFacing() --Faces depending on your mouse position
 	return util.toDirection(world.distance(activeItem.ownerAimPosition(), mcontroller.position())[1])
 end

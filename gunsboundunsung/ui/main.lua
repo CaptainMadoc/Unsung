@@ -108,7 +108,7 @@ function realInit(dt)
 	data["fired"] = false
 	data["althanded"] = false
 	data["fireSelect"] = "auto"
-	data["uiShell"] = "/gunsboundunsung/ui/ammo.png"
+	data["uiShell"] = "/gunsboundunsungunsung/ui/ammo.png"
 	data["inAccuracy"] = 1
 	data["muzzleDistance"] = {0,0}
 	position = activeItemAnimation.ownerPosition()
@@ -175,7 +175,7 @@ function realUpdate(dt)
 		if data["althanded"] then
 			offset = {0,-1}
 		end
-		localAnimator.addDrawable({image = "/gunsboundunsung/ui/"..data["fireSelect"]..".png", position = vec2.add(vec2.add(activeItemAnimation.ownerAimPosition(), {0, -1}), offset), fullbright = true}, "overlay")	
+		localAnimator.addDrawable({image = "/gunsboundunsungunsung/ui/"..data["fireSelect"]..".png", position = vec2.add(vec2.add(activeItemAnimation.ownerAimPosition(), {0, -1}), offset), fullbright = true}, "overlay")	
 	end
 	
 	--crosshair radius

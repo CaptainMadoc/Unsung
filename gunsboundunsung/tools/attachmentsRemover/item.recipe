@@ -3,7 +3,7 @@
     { "item" : "ironbar", "count" : 2 }
   ],
   "output" : {
-    "item" : "unsungattachmentsremover",
+    "item" : "attachmentsremover",
     "count" : 1
   },
   "duration" : 1,

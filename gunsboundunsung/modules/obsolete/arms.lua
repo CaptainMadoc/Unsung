@@ -3,7 +3,7 @@ arms = {
 	inited = false,
 	twohand_current = false,
 	twohand_target = false,
-	cropA1 = "?crop=0;0;26;43",
+	cropA1 = "?crop=0;0;24;43",
 	cropA2 = "?crop=25;0;30;43",
 	cropA3 = "?crop=30;0;43;43",
 }

@@ -13,49 +13,49 @@ function portrait:split(inputstr, sep)
 end
 
 portrait.sleeveframe = {
-["idle.1"]		=	1 ,
-["idle.2"]		=	2 ,
-["idle.3"]		=	3 ,
-["idle.4"]		=	4 ,
-["idle.5"]		=	5 ,
-["duck.1"]		=	6 ,
-["walk.1"]		=	7 ,
-["walk.2"]		=	8 ,
-["walk.3"]		=	9 ,
-["walk.4"]		=	10,
-["walk.5"]		=	11,
-["rotation"]	=	12,
-["run.1"]		=	13,
-["run.2"]		=	14,
-["run.3"]		=	15,
-["run.4"]		=	16,
-["run.5"]		=	17,
-["jump.1"]		=	18,
-["jump.2"]		=	19,
-["jump.3"]		=	20,
-["jump.4"]		=	21,
-["fall.1"]		=	22,
-["fall.2"]		=	23,
-["fall.3"]		=	24,
-["fall.4"]		=	25,
-["swimIdle.1"]	=	26,
-["swimIdle.2"]	=	27,
-["swim.1"]		=	28,
-["swim.2"]		=	29,
-["swim.3"]		=	30,
-["swim.4"]		=	31,
-["swim.5"]		=	32,
-["idleMelee"]	=	33,
-["duckMelee"]	=	34
+	["idle.1"]		=	1 ,
+	["idle.2"]		=	2 ,
+	["idle.3"]		=	3 ,
+	["idle.4"]		=	4 ,
+	["idle.5"]		=	5 ,
+	["duck.1"]		=	6 ,
+	["walk.1"]		=	7 ,
+	["walk.2"]		=	8 ,
+	["walk.3"]		=	9 ,
+	["walk.4"]		=	10,
+	["walk.5"]		=	11,
+	["rotation"]	=	12,
+	["run.1"]		=	13,
+	["run.2"]		=	14,
+	["run.3"]		=	15,
+	["run.4"]		=	16,
+	["run.5"]		=	17,
+	["jump.1"]		=	18,
+	["jump.2"]		=	19,
+	["jump.3"]		=	20,
+	["jump.4"]		=	21,
+	["fall.1"]		=	22,
+	["fall.2"]		=	23,
+	["fall.3"]		=	24,
+	["fall.4"]		=	25,
+	["swimIdle.1"]	=	26,
+	["swimIdle.2"]	=	27,
+	["swim.1"]		=	28,
+	["swim.2"]		=	29,
+	["swim.3"]		=	30,
+	["swim.4"]		=	31,
+	["swim.5"]		=	32,
+	["idleMelee"]	=	33,
+	["duckMelee"]	=	34
 }
 
 portrait.chestframe = {
-["chest.1"] 	=	1,
-["chest.2"] 	=	2,
-["chest.3"] 	=	3,
-["run"]			=	4,
-["duck"]		=	5,
-["swim"] 		=	6
+	["chest.1"] 	=	1,
+	["chest.2"] 	=	2,
+	["chest.3"] 	=	3,
+	["run"]			=	4,
+	["duck"]		=	5,
+	["swim"] 		=	6
 }
 
 portrait.zLevelHead = { 
@@ -242,7 +242,7 @@ function portrait:speciesDir(sp, gen, part)
 end
 
 function portrait:auto(id)
-return self:speciesParts(world.entityPortrait(id, "full"), world.entitySpecies(id), world.entityGender(id))
+	return self:speciesParts(world.entityPortrait(id, "full"), world.entitySpecies(id), world.entityGender(id))
 end
 
 function portrait:speciesParts(p, spe, gender)
