@@ -1,6 +1,6 @@
 {
-  "projectileName" : "unsungcbow2proj",
-  "image" : "unsungcbow2proj.png",
+  "projectileName" : "unsungcbow3proj",
+  "image" : "unsungcbow3proj.png",
   "animationCycle" : 0.25,
   "frameNumber" : 1,
   "pointLight" : false,

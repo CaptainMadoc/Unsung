@@ -133,11 +133,11 @@ function realUpdate(dt)
 	end
 	--ammo Display
 	local matt = {
-		{10 / data["maxMagazine"],0,0},
+		{20 / data["maxMagazine"],0,0},
 		{0,1,0},
 		{0,0,1}
 	}
-	local shift = (-0.125) * (10 / data["maxMagazine"])
+	local shift = (-0.125) * (20 / data["maxMagazine"])
 	
 	local ratio1 = 1
 	if data["fired"] == true then
