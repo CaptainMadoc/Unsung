@@ -209,9 +209,9 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2.75, -0.5],
-						"zLevel" : 20,
-						"fullbright" : true,
+						"offset" : [2.75, -0.55],
+						"zLevel" : 15,
+						"fullbright" : false,
 						"centered" : false
 					},
 					"partStates" : {
@@ -464,7 +464,8 @@
 			"mag" : {
 				"interpolated" : false,
 				"transform" : {
-					"position" : [-0.9375, -1.0625]
+					"position" : [-0.9375, -1.0625],
+					"rotationPoint" : [2.25, 1.5]
 				}
 			},
 

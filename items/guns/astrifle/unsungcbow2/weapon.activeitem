@@ -200,7 +200,7 @@
 						"transformationGroups" : ["base"],
 						"offset" : [1.375, -0.375],
 						"zLevel" : 20,
-						"fullbright" : true,
+						"fullbright" : false,
 						"centered" : false
 					},
 					"partStates" : {
