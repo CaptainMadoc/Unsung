@@ -120,12 +120,12 @@
 			"magazine" : "mag.png"
 		},
 		"sounds" : {
-			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
-			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"],
+			"cock" : ["/sfx/gunsboundunsung/reloadingmanual.ogg"],
+			"cock2" : ["/sfx/gunsboundunsung/reloadedmanual.ogg"],
 			"boltback" : ["sounds/boltback.ogg"],
 			"boltforward" : ["sounds/boltforward.ogg"],
-			"magin" : ["sounds/magin.ogg"],
-			"magout" : ["sounds/magout.ogg"]
+			"magin" : ["/sfx/gunsboundunsung/reloadedmanual.ogg"],
+			"magout" : ["/sfx/gunsboundunsung/reloadingmanual.ogg"]
 		},
 		"animatedParts" : {
 			"parts" : {

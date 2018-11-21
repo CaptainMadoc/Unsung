@@ -96,7 +96,7 @@
 	},
 
 	"fireSounds" : ["/items/guns/astrifle/unsungcbow1/sounds/762x39mm.ogg"],
-	"fireTypes" : ["auto", "semi"],
+	"fireTypes" : ["auto"],
 	"gunPart" : "gun",
 
 	"gunAnimations" : {
