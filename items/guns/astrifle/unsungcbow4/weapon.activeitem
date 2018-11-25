@@ -2,7 +2,7 @@
 	//UIinfo
 	"itemName" : "unsungcbow4",
 	"shortdescription" : "Unsung C'bow 4",
-	"description" : "Steam is meant for pulling!",
+	"description" : "Wait... what's in that battery?",
 	"category" : "base",
 	"tooltipKind" : "base",
 	"inventoryIcon" : "icon.png",
@@ -83,7 +83,7 @@
 	"gunStats" : {
 		"damageMultiplier" : 2,
 
-		"maxMagazine" : 20,
+		"maxMagazine" : 30,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
 		"recoil" : 0,
@@ -92,7 +92,7 @@
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 200
+		"rpm" : 210
 	},
 
 	"fireSounds" : ["/items/guns/astrifle/unsungak47/sounds/762x39mm.ogg"],
@@ -198,8 +198,8 @@
 						"attachment_grip_pos" : [2.875,0.875],
 						"attachment_grip_end" : [3,0.875],
 
-						"muzzle_begin" : [3.5, 1.125],
-						"muzzle_end" : [3.55, 1.125], 
+						"muzzle_begin" : [3.5, 0.8625],
+						"muzzle_end" : [3.55, 0.8625], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -428,8 +428,8 @@
 			"gun" : {
 				"interpolated" : false,
 				"transform" : {
-					"rotationPoint" : [-0.5, 0.75],
-					"position" : [-0.375, -0.6875]
+					"rotationPoint" : [0.5, 0.125],
+					"position" : [-1.5, 0.0625]
 				}
 			},
 			"gundrawn" : {
@@ -450,7 +450,8 @@
 				"interpolated" : false,
 				"transform" : {
 					"scale" : [1, 1],
-					"position" : [-0.9375, -1.0625]
+					"rotationPoint" : [1.3125, 0.0625],
+					"position" : [2.6875, 0.1875]
 				}
 			},
 			"lever2" : {
@@ -463,8 +464,8 @@
 			"mag" : {
 				"interpolated" : false,
 				"transform" : {
-					"position" : [-0.9375, -1.0625],
-					"rotationPoint" : [2.25, 1.5]
+					"position" : [1.1875, -0.4375],
+					"rotationPoint" : [0.875, 0.625]
 				}
 			},
 

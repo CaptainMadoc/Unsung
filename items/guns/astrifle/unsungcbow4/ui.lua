@@ -108,7 +108,7 @@ function realInit(dt)
 	data["fired"] = false
 	data["althanded"] = false
 	data["fireSelect"] = "auto"
-	data["uiShell"] = "/items/guns/astrifle/unsungcbow3/ammo.png"
+	data["uiShell"] = "/items/guns/astrifle/unsungcbow4/ammo.png"
 	data["inAccuracy"] = 1
 	data["muzzleDistance"] = {0,0}
 	position = activeItemAnimation.ownerPosition()
