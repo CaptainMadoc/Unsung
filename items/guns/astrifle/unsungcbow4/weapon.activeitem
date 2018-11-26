@@ -208,7 +208,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2.75, -0.55],
+						"offset" : [3.4, -0.08],
 						"zLevel" : 15,
 						"fullbright" : false,
 						"centered" : false
@@ -375,9 +375,9 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "unsungspark1", "offset" : [3.875, 1]},
-					{ "particle" : "unsungspark1", "offset" : [3.875, 1]},
-					{ "particle" : "unsungspark1", "offset" : [3.875, 1]}
+					{ "particle" : "unsungspark1", "offset" : [5, 0.8625]},
+					{ "particle" : "unsungspark1", "offset" : [5, 0.8625]},
+					{ "particle" : "unsungspark1", "offset" : [5, 0.8625]}
 				]
 			}
 		},
