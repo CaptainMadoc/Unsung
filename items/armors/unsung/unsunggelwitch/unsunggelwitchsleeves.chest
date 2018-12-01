@@ -1,12 +1,12 @@
 {
-  "itemName" : "unsungenglishgenteelsleeves",
+  "itemName" : "unsunggelwitchsleeves",
   "price" : 50,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "chestarmour",
-  "description" : "Manners Maketh Man.",
-  "shortdescription" : "English Genteel Sleeves",
+  "description" : "Don't fuck with a witch.",
+  "shortdescription" : "Gelwitch Sleeves",
   "tooltipKind" : "armor",
 
   "maleFrames" : {

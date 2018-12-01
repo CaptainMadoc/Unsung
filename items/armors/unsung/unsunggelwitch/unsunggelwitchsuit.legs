@@ -1,12 +1,12 @@
 {
-  "itemName" : "unsungenglishgenteelsuit",
+  "itemName" : "unsunggelwitchsuit",
   "price" : 100,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "legwear",
-  "description" : "Manners Maketh Man.",
-  "shortdescription" : "English Genteel Suit",
+  "description" : "Don't fuck with a witch.",
+  "shortdescription" : "Gelwitch Suit",
   "tooltipKind" : "armor",
   
   "maleFrames" : "Pants.png",
