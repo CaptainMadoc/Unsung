@@ -1,6 +1,6 @@
 {
 	//UIinfo
-	"itemName" : "unsungcoltm1911",
+	"itemName" : "unsunggamplet",
 	"shortdescription" : "Gamplet",
 	"description" : "description here",
 	"category" : "base",
@@ -22,7 +22,7 @@
 	"uiShell" : "ammo.png",
 
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/items/ammoGroup/unsung45ACP.json",
+	"compatibleAmmo" : "/items/ammoGroup/unsunggamplet.json",
 
 	"attachments" : {
 		"grip" : {
