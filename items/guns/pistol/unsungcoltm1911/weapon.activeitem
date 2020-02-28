@@ -1,7 +1,7 @@
 {
 	//UIinfo
 	"itemName" : "unsungcoltm1911",
-	"shortdescription" : "Compact Gamp Bow",
+	"shortdescription" : "Gamplet",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -150,40 +150,40 @@
 						"transformationGroups" : ["lever", "gun", "base"]
 					}
 				},
-				"gunleverfolded" : {
+				"gunlever2" : {
 					"properties" : {
 						"zLevel" : 22,
 						"centered" : false,
-						"image" : "leverfolded.png",
+						"image" : "lever2.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["leverfolded", "gun", "base"]
+						"transformationGroups" : ["lever2", "gun", "base"]
 					}
 				},
-				"barrel" : {
+				"gunlever3" : {
 					"properties" : {
-						"zLevel" : 21,
+						"zLevel" : 22,
 						"centered" : false,
-						"image" : "barrel.png",
+						"image" : "lever3.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["barrel", "gun", "base"]
+						"transformationGroups" : ["lever2", "gun", "base"]
 					}
 				},
-				"receiver" : {
+				"gunlever4" : {
 					"properties" : {
-						"zLevel" : 20,
+						"zLevel" : 22,
 						"centered" : false,
-						"image" : "receiver.png",
+						"image" : "lever4.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["receiver", "gun", "base"]
+						"transformationGroups" : ["lever2", "gun", "base"]
 					}
 				},
-				"receiverfolded" : {
+				"gunlever5" : {
 					"properties" : {
-						"zLevel" : 19,
+						"zLevel" : 22,
 						"centered" : false,
-						"image" : "receiverfolded.png",
+						"image" : "lever5.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["receiverfolded", "gun", "base"]
+						"transformationGroups" : ["lever2", "gun", "base"]
 					}
 				},
 				
@@ -441,10 +441,16 @@
 			"lever" : {
 				"interpolated" : false
 			},
-			"barrel" : {
+			"lever2" : {
 				"interpolated" : false
 			},
-			"leverfolded" : {
+			"lever3" : {
+				"interpolated" : false
+			},
+			"lever4" : {
+				"interpolated" : false
+			},
+			"lever5" : {
 				"interpolated" : false
 			},
 			"mag" : {
