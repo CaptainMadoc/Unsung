@@ -1,0 +1,5 @@
+{ //TEMPLATE FOR A AMMO GROUP
+    "1" : { //tier 1
+        "list" : ["unsunggampletammo"]
+    }
+}

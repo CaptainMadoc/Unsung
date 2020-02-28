@@ -1,0 +1,23 @@
+{
+	"itemName" : "grenadelaunchergrip",
+	"rarity" : "common",
+	"shortdescription" : "Grenade Launcher",
+	"category" : "Attachments | Grip",
+	"compatibleAmmo" : "/ammoGroup/gbgrenadeLauncher.json",
+
+	"price" : 0,
+	"attachment" : {
+		"offset" : [0.0,0.0],
+		"scale" : [1,1],
+		"image" : "image.png",
+		"compatibleAmmo" : "/ammoGroup/gbgrenadeLauncher.json",
+		"script" : "/attachments/scripts/testspecial.lua"
+	},
+	"attachmentType" : "grip",
+	"maxStack" : 1,
+
+	"inventoryIcon" : "image.png",
+	"description" : "",
+	"scripts" : ["/attachments/scripts/attach.lua"]
+}
+ 

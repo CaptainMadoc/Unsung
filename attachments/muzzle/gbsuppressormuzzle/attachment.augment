@@ -1,0 +1,24 @@
+{
+	"itemName" : "jssupressormuzzle",
+	"rarity" : "common",
+	"category" : "Attachments | Muzzle",
+	"price" : 0,
+	"attachment" : {
+		"offset" : [0,-0.0625],
+		"scale" : [0.5,0.5],
+		"image" : "image.png",
+		"sound" : "silencer.ogg",
+		"statsRatio" : {
+			"muzzleFlash" : 0.0
+		},
+		"script" : "/attachments/scripts/supressor.lua"
+	},
+	"attachmentType" : "muzzle",
+	"maxStack" : 1,
+
+	"inventoryIcon" : "image.png",
+	"description" : "",
+	"shortdescription"   : "Suppressor",
+	"scripts" : ["/attachments/scripts/attach.lua"]
+}
+ 

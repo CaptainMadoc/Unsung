@@ -1,0 +1,24 @@
+{
+	"itemName" : "jsverticalgrip",
+	"rarity" : "common",
+	"shortdescription" : "Vertical Grip",
+	"category" : "Attachments | Grip",
+
+	"price" : 0,
+	"attachment" : {
+		"offset" : [0.0,0.0],
+		"scale" : [0.5,0.5],
+		"image" : "image.png",
+		"script" : "/attachments/scripts/attachmentStats.lua",
+		"statsRatio" : {
+			"recoil" : 0.5
+		}
+	},
+	"attachmentType" : "grip",
+	"maxStack" : 1,
+
+	"inventoryIcon" : "image.png",
+	"description" : "",
+	"scripts" : ["/attachments/scripts/attach.lua"]
+}
+ 

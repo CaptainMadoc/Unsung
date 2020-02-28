@@ -1,0 +1,182 @@
+{
+	"globalTagDefaults" : {
+		"R_a1":"/assetmissing.png",
+		"R_a2":"/assetmissing.png",
+		"R_af1":"/assetmissing.png",
+		"R_af2":"/assetmissing.png",
+		"R_hand":"/assetmissing.png",
+		"R_handf":"/assetmissing.png",
+		"R_a1_FB":"/assetmissing.png",
+		"R_a2_FB":"/assetmissing.png",
+		"R_af1_FB":"/assetmissing.png",
+		"R_af2_FB":"/assetmissing.png",
+		"R_hand_FB":"/assetmissing.png",
+		"R_handf_FB":"/assetmissing.png",
+		"L_a1":"/assetmissing.png",
+		"L_a2":"/assetmissing.png",
+		"L_af1":"/assetmissing.png",
+		"L_af2":"/assetmissing.png",
+		"L_hand":"/assetmissing.png",
+		"L_handf":"/assetmissing.png",
+		"L_a1_FB":"/assetmissing.png",
+		"L_a2_FB":"/assetmissing.png",
+		"L_af1_FB":"/assetmissing.png",
+		"L_af2_FB":"/assetmissing.png",
+		"L_hand_FB":"/assetmissing.png",
+		"L_handf_FB":"/assetmissing.png",
+		"selfimage" : "/assetmissing.png"
+	},
+	"animatedParts" : {
+		"parts" : {
+			//Right bare arms
+			"R_hand"	:{
+				"properties":{"centered":false,"image":"<R_hand>","offset":[0.0,0.0],"transformationGroups":["R_hand","R_arm2","R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":100}},"back":{"properties":{"zLevel":1}}}}
+			},
+			"R_hand_FB"	:{
+				"properties":{"centered":false,"image":"<R_hand_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["R_hand","R_arm2","R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":100}},"back":{"properties":{"zLevel":1}}}}
+			},
+			"R_arm2"	:{
+				"properties":{"centered":false,"image":"<R_a2>","offset":[0.0,0.0],"transformationGroups":["R_arm2","R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":110}},"back":{"properties":{"zLevel":2}}}}
+			},
+			"R_arm2_FB"	:{
+				"properties":{"centered":false,"image":"<R_a2_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["R_arm2","R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":110}},"back":{"properties":{"zLevel":2}}}}
+			},
+			"R_arm1"	:{
+				"properties":{"centered":false,"image":"<R_a1>","offset":[0.0,0.0],"transformationGroups":["R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":120}},"back":{"properties":{"zLevel":3}}}}
+			},
+			"R_arm1_FB"	:{
+				"properties":{"centered":false,"image":"<R_a1_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":120}},"back":{"properties":{"zLevel":3}}}}
+			},
+
+			//Right armor arms
+			"R_handf"	:{
+				"properties":{"centered":false,"image":"<R_handf>","offset":[0.0,0.0],"transformationGroups":["R_hand","R_arm2","R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":130}},"back":{"properties":{"zLevel":4}}}}
+			},
+			"R_handf_FB"	:{
+				"properties":{"centered":false,"image":"<R_handf_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["R_hand","R_arm2","R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":130}},"back":{"properties":{"zLevel":4}}}}
+			},
+			"R_af1"	:{
+				"properties":{"centered":false,"image":"<R_af1>","offset":[0.0,0.0],"transformationGroups":["R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":140}},"back":{"properties":{"zLevel":5}}}}
+			},
+			"R_af1_FB"	:{
+				"properties":{"centered":false,"image":"<R_af1_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":140}},"back":{"properties":{"zLevel":5}}}}
+			},
+			"R_af2"		:{
+				"properties":{"centered":false,"image":"<R_af2>","offset":[0.0,0.0],"transformationGroups":["R_arm2","R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":150}},"back":{"properties":{"zLevel":6}}}}
+			},
+			"R_af2_FB"		:{
+				"properties":{"centered":false,"image":"<R_af2_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["R_arm2","R_arm1","R_offset","global","base"]},
+				"partStates":{"right":{"front":{"properties":{"zLevel":150}},"back":{"properties":{"zLevel":6}}}}
+			},
+
+			//Left Bare arms
+			"L_hand"	:{
+				"properties":{"centered":false,"image":"<L_hand>","offset":[0.0,0.0],"transformationGroups":["L_hand","L_arm2","L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":100}},"back":{"properties":{"zLevel":1}}}}
+			},
+			"L_hand_FB"	:{
+				"properties":{"centered":false,"image":"<L_hand_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["L_hand","L_arm2","L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":100}},"back":{"properties":{"zLevel":1}}}}
+			},
+			"L_arm2"	:{
+				"properties":{"centered":false,"image":"<L_a2>","offset":[0.0,0.0],"transformationGroups":["L_arm2","L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":110}},"back":{"properties":{"zLevel":2}}}}
+			},
+			"L_arm2_FB"	:{
+				"properties":{"centered":false,"image":"<L_a2_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["L_arm2","L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":110}},"back":{"properties":{"zLevel":2}}}}
+			},
+			"L_arm1"	:{
+				"properties":{"centered":false,"image":"<L_a1>","offset":[0.0,0.0],"transformationGroups":["L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":120}},"back":{"properties":{"zLevel":3}}}}
+			},
+			"L_arm1_FB"	:{
+				"properties":{"centered":false,"image":"<L_a1_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":120}},"back":{"properties":{"zLevel":3}}}}
+			},
+
+			//Left Armor arms
+			"L_handf"	:{
+				"properties":{"centered":false,"image":"<L_handf>","offset":[0.0,0.0],"transformationGroups":["L_hand","L_arm2","L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":130}},"back":{"properties":{"zLevel":4}}}}
+			},
+			"L_handf_FB"	:{
+				"properties":{"centered":false,"image":"<L_handf_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["L_hand","L_arm2","L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":130}},"back":{"properties":{"zLevel":4}}}}
+			},
+			"L_af2"		:{
+				"properties":{"centered":false,"image":"<L_af2>","offset":[0.0,0.0],"transformationGroups":["L_arm2","L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":140}},"back":{"properties":{"zLevel":5}}}}
+			},
+			"L_af2_FB"		:{
+				"properties":{"centered":false,"image":"<L_af2_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["L_arm2","L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":140}},"back":{"properties":{"zLevel":5}}}}
+			},
+			"L_af1"		:{
+				"properties":{"centered":false,"image":"<L_af1>","offset":[0.0,0.0],"transformationGroups":["L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":150}},"back":{"properties":{"zLevel":6}}}}
+			},
+			"L_af1_FB"		:{
+				"properties":{"centered":false,"image":"<L_af1_FB>", "fullbright":true,"offset":[0.0,0.0],"transformationGroups":["L_arm1","L_offset","global","base"]},
+				"partStates":{"left":{"front":{"properties":{"zLevel":150}},"back":{"properties":{"zLevel":6}}}}
+			}
+
+		},
+		"stateTypes" : {
+			//arm api
+			"left" : {"default" : "back",
+				"states" : {
+					"back" : {"frames" : 1,"mode" : "end","cycle" : 0.1},
+					"front" : {"frames" : 1,"mode" : "end","cycle" : 0.1}
+				}
+			},
+			"right" : {"default" : "front",
+				"states" : {
+					"back" : {"frames" : 1,"mode" : "end","cycle" : 0.1},
+					"front" : {"frames" : 1,"mode" : "end","cycle" : 0.1}
+				}
+			}
+		}
+	},
+	"particleEmitters" : {},
+	"sounds" : {
+		//custom sounds for probably attachments purposes
+		"customSound_1" : [],
+		"customSound_2" : [],
+		"customSound_3" : [],
+		"customSound_4" : [],
+		"customSound_5" : [],
+		"customSound_6" : [],
+		"customSound_7" : [],
+		"customSound_8" : [],
+		"customSound_9" : [],
+		"customSound_10" : [],
+		"customSound_11" : [],
+		"customSound_12" : [],
+		"null" : []
+	},
+	"transformationGroups" : {
+		"R_hand" 	: {"ignore" : true,"interpolated" : false},
+		"R_arm2" 	: {"ignore" : true,"interpolated" : false},
+		"R_offset" 	: {"ignore" : true,"interpolated" : false},
+		"R_arm1" 	: {"ignore" : true,"interpolated" : false},
+		"L_hand" 	: {"ignore" : true,"interpolated" : false},
+		"L_arm2" 	: {"ignore" : true,"interpolated" : false},
+		"L_offset" 	: {"ignore" : true,"interpolated" : false,"transform" : {"curve" : 1,"position" : [0.6875, 0]}},
+		"L_arm1" 	: {"ignore" : true,"interpolated" : false},
+
+		"global" 	: {"ignore" : true,"interpolated" : false},
+		"base"		: {"interpolated" : false}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"itemName" : "unsunggampletammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "unsunggampletammo.png",
+	"description" : "test",
+	"shortdescription" : "Gamplet Dart",
+	"projectile" : "unsunggampletproj",
+	"projectileConfig" : {"speed" : 75, "power" : 3}
+}
