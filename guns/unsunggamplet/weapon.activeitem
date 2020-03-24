@@ -99,8 +99,18 @@
 						"image" : "<partImage>",
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["gun", "base"]
+						},
+					"partStates" : {
+						"right" : {
+							"front" : {
+								"properties" : {"zLevel" : 161}
+							},
+							"back" : {
+								"properties" : {"zLevel" : 16}
+							}
+						}
 					}
-				},
+						},
 
 				"magazine" : {
 					"properties" : {
