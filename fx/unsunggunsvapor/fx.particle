@@ -2,7 +2,7 @@
   "kind" : "unsunggunsvapor",
   "definition" : {
     "type" : "animated",
-    "animation" : "/fx/jsvapor/image.animation",
+    "animation" : "/fx/unsungvapor/image.animation",
     "looping" : false,
     "size" : 0.1675,
     "color" : [255,255,255,32],
