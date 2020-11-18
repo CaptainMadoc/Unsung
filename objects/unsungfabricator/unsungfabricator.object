@@ -1,5 +1,5 @@
 {
-  "objectName" : "gastation",
+  "objectName" : "unsungfabricator",
   "colonyTags" : ["combat"],
   "printable" : false,
   "rarity" : "common",
@@ -9,7 +9,7 @@
     "filter" : [ "GunsNAmmoCrafting" ],
     "paneLayoutOverride" : {
       "windowtitle" : {
-        "title" 	: "Gun Station",
+        "title" 	: "LOBO Fabricator",
         "subtitle" 	: "Guns and ammo for all!",
 		"icon"		: {
 			"file"	: "/interface/gunicon.png"
@@ -30,7 +30,7 @@
   "price" : 500,
 
   "description" : "Makes ballistic guns and ammo for them.",
-  "shortdescription" : "^orange;Gun station^white;",
+  "shortdescription" : "^orange;Tool-crafting station^white;",
   "race" : "human",
 
   "apexDescription" : "I can assamble weapons and their ammo here.",
@@ -44,7 +44,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "gastation.png:<color>.<frame>",
+      "dualImage" : "unsungfabricator.png:<color>.<frame>",
       "imagePosition" : [-10,0],
       "frames" : 1,
 
