@@ -1,0 +1,11 @@
+{
+  "input" : [  
+    { "item" : "ironbar", "count" : 3 },
+	{ "item" : "darkwoodmaterial", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "gaironsniper",
+    "count" : 1
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixelcompress", "all" ]
+}

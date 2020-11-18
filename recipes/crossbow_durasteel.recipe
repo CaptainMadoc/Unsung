@@ -1,0 +1,15 @@
+{
+  "input" : [  
+    { "item" : "durasteelbar", "count" : 2 },
+    { "item" : "logblock", "count" : 5 },
+	{ "item" : "plantfibre", "count" : 2}
+  ],
+  "output" : {
+    "item" : "gadurasteelcrossbow",
+    "count" : 1,
+	"parameters" : {
+		"level" : 40
+	}
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixelcompress", "all" ]
+}

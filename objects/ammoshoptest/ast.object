@@ -1,0 +1,84 @@
+{
+  "objectName" : "ast",
+  "colonyTags" : ["commerce"],
+  "rarity" : "Common",
+  "category" : "other",
+  "description" : "Print your ammo here, made by *Gun Powder co*. Looks like a prototype.",
+  "shortdescription" : "Ammo printer",
+  "race" : "generic",
+  "printable" : false,
+
+  "apexDescription" : "Buying ammo is more efficient than crafting it.",
+  "avianDescription" : "I can get my ammo instantly here for a confy price.",
+  "floranDescription" : "Floran trade ssshinniesss for bulletsss.",
+  "glitchDescription" : "Intrigued. Who runs this ammo selling machine?",
+  "humanDescription" : "An ammo shop! I've never heard of *Gun Powder co.* before...",
+  "hylotlDescription" : "Now I can invest in ammo, if I need to.",
+  "novakidDescription" : "This shop'll allow me to restock.",
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Ammo printer",
+        "subtitle" : "Trade your pixels for ammo"
+      }
+    },
+    "buyFactor" : 1.0,
+    "sellFactor" : 0.1,
+    "items" : [
+      { "item" : { "name" : "stdmag"}},
+	  { "item" : { "name" : "advmag"}},
+	  { "item" : { "name" : "expmag"}},
+	  { "item" : { "name" : "stdbullet" } },
+	  { "item" : { "name" : "advbullet" } },
+	  { "item" : { "name" : "expbullet" } },
+	  { "item" : { "name" : "stdshell" } },
+	  { "item" : { "name" : "advshell" } },
+	  { "item" : { "name" : "expshell" } }, 
+	  { "item" : { "name" : "railbullet" } },  
+      { "item" : { "name" : "piecebolt" } },
+	  { "item" : { "name" : "woodbolt" } },
+	  { "item" : { "name" : "stdclip" } },
+	  { "item" : { "name" : "advclip" } },
+	  { "item" : { "name" : "expclip" } },
+	  { "item" : { "name" : "unloader" } }
+	  ]
+  },
+
+  // Masking Fullbright Transparency Values: 0% brightness on lights, 75% brightness on posters in window, 70% on window
+
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "astright.png:<color>.<frame>", "fullbright" : true }, { "image" : "astright.png:<color>.<frame>" } ],
+      "direction" : "right",
+	  
+      "imagePosition" : [-10,0],
+	  
+	  
+      "frames" : 3,
+	  "animationCycle" : 0.3,	
+	  
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "imageLayers" : [ { "image" : "astleft.png:<color>.<frame>", "fullbright" : true }, { "image" : "astleft.png:<color>.<frame>" } ],
+      "direction" : "left",
+	  
+      "imagePosition" : [-10,0],
+	  
+	  
+      "frames" : 3,
+	  "animationCycle" : 0.3,	
+	  
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

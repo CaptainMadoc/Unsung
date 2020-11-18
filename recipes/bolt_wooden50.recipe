@@ -1,0 +1,11 @@
+{
+  "input" : [  
+    { "item" : "ironbar", "count" : 50 },
+    { "item" : "logblock", "count" : 50 }
+  ],
+  "output" : {
+    "item" : "woodbolt50",
+    "count" : 1
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixeldecompress", "all" ]
+}

@@ -1,0 +1,14 @@
+{
+	"input" : [	
+    { "item" : "advbullet", "count" : 70 }
+	],
+	"duration" : 1.5,
+	"output" : {
+		"item" : "advmag",
+		"count" : 1,
+	"parameters" : {
+		"ammoCount" : 70
+	}
+	},
+	"groups" : [ "GunsNAmmoCrafting", "pixeldecompress", "all" ]
+}

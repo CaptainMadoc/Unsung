@@ -1,0 +1,13 @@
+{
+  "input" : [  
+    { "item" : "refinedaegisalt", "count" : 6 },
+    { "item" : "battery", "count" : 1 },
+	{ "item" : "militarygoods", "count" : 3 },
+	{ "item" : "siliconboard", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "gaaegistarenergy",
+    "count" : 1
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixelcompress", "all" ]
+}

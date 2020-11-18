@@ -1,0 +1,10 @@
+{
+  "input" : [  
+    { "item" : "advbullet", "count" : 6 }
+  ],
+  "output" : {
+    "item" : "advclip",
+    "count" : 1
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixeldecompress", "all" ]
+}

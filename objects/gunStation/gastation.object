@@ -1,0 +1,56 @@
+{
+  "objectName" : "gastation",
+  "colonyTags" : ["combat"],
+  "printable" : false,
+  "rarity" : "common",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/pixelcompressor.config",
+    "filter" : [ "GunsNAmmoCrafting" ],
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" 	: "Gun Station",
+        "subtitle" 	: "Guns and ammo for all!",
+		"icon"		: {
+			"file"	: "/interface/gunicon.png"
+		}
+      },
+	  "lblBarTab"	: {
+		"file"	: "/interface/crafting/tabicon_weapons.png",
+		"position" : [25, 223]
+	  },
+	  "lblMatTab"	: {
+		"file"	: "/interface/crafting/tabicon_consumables.png",
+		"position" : [53, 223]
+	  }
+    }
+  },
+
+  "category" : "crafting",
+  "price" : 500,
+
+  "description" : "Makes ballistic guns and ammo for them.",
+  "shortdescription" : "^orange;Gun station^white;",
+  "race" : "human",
+
+  "apexDescription" : "I can assamble weapons and their ammo here.",
+  "avianDescription" : "A station to build weapons and ammo.",
+  "floranDescription" : "Floran usssesss powder to eject boltsss.",
+  "glitchDescription" : "Intrigued. Weapons with separated projectiles.",
+  "humanDescription" : "A place to design good old times' guns.",
+  "hylotlDescription" : "A station for energy-less weapons.",
+  "novakidDescription" : "A good ol' place for my guns' designs.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "gastation.png:<color>.<frame>",
+      "imagePosition" : [-10,0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

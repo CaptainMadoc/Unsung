@@ -1,0 +1,21 @@
+{
+  "itemName" : "biobolt",
+  "price" : 50,
+  "rarity" : "Common",
+  "tooltipKind" : "ammoitem",
+  "category" : "biobolt",
+  "inventoryIcon" : "icon.png",
+  "description" : "Standard-issue multipurpose LOBO bolt.",
+  "shortdescription" : "Bio-Bolt",
+
+  "ammoType" : "biobolt",									//type of ammo, has to be same as itemname since it's used for giving the ammo back in case of unloading
+  "ammoTag"  : "biobolt",												//ammo tag, has to match one of the tags in weapons "ammoTags" list
+  "ammoName" : "Bio-Bolt",										//used for the tooltip
+  "ammoIcon" : "/items/augments/ammo/unsung/icon.png",				//used for the tooltip
+  "ammoProjectile" : "unsungbioboltproj",									//overrides projectile for the primary attack
+  "ammoProjectileCount" : 1,										//overrides projectile count for the primary. Damage is divided evenly across the projectiles
+  "ammoCount" : 50,													//determines how much ammo this item restores. The excess will be returned in items specified in "ammoType"
+  "ammoDamage" : 10,													//damage per shot added by this type of ammo. This damage is split between all projectiles if projectile count is not 1
+
+  "scripts" : [ "/items/augments/ammo/unsung.lua" ]
+}

@@ -1,0 +1,12 @@
+{
+  "input" : [  
+    { "item" : "simplecasing", "count" : 10 },
+	{ "item" : "volatilepowder", "count" : 2}
+	
+  ],
+  "output" : {
+    "item" : "advbullet",
+    "count" : 10
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixeldecompress", "all" ]
+}

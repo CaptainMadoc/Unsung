@@ -1,0 +1,12 @@
+{
+  "input" : [  
+    { "item" : "ironbar", "count" : 1 },
+    { "item" : "tungstenbar", "count" : 2 },
+	{ "item" : "darkwoodmaterial", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "gatungstenrevolver",
+    "count" : 1
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixelcompress", "all" ]
+}

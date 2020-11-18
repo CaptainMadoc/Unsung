@@ -1,0 +1,15 @@
+{
+  "input" : [  
+    { "item" : "titaniumbar", "count" : 2 },
+    { "item" : "logblock", "count" : 5 },
+	{ "item" : "plantfibre", "count" : 2}
+  ],
+  "output" : {
+    "item" : "gatitaniumcrossbow",
+    "count" : 1,
+	"parameters" : {
+		"level" : 30
+	}
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixelcompress", "all" ]
+}

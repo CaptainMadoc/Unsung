@@ -1,0 +1,13 @@
+{
+  "input" : [  
+    { "item" : "simplecasing", "count" : 10 },
+    { "item" : "corefragmentore", "count" : 2 },
+	{ "item" : "volatilepowder", "count" : 4}
+	
+  ],
+  "output" : {
+    "item" : "expshell",
+    "count" : 8
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixeldecompress", "all" ]
+}

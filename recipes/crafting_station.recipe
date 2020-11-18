@@ -1,0 +1,14 @@
+{
+  "input" : [  
+    { "item" : "ironbar", "count" : 5 },
+    { "item" : "logblock", "count" : 4 },
+	{ "item" : "darkwoodmaterial", "count" : 10 },
+	{ "item" : "bluedye", "count" : 5},
+	{ "item" : "paper", "count" : 4 }
+  ],
+  "output" : {
+    "item" : "gastation",
+    "count" : 1
+  },
+  "groups" : [ "inventorstable" ]
+}

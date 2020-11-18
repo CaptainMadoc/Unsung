@@ -1,0 +1,14 @@
+{
+  "input" : [  
+    { "item" : "ironbar", "count" : 1 },
+    { "item" : "darkwoodmaterial", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "unloader",
+    "count" : 1,
+	"parameters" : {
+		"level" : 10
+	}
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixelcompress", "all" ]
+}

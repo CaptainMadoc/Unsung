@@ -1,0 +1,10 @@
+{
+  "input" : [  
+    { "item" : "expbullet", "count" : 6 }
+  ],
+  "output" : {
+    "item" : "expclip",
+    "count" : 1
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixeldecompress", "all" ]
+}

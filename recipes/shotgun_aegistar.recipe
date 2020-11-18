@@ -1,0 +1,13 @@
+{
+  "input" : [  
+    { "item" : "ironbar", "count" : 3 },
+    { "item" : "refinedaegisalt", "count" : 5 },
+	{ "item" : "darkwoodmaterial", "count" : 2 },
+	{ "item" : "glass", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "gaaegistarshotgun",
+    "count" : 1
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixelcompress", "all" ]
+}

@@ -1,0 +1,10 @@
+{
+  "input" : [  
+    { "item" : "stdbullet", "count" : 6 }
+  ],
+  "output" : {
+    "item" : "stdclip",
+    "count" : 1
+  },
+  "groups" : [ "GunsNAmmoCrafting", "pixeldecompress", "all" ]
+}

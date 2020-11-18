@@ -1,0 +1,13 @@
+{
+	"input" : [	
+    { "item" : "stdbullet", "count" : 50 }
+	],
+	"output" : {
+		"item" : "stdmag",
+		"count" : 1,
+	"parameters" : {
+		"ammoCount" : 50
+	}
+	},
+	"groups" : [ "GunsNAmmoCrafting", "pixeldecompress", "all" ]
+}
