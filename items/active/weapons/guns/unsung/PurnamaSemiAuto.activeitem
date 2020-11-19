@@ -1,9 +1,9 @@
 {
   "itemName" : "PurnamaSemiAuto",	//this is an example weapon. Copy the folder to your mod (in appropriate location) and change "gasolariumcrossbow" for the name you want to use
   "price" : 150,
-  "inventoryIcon" : "PurnamaSemiAuto.png",
+  "inventoryIcon" : "PurnamaSemiAuto-i.png",
   "maxStack" : 1,
-  "rarity" : "Uncommon",
+  "rarity" : "Common",
   "description" : "LOBO toolweapon built for a slow, but accurate rate of fire.",
   "shortdescription" : "Purnama (Semi-Auto)",
   "level" : 1,
@@ -30,7 +30,7 @@
     "butt" : "",
     "middle" : "PurnamaSemiAuto.png",
     "barrel" : "",
-    "muzzleFlash" : ""
+    "muzzleFlash" : "/items/active/weapons/guns/unsung/PurnamaSemiAutoFlash.png"
   },
   "animationCustom" : {
 	"animatedParts":{
@@ -101,9 +101,10 @@
     }
   },
 
-  "baseOffset" : [0.5, 0.0],
-  "muzzleOffset" : [1.875, 0.125],
 
+  "baseOffset" : [-0.44, 0.0],			//Offsets are 0.125 per pixel
+  "muzzleOffset" : [1.875, 0.0875],		//Offsets are 0.125 per pixel
+  "handGrip" : "wrap",
   "scripts" : ["/items/active/weapons/ranged/gunammo.lua"],
 
   "elementalType" : "physical",
@@ -131,25 +132,25 @@
       "idle" : {
         "armRotation" : 0,
         "weaponRotation" : 0,
-        "twoHanded" : true,
+        "twoHanded" : false,
   
         "allowRotate" : true,
         "allowFlip" : true
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
-        "twoHanded" : true,
+        "armRotation" : 1,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
   
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.5,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
-        "twoHanded" : true,
+        "duration" : 0.1,
+        "armRotation" : 1,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
   
         "allowRotate" : false,
         "allowFlip" : false

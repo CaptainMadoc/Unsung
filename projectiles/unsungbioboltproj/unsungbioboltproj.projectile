@@ -7,7 +7,7 @@
   "actionOnHit" : [
     {
       "action" : "config",
-      "file" : "/fx/unsungbulletimpact/action.config"
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
     }
   ],
   "power" : 20.0

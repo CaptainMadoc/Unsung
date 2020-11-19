@@ -1,0 +1,10 @@
+{
+  "input" : [  
+    { "item" : "logblock", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "biobolt",
+    "count" : 1
+  },
+  "groups" : [ "UnsungCrafting", "pixeldecompress", "all" ]
+}
