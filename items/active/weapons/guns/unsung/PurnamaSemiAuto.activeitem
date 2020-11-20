@@ -102,7 +102,7 @@
   },
 
 
-  "baseOffset" : [-0.44, 0.0],			//Offsets are 0.125 per pixel
+  "baseOffset" : [-0.625, 0.0],			//Offsets are 0.125 per pixel
   "muzzleOffset" : [1.875, 0.0875],		//Offsets are 0.125 per pixel
   "handGrip" : "outside",
   "scripts" : ["/items/active/weapons/ranged/gunammo.lua"],

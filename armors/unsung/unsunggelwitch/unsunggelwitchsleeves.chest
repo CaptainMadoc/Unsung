@@ -1,0 +1,50 @@
+{
+  "itemName" : "unsunggelwitchsleeves",
+  "price" : 50,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "category" : "chestarmour",
+  "description" : "Don't fuck with a witch.",
+  "shortdescription" : "Gelwitch Sleeves",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "colorOptions" : [
+    // OLIVE
+    { "e0975c" : "C2DE2A", "a85636" : "A4A11D", "6f2919" : "5B590B" },
+    // BLACK
+    { "e0975c" : "484848", "a85636" : "242424", "6f2919" : "000000" },
+    // GREY
+    { "e0975c" : "B4B4B4", "a85636" : "909090", "6f2919" : "6C6C6C" },
+    // WHITE
+    { "e0975c" : "FFFFFF", "a85636" : "D8D8FF", "6f2919" : "D8D8D8" },
+    // RED
+    { "e0975c" : "FF4436", "a85636" : "AC1A09", "6f2919" : "600A03" },
+    // ORANGE
+    { "e0975c" : "FFB448", "a85636" : "FF6C00", "6f2919" : "904800" },
+    // YELLOW
+    { "e0975c" : "FFFF24", "a85636" : "D8B400", "6f2919" : "B46C00" },
+    // GREEN
+    { "e0975c" : "9BDE29", "a85636" : "4E9F19", "6f2919" : "005808" },
+    // BLUE
+    { "e0975c" : "75A4FC", "a85636" : "005DC0", "6f2919" : "003059" },
+    // PURPLE
+    { "e0975c" : "CA48FC", "a85636" : "8424C0", "6f2919" : "310A59" },
+    // PINK
+    { "e0975c" : "FFA8FD", "a85636" : "FF4AC1", "6f2919" : "AB1D5A" },
+    // BROWN
+    { "e0975c" : "CD5F14", "a85636" : "873408", "6f2919" : "330301" }
+  ]
+}
