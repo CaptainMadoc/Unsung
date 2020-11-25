@@ -48,7 +48,7 @@
         "properties" : {
           "zLevel" : 1,
           "centered" : true,
-          "offset" : [0.5, -0.1],
+          "offset" : [-0.125, -0.07],
           "fullbright" : false,
           "transformationGroups" : ["muzzle"]
         },

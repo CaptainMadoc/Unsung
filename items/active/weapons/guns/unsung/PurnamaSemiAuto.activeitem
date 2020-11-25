@@ -117,7 +117,7 @@
     "baseDps" : 15,
 	"bonusDps" : 0,					//the parameter responsible for extra per-shot damage, introduced by ammo. Per shot damage gets spread over all the projectiles
     "energyUsage" : 0,
-    "inaccuracy" : 0,
+    "inaccuracy" : 0.01,
 
     "projectileCount" : 1,
     "fireType" : "auto", //burst
