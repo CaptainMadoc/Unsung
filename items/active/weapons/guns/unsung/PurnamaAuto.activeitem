@@ -1,18 +1,18 @@
 {
-  "itemName" : "PurnamaSemiAuto",	//this is an example weapon. Copy the folder to your mod (in appropriate location) and change "gasolariumcrossbow" for the name you want to use
+  "itemName" : "PurnamaAuto",	//this is an example weapon. Copy the folder to your mod (in appropriate location) and change "gasolariumcrossbow" for the name you want to use
   "price" : 150,
-  "inventoryIcon" : "PurnamaSemiAuto-i.png",
+  "inventoryIcon" : "PurnamaAuto-i.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "LOBO toolweapon built for a slow, but accurate rate of fire.",
-  "shortdescription" : "Purnama (Semi-Auto)",
+  "description" : "LOBO toolweapon built for a high rate of fire at the cost of accuracy and damage.",
+  "shortdescription" : "Purnama (Automatic)",
   "level" : 1,
   "tooltipKind" : "ammogun",//custom tooltip, values set by the .lua
   "category" : "uniqueWeapon",
   "itemTags" : ["weapon","ranged","rifle"],
   "twoHanded" : false,
   
-  "ammoMax" : 50,			//Specifies how big the guns' magazine is. For now, consider all guns to have internal non-removable magazines
+  "ammoMax" : 150,			//Specifies how big the guns' magazine is. For now, consider all guns to have internal non-removable magazines
   "ammoAmount" : 0,			//Holds the current amount of ammo. Mostly set dynamically
   "usesAmmo" : true,		//Used by ammo to determine if it should bother trying to load into the gun
   "ammoTags" : ["biobolt"],	//Tags, specifying the kind of ammo the gun takes
@@ -28,7 +28,7 @@
   "animation" : "/items/active/weapons/guns/unsung/PurnamaSemiAuto.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "PurnamaSemiAuto.png",
+    "middle" : "PurnamaAuto.png",
     "barrel" : "",
     "muzzleFlash" : "/items/active/weapons/guns/unsung/PurnamaSemiAutoFlash.png"
   },
@@ -95,7 +95,7 @@
       }
 	},
     "sounds" : {
-      "fire" 		: [ "/items/active/weapons/guns/unsung/PurnamaSemiAuto.ogg" ],
+      "fire" 		: [ "/items/active/weapons/guns/unsung/PurnamaAuto.ogg" ],
 	  "empty"		: [ "/sfx/gun/reload/machinepistol_reload_clip1.ogg" ],
       "switchAmmo" 	: [ "/sfx/gun/reload/shotgun_reload_clip3.ogg" ]
     }
@@ -113,11 +113,11 @@
     "scripts" : ["/items/active/weapons/ranged/gunfireammo.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.8,
-    "baseDps" : 15,
+    "fireTime" : 0.05,
+    "baseDps" : 5,
 	"bonusDps" : 0,					//the parameter responsible for extra per-shot damage, introduced by ammo. Per shot damage gets spread over all the projectiles
     "energyUsage" : 0,
-    "inaccuracy" : 0,
+    "inaccuracy" : 1,
 
     "projectileCount" : 1,
     "fireType" : "auto", //burst
