@@ -1,0 +1,56 @@
+{
+  "objectName" : "unsungfabricator",
+  "colonyTags" : ["combat"],
+  "printable" : false,
+  "rarity" : "common",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/pixelcompressor.config",
+    "filter" : [ "UnsungCrafting" ],
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" 	: "Moonweaving Table",
+        "subtitle" 	: "Sculpting tools included.",
+		"icon"		: {
+			"file"	: "/interface/gunicon.png"
+		}
+      },
+	  "lblBarTab"	: {
+		"file"	: "/interface/crafting/tabicon_weapons.png",
+		"position" : [25, 223]
+	  },
+	  "lblMatTab"	: {
+		"file"	: "/interface/crafting/tabicon_consumables.png",
+		"position" : [53, 223]
+	  }
+    }
+  },
+
+  "category" : "crafting",
+  "price" : 500,
+
+  "description" : "A fabrication structure for LOBO toolweapons.",
+  "shortdescription" : "^orange;Tool-crafting station^white;",
+  "race" : "human",
+
+  "apexDescription" : "Hard to believe this alien shape is built for weaponmaking.",
+  "avianDescription" : "Where's the instruction manual for this?",
+  "floranDescription" : "Sssssticky mud, but not?",
+  "glitchDescription" : "Anxious. This contraption is very much not of this world. Or any world.",
+  "humanDescription" : "To the crafting toilet!",
+  "hylotlDescription" : "This... may just be slightly overdesigned, even for me.",
+  "novakidDescription" : "Now what in tarnation is this? A TeeVee for bugs?",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "unsungfabricator.png:<color>.<frame>",
+      "imagePosition" : [-10,0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
