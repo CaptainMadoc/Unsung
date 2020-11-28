@@ -12,7 +12,7 @@
   "itemTags" : ["weapon","ranged","rifle"],
   "twoHanded" : false,
   
-  "ammoMax" : 50,			//Specifies how big the guns' magazine is. For now, consider all guns to have internal non-removable magazines
+  "ammoMax" : 100,			//Specifies how big the guns' magazine is. For now, consider all guns to have internal non-removable magazines
   "ammoAmount" : 0,			//Holds the current amount of ammo. Mostly set dynamically
   "usesAmmo" : true,		//Used by ammo to determine if it should bother trying to load into the gun
   "ammoTags" : ["biobolt"],	//Tags, specifying the kind of ammo the gun takes

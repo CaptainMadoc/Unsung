@@ -1,0 +1,13 @@
+{
+  "input" : [  
+	{ "item" : "plantfibre", "count" : 1}
+  ],
+  "output" : {
+    "item" : "PurnamaAuto",
+    "count" : 1,
+	"parameters" : {
+		"level" : 1
+	}
+  },
+  "groups" : [ "UnsungOutfit", "pixelcompress", "all" ]
+}

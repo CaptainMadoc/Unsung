@@ -1,12 +1,12 @@
 {
-  "objectName" : "unsungfabricator",
+  "objectName" : "unsungoutfitter",
   "colonyTags" : ["combat"],
   "printable" : false,
   "rarity" : "common",
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
     "config" : "/interface/windowconfig/pixelcompressor.config",
-    "filter" : [ "UnsungCrafting" ],
+    "filter" : [ "UnsungOutfit" ],
     "paneLayoutOverride" : {
       "windowtitle" : {
         "title" 	: "Moonweaving Table",
@@ -33,13 +33,13 @@
   "shortdescription" : "^orange;Tool-crafting station^white;",
   "race" : "human",
 
-  "apexDescription" : "Hard to believe this alien shape is built for weaponmaking.",
-  "avianDescription" : "Where's the instruction manual for this?",
-  "floranDescription" : "Sssssticky mud, but not?",
-  "glitchDescription" : "Anxious. This contraption is very much not of this world. Or any world.",
-  "humanDescription" : "To the crafting toilet!",
-  "hylotlDescription" : "This... may just be slightly overdesigned, even for me.",
-  "novakidDescription" : "Now what in tarnation is this? A TeeVee for bugs?",
+  "apexDescription" : "Is this some sort of clothing device? Fascinating.",
+  "avianDescription" : "This isn't going to clump my feathers together, is it?",
+  "floranDescription" : "Mud... bath?",
+  "glitchDescription" : "Anxious. I hope this 'wardrobe' doesn't get into the gaps of my parts.",
+  "humanDescription" : "Alright, now this is just straight up someone's fetish.",
+  "hylotlDescription" : "Ah, a more pedestrian shape. Wait, this is for WHAT now??",
+  "novakidDescription" : "Whaddya mean this ain't no wardrobe door?",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
