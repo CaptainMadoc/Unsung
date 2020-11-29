@@ -9,7 +9,7 @@
     "filter" : [ "UnsungCrafting" ],
     "paneLayoutOverride" : {
       "windowtitle" : {
-        "title" 	: "Moonweaving Table",
+        "title" 	: "Moonsculpt Table",
         "subtitle" 	: "Sculpting tools included.",
 		"icon"		: {
 			"file"	: "/interface/gunicon.png"

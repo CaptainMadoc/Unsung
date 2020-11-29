@@ -9,7 +9,7 @@
     "filter" : [ "UnsungOutfit" ],
     "paneLayoutOverride" : {
       "windowtitle" : {
-        "title" 	: "Moonweaving Table",
+        "title" 	: "Moonweaving Gate",
         "subtitle" 	: "Sculpting tools included.",
 		"icon"		: {
 			"file"	: "/interface/gunicon.png"

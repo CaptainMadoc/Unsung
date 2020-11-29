@@ -1,0 +1,10 @@
+{
+  "itemName" : "lobomass",
+  "price" : 1,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "lobomass.png",
+  "description" : "A mysterious substance with even more mysterious origins.",
+  "shortdescription" : "LOBOMass",
+  "itemTags" : [ "reagent" ]
+}
