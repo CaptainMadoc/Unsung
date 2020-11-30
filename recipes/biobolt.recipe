@@ -1,6 +1,6 @@
 {
   "input" : [  
-    { "item" : "logblock", "count" : 1 }
+    { "item" : "lobomass", "count" : 1 }
   ],
   "output" : {
     "item" : "biobolt",

@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "aegisaltore", "count" : 100 }
+    { "item" : "processor", "count" : 1 }
   ],
   "output" : { "item" : "lobomass", "count" : 30 },
   "groups" : [ "unsungrefinery" ]

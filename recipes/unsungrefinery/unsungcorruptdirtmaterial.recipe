@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "corruptdirtmaterial", "count" : 500 }
+  ],
+  "output" : { "item" : "lobomass", "count" : 1 },
+  "groups" : [ "unsungrefinery" ]
+}
