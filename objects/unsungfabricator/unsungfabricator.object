@@ -43,19 +43,19 @@
     },
     "lblWeaponsTab" : {
       "type" : "image",
-      "file" : "/interface/crafting/tabicon_weapons.png",
+      "file" : "/interface/crafting/unsung_tabicon_weapons.png",
       "position" : [52, 223],
       "zlevel" : 3
     },
     "lblArmourTab" : {
       "type" : "image",
-      "file" : "/interface/crafting/tabicon_armours.png",
+      "file" : "/interface/crafting/unsung_tabicon_armours.png",
       "position" : [25, 223],
       "zlevel" : 3
     },
     "lblConsumeTab" : {
       "type" : "image",
-      "file" : "/interface/crafting/tabicon_consumables.png",
+      "file" : "/interface/crafting/unsung_tabicon_consumables.png",
       "position" : [80, 223],
       "zlevel" : 3
      }
