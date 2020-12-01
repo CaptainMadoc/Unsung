@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "aztechtech", "count" : 100 }
+    { "item" : "aztectech", "count" : 100 }
   ],
   "output" : { "item" : "lobomass", "count" : 5 },
   "groups" : [ "unsungrefinery" ]

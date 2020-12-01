@@ -1,36 +1,31 @@
 {
   "objectName" : "unsungoutfitter",
-  "colonyTags" : ["combat"],
+  "colonyTags" : ["crafting"],
   "printable" : false,
   "rarity" : "common",
   "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/windowconfig/pixelcompressor.config",
-    "filter" : [ "UnsungOutfit" ],
-    "paneLayoutOverride" : {
-      "windowtitle" : {
-        "title" 	: "Moonweaving Gate",
-        "subtitle" 	: "Sculpting tools included.",
-		"icon"		: {
-			"file"	: "/interface/gunicon.png"
-		}
+
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/craftingwheel.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Sewing Machine",
+            "subtitle" : " ^#b9b5b2;Textiles and dyes",
+            "icon" : {
+              "file" : "/interface/crafting/craftingwheel2.png"
+            }
+          }
+        },
+        "filter" : [ "UnsungOutfit" ],
+        "craftingSound" : "/sfx/interface/crafting_sewing.ogg"
       },
-	  "lblBarTab"	: {
-		"file"	: "/interface/crafting/tabicon_weapons.png",
-		"position" : [25, 223]
-	  },
-	  "lblMatTab"	: {
-		"file"	: "/interface/crafting/tabicon_consumables.png",
-		"position" : [53, 223]
-	  }
-    }
-  },
 
   "category" : "crafting",
   "price" : 500,
 
   "description" : "A fabrication structure for LOBO toolweapons.",
-  "shortdescription" : "^orange;Tool-crafting station^white;",
+  "shortdescription" : "^orange;Moonweaver^white;",
   "race" : "human",
 
   "apexDescription" : "Is this some sort of clothing device? Fascinating.",
@@ -44,7 +39,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "unsungfabricator.png:<color>.<frame>",
+      "dualImage" : "unsungoutfitter.png:<color>.<frame>",
       "imagePosition" : [-10,0],
       "frames" : 1,
 

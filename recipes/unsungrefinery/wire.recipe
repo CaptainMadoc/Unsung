@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "wires", "count" : 1 }
+    { "item" : "wire", "count" : 1 }
   ],
   "output" : { "item" : "lobomass", "count" : 30 },
   "groups" : [ "unsungrefinery" ]

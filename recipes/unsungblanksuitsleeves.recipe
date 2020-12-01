@@ -3,11 +3,11 @@
 	{ "item" : "lobomass", "count" : 1}
   ],
   "output" : {
-    "item" : "PurnamaBurst",
+    "item" : "unsungblanksuitsleeves",
     "count" : 1,
 	"parameters" : {
 		"level" : 1
 	}
   },
-  "groups" : [ "UnsungOutfit", "pixelcompress", "all" ]
+  "groups" : [ "UnsungCrafting", "armours", "all" ]
 }

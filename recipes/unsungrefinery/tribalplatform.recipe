@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "aegisaltore", "count" : 100 }
+    { "item" : "tribalplatform", "count" : 100 }
   ],
   "output" : { "item" : "lobomass", "count" : 5 },
   "groups" : [ "unsungrefinery" ]

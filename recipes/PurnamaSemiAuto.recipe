@@ -9,5 +9,5 @@
 		"level" : 1
 	}
   },
-  "groups" : [ "UnsungCrafting", "pixelcompress", "all" ]
+  "groups" : [ "UnsungCrafting", "weapons", "all" ]
 }

@@ -76,9 +76,7 @@
       { "item" : "unsungoutfit2chest" },
       { "item" : "unsungoutfit2legs" },
       { "item" : "unsungoutfit3chest" },
-      { "item" : "unsungoutfit3legs" },
-      { "item" : "unsungoutfit4chest" },
-      { "item" : "unsungoutfit4legs" }
+      { "item" : "unsungoutfit3legs" }
 	  ]
   },
   

@@ -5,31 +5,67 @@
   "rarity" : "common",
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
-    "config" : "/interface/windowconfig/pixelcompressor.config",
+    "config" : "/interface/windowconfig/craftinganvil.config",
     "filter" : [ "UnsungCrafting" ],
     "paneLayoutOverride" : {
+    "background" : {
+      "type" : "background",
+      "fileHeader" : "/interface/crafting/unsungcraftingheader.png",
+      "fileBody" : "/interface/crafting/unsungbody.png",
+      "fileFooter" : "/interface/crafting/unsungcraftingfooter.png"
+    },
+    "close" : {
+      "type" : "button",
+      "base" : "/interface/unsungx.png",
+      "hover" : "/interface/unsungxhover.png",
+      "pressed" : "/interface/unsungxpress.png",
+      "pressedOffset" : [0, 0],
+      "position" : [321, 261]
+    },
       "windowtitle" : {
-        "title" 	: "Moonsculpt Table",
-        "subtitle" 	: "Sculpting tools included.",
+        "title" 	: "^#ffffff;Moonsculpt Table",
+        "subtitle" 	: "^#d8d8d8;Sculpting tools included.",
 		"icon"		: {
-			"file"	: "/interface/gunicon.png"
+			"file"	: "/objects/unsungfabricator/icon.png"
 		}
       },
-	  "lblBarTab"	: {
-		"file"	: "/interface/crafting/tabicon_weapons.png",
-		"position" : [25, 223]
-	  },
-	  "lblMatTab"	: {
-		"file"	: "/interface/crafting/tabicon_consumables.png",
-		"position" : [53, 223]
-	  }
+    "lblSchematics" : {
+      "type" : "label",
+      "position" : [88, 244],
+      "hAnchor" : "mid",
+      "value" : "^#d8d8d8;BLUEPRINTS"
+    },
+    "lblProducttitle" : {
+      "type" : "label",
+      "position" : [265, 244],
+      "hAnchor" : "mid",
+      "value" : "^#d8d8d8;PRODUCT"
+    },
+    "lblWeaponsTab" : {
+      "type" : "image",
+      "file" : "/interface/crafting/tabicon_weapons.png",
+      "position" : [52, 223],
+      "zlevel" : 3
+    },
+    "lblArmourTab" : {
+      "type" : "image",
+      "file" : "/interface/crafting/tabicon_armours.png",
+      "position" : [25, 223],
+      "zlevel" : 3
+    },
+    "lblConsumeTab" : {
+      "type" : "image",
+      "file" : "/interface/crafting/tabicon_consumables.png",
+      "position" : [80, 223],
+      "zlevel" : 3
+     }
     }
   },
 
   "category" : "crafting",
   "price" : 500,
 
-  "description" : "A fabrication structure for LOBO toolweapons.",
+  "description" : "A fabrication structure for LOBO equipment.",
   "shortdescription" : "^orange;Tool-crafting station^white;",
   "race" : "human",
 
