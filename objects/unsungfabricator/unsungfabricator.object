@@ -44,13 +44,13 @@
     "lblWeaponsTab" : {
       "type" : "image",
       "file" : "/interface/crafting/unsung_tabicon_weapons.png",
-      "position" : [52, 223],
+      "position" : [25, 223],
       "zlevel" : 3
     },
     "lblArmourTab" : {
       "type" : "image",
       "file" : "/interface/crafting/unsung_tabicon_armours.png",
-      "position" : [25, 223],
+      "position" : [52, 223],
       "zlevel" : 3
     },
     "lblConsumeTab" : {
@@ -58,7 +58,46 @@
       "file" : "/interface/crafting/unsung_tabicon_consumables.png",
       "position" : [80, 223],
       "zlevel" : 3
-     }
+     },
+    "categories" : {
+      "type" : "radioGroup",
+      "toggleMode" : false,
+      "buttons" : [
+        {
+          "selected" : true,
+          "position" : [45, 221],
+          "baseImage" : "/interface/crafting/unselectedTab.png",
+          "baseImageChecked" : "/interface/crafting/unsungselectedTab.png",
+          "data" : {
+            "filter" : [ "armours" ]
+          }
+        },
+        {
+          "position" : [18, 221],
+          "baseImage" : "/interface/crafting/unselectedTab.png",
+          "baseImageChecked" : "/interface/crafting/unsungselectedTab.png",
+          "data" : {
+            "filter" : [ "weapons" ]
+          }
+        },
+        {
+          "position" : [72, 221],
+          "baseImage" : "/interface/crafting/unselectedTab.png",
+          "baseImageChecked" : "/interface/crafting/unsungselectedTab.png",
+          "data" : {
+            "filter" : [ "consumables" ]
+          }
+        },
+        {
+          "position" : [99, 221],
+          "baseImage" : "/interface/crafting/unselectedTab.png",
+          "baseImageChecked" : "/interface/crafting/unsungselectedTab.png",
+          "data" : {
+            "filter" : [ "hazardgear" ]
+          }
+        }
+      ]
+    }
     }
   },
 
