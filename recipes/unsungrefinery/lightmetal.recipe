@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "lightmetal", "count" : 100 }
+    { "item" : "lightmetal", "count" : 200 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }

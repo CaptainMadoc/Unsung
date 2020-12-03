@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "junk", "count" : 100 }
+    { "item" : "junk", "count" : 500 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 2 },
   "groups" : [ "unsungrefinery" ]
 }

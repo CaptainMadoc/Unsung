@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "gravelmaterial", "count" : 100 }
+    { "item" : "gravelmaterial", "count" : 500 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }

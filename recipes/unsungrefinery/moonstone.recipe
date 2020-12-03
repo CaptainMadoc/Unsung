@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "moonstone", "count" : 100 }
+    { "item" : "moonstone", "count" : 200 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }

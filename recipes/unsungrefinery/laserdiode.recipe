@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "laserdiode", "count" : 1 }
+    { "item" : "laserdiode", "count" : 100 }
   ],
-  "output" : { "item" : "lobomass", "count" : 30 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }

@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "giantflowerpetal", "count" : 1 }
+    { "item" : "giantflowerpetal", "count" : 400 }
   ],
-  "output" : { "item" : "lobomass", "count" : 30 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }
