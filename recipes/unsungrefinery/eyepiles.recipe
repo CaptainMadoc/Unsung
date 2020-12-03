@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "eyepiles", "count" : 100 }
+    { "item" : "eyepiles", "count" : 250 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 2 },
   "groups" : [ "unsungrefinery" ]
 }

@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "fabric", "count" : 1 }
+    { "item" : "fabric", "count" : 1000 }
   ],
-  "output" : { "item" : "lobomass", "count" : 30 },
+  "output" : { "item" : "lobomass", "count" : 5 },
   "groups" : [ "unsungrefinery" ]
 }

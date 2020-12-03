@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "alienstripedwood", "count" : 100 }
+    { "item" : "alienstripedwood", "count" : 400 }
   ],
   "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]

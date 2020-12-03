@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "coralfragment", "count" : 1 }
+    { "item" : "coralfragment", "count" : 250 }
   ],
-  "output" : { "item" : "lobomass", "count" : 30 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }

@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "castlewalls1", "count" : 100 }
+    { "item" : "castlewalls1", "count" : 500 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }

@@ -2,6 +2,6 @@
   "input" : [
     { "item" : "copperblock", "count" : 100 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 3 },
   "groups" : [ "unsungrefinery" ]
 }

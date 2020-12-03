@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "blackblock", "count" : 100 }
+    { "item" : "blackblock", "count" : 400 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }

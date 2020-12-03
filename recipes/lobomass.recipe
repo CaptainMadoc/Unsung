@@ -1,0 +1,10 @@
+{
+  "input" : [  
+    { "item" : "alienmeat", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "lobomass",
+    "count" : 1
+  },
+  "groups" : [ "all" ]
+}

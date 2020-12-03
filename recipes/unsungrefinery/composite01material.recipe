@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "composite01material", "count" : 100 }
+    { "item" : "composite01material", "count" : 200 }
   ],
   "output" : { "item" : "lobomass", "count" : 5 },
   "groups" : [ "unsungrefinery" ]

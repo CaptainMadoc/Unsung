@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "cheapwallpaper", "count" : 100 }
+    { "item" : "cheapwallpaper", "count" : 300 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }

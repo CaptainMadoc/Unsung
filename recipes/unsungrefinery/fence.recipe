@@ -2,6 +2,6 @@
   "input" : [
     { "item" : "fence", "count" : 100 }
   ],
-  "output" : { "item" : "lobomass", "count" : 5 },
+  "output" : { "item" : "lobomass", "count" : 2 },
   "groups" : [ "unsungrefinery" ]
 }

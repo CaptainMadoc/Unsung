@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "corefragmentore", "count" : 1 }
+    { "item" : "corefragmentore", "count" : 400 }
   ],
-  "output" : { "item" : "lobomass", "count" : 30 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }

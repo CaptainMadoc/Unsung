@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "biosample", "count" : 1 }
+    { "item" : "biosample", "count" : 200 }
   ],
-  "output" : { "item" : "lobomass", "count" : 30 },
+  "output" : { "item" : "lobomass", "count" : 1 },
   "groups" : [ "unsungrefinery" ]
 }
