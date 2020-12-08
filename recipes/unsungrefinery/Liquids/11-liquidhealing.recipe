@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "liquidhealing", "count" : 100 }
+  ],
+  "output" : { "item" : "lobomass", "count" : 4 },
+  "groups" : [ "unsungrefinery" ]
+}

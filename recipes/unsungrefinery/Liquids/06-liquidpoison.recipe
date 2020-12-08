@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "liquidpoison", "count" : 140 }
+  ],
+  "output" : { "item" : "lobomass", "count" : 1 },
+  "groups" : [ "unsungrefinery" ]
+}

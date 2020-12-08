@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "neonblock", "count" : 300 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 1 },
-  "groups" : [ "unsungrefinery" ]
-}

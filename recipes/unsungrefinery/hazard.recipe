@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "hazard", "count" : 400 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 2 },
-  "groups" : [ "unsungrefinery" ]
-}

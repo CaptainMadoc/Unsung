@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "titaniumore", "count" : 120 }
+  ],
+  "output" : { "item" : "lobomass", "count" : 1 },
+  "groups" : [ "unsungrefinery" ]
+}

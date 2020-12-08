@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "solariumstar", "count" : 100 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 100 },
-  "groups" : [ "unsungrefinery" ]
-}

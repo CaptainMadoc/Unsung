@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "tentacleblock", "count" : 100 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 5 },
-  "groups" : [ "unsungrefinery" ]
-}

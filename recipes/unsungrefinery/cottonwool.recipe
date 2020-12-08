@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "cottonwool", "count" : 100 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 2 },
-  "groups" : [ "unsungrefinery" ]
-}

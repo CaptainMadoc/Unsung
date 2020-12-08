@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "baseboard", "count" : 300 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 1 },
-  "groups" : [ "unsungrefinery" ]
-}

@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "refinedferozium", "count" : 1 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 60 },
-  "groups" : [ "unsungrefinery" ]
-}

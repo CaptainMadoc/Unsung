@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "moltencore", "count" : 1 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 3 },
-  "groups" : [ "unsungrefinery" ]
-}

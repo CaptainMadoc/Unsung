@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "violiumore", "count" : 100 }
+  ],
+  "output" : { "item" : "lobomass", "count" : 3 },
+  "groups" : [ "unsungrefinery" ]
+}

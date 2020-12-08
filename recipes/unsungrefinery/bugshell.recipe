@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "bugshell", "count" : 100 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 1 },
-  "groups" : [ "unsungrefinery" ]
-}

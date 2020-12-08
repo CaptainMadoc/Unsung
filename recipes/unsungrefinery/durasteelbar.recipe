@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "durasteelbar", "count" : 1 }
-  ],
-  "output" : { "item" : "lobomass", "count" : 50 },
-  "groups" : [ "unsungrefinery" ]
-}
