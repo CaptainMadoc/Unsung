@@ -40,7 +40,7 @@
           "states" : {					//animations are handled by both gunammo.lua (ammo states) and gunfireammo.lua (firing state). If you want to change those, make a copy and work with that.
 			"firing" :{					//gun will transition to "firing" state each time you pull the trigger
 			  "frames" : 4,
-			  "cycle" : 0.1,
+			  "cycle" : 0.3,
 			  "mode" : "transition",
 			  "transition" : "empty"	//transition mode and animation is set up for the crossbow. may not work for everything
 			},
@@ -102,7 +102,7 @@
   },
 
 
-  "baseOffset" : [-0.625, 0.0],			//Offsets are 0.125 per pixel
+  "baseOffset" : [-1.125, 0.125],			//Offsets are 0.125 per pixel
   "muzzleOffset" : [1.875, 0.0875],		//Offsets are 0.125 per pixel
   "handGrip" : "outside",
   "scripts" : ["/items/active/weapons/ranged/gunammo.lua"],
