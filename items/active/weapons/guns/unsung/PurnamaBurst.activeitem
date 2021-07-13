@@ -12,7 +12,7 @@
   "itemTags" : ["weapon","ranged","rifle"],
   "twoHanded" : false,
   
-  "ammoMax" : 100,			//Specifies how big the guns' magazine is. For now, consider all guns to have internal non-removable magazines
+  "ammoMax" : 90,			//Specifies how big the guns' magazine is. For now, consider all guns to have internal non-removable magazines
   "ammoAmount" : 0,			//Holds the current amount of ammo. Mostly set dynamically
   "usesAmmo" : true,		//Used by ammo to determine if it should bother trying to load into the gun
   "ammoTags" : ["biobolt"],	//Tags, specifying the kind of ammo the gun takes
@@ -121,8 +121,8 @@
 
     "projectileCount" : 1,
     "fireType" : "burst", //burst
-    "burstCount" : 2,
-    "burstTime"	: 0.1,
+    "burstCount" : 3,
+    "burstTime"	: 0.05,
 
     "projectileType" : "woodenbolt",
     "projectileParameters" : {
@@ -143,7 +143,7 @@
         "weaponRotation" : 0,
         "twoHanded" : false,
   
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : false
       },
       "cooldown" : {
@@ -152,7 +152,7 @@
         "weaponRotation" : 0,
         "twoHanded" : false,
   
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : false
       }
     }
