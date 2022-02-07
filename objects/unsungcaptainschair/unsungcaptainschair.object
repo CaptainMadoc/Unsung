@@ -1,0 +1,34 @@
+{
+	"objectName" : "unsungcaptainschair",
+	"colonyTags" : [ "unsung" ],
+	"rarity" : "Common",
+	"objectType" : "loungeable",
+	"description" : "Bikers in space. Why not?",
+	"shortdescription" : "Captain's Seat",
+	"race" : "unsung",
+	"category" : "furniture",
+	"printable" : false,
+	"apexDescription" : "Whoever designed this was daydreaming about something.",
+	"avianDescription" : "Hmm, handlebars to stretch my wings with.",
+	"floranDescription" : "Ssssquishyyyyy.",
+	"glitchDescription" : "Curiosity. This seat seems to be... alive.",
+	"humanDescription" : "Handlebars? What is this, Penultimate Dream 10?",
+	"hylotlDescription" : "How can something look so elegant and so hideous at the same time?",
+	"novakidDescription" : "This here seat's all wiggly-like.",
+	"unsungDescription" : "Keys in, seat warmed.",
+	"inventoryIcon" : "captainschairicon.png",
+	"orientations" : [
+		{
+			"dualImage" : "unsungcaptainschair.png",
+			"imagePosition" : [-24, 0],
+			"frames" : 1,
+			"animationCycle" : 1.0,
+			"spaceScan" : 0.1,
+			"anchors" : [ "bottom" ]
+		}
+	],
+	"interactAction" : "ScriptPane",
+	"interactData" : "/interface/cockpit/cockpit.config",
+	"sitFlipDirection" : true,
+	"sitPosition" : [1, 22]
+}
