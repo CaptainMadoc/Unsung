@@ -17,7 +17,7 @@
     "swim.5" : "swimIdle.1",
     "swim.6" : "swimIdle.1",
     "swim.7" : "swimIdle.1",
-    "sit.1" : "duck.1",
     "lay.1" : "run.8"
   }
 }
+
