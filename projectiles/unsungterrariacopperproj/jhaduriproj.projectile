@@ -1,0 +1,16 @@
+{
+  "projectileName" : "jhaduriproj",
+  "image" : "jhaduriproj.png",
+  "animationCycle" : 0.1,
+  "frameNumber" : 4,
+  "pointLight" : false,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "power" : 20.0
+}
+
+

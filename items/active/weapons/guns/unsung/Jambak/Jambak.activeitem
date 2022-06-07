@@ -1,0 +1,50 @@
+{
+  "itemName" : "Jambak",
+  "price" : 50,
+  "inventoryIcon" : "Jambak-i.png",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "tooltipKind" : "sb_gun2",
+  "tooltipFields":{"damageKindImage":"/interface/Jambak.png","subtitle":"Disposable Weapon"},
+  "category" : "bow",
+  "description" : "A basic, easily concealed ranged weapon.",
+  "shortdescription" : "Slingshot",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow", "breakable", "consumable", "upgradeableWeapon"], //T6 grenade slingshot is OP?
+  "durability" : 50,
+  "durabilityHit" : 50,
+  "sb_repairType" : 2,
+
+//  "radioMessagesOnPickup" : [ "pickupbow" ],
+  "level" : 1,
+
+  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animationParts" : {
+    "bow" : "Jambakfull.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {"offset" : [0.25, 0]}}}},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg", "/sfx/tools/rod_line_stretching.ogg" ],
+      "release" : [ "/sfx/gun/blowgun1.ogg", "/sfx/gun/blowgun2.ogg", "/sfx/gun/blowgun3.ogg" ],
+      "break" : [ "/sfx/objects/wood_break1.ogg","/sfx/objects/wood_break2.ogg","/sfx/objects/wood_break3.ogg","/sfx/objects/wood_break4.ogg","/sfx/objects/wood_break5.ogg","/sfx/objects/wood_break6.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "fireOffset":[1,0.375],
+    "fireTime" : 0.6,
+    "baseDps" : 6.25,
+    "inaccuracy" : 0.025,
+    "projectileType":"sb_slingshot",
+    "scripts" : ["/items/active/starbound/bows/slingshot/slingshot.lua"],
+    "walkWhileFiring":false
+  },
+
+  "builder" : "/items/buildscripts/starbound/buildunrandweapon.lua"
+}
+
+// Credit to Silver Sokolova and Betabound for the code and script of this
