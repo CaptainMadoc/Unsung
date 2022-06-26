@@ -11,8 +11,8 @@
   "shortdescription" : "Slingshot",
   "twoHanded" : true,
   "itemTags" : ["weapon", "ranged", "bow", "breakable", "consumable", "upgradeableWeapon"], //T6 grenade slingshot is OP?
-  "durability" : 50,
-  "durabilityHit" : 50,
+  "durability" : 100,
+  "durabilityHit" : 100,
   "sb_repairType" : 2,
 
 //  "radioMessagesOnPickup" : [ "pickupbow" ],
