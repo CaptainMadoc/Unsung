@@ -1,4 +1,5 @@
 [
 { "op" : "add", "path" : "/defaultCodexes/unsung", "value" : [ "protectorate1", "protectorate2", "unsungdiary" ] },
-{ "op" : "add", "path" : "/deploymentConfig/speciesStarterMechBody/unsung", "value": "mechbodyhumanproto"}
+{ "op" : "add", "path" : "/deploymentConfig/speciesStarterMechBody/unsung", "value": "mechbodyhumanproto"},
+[{"op":"add","path":"/defaultBlueprints/tier1/-","value":["uammo",50,{"projectileType":"ubullet"}]}]
 ]

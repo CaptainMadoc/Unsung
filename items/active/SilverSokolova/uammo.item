@@ -1,0 +1,14 @@
+{
+  "itemName" : "uammo",
+  "rarity" : "common",
+  "price" : 1,
+  "tooltipKind" : "uobject",
+  "inventoryIcon" : "uammo.png",
+  "category" : "pistol",
+  "tooltipFields" : {"subtitle" : "Other"},
+//"itemTags" : ["weapon","ranged","revolver","pistol","gun"],
+  "description" : "This type of ammo can be used with certain weapons.",
+  "shortdescription" : "U Ammunition",
+  "projectileTypes" : ["ubullet"],
+  "builder" : "/items/active/SilverSokolova/ubuildammo.lua"
+}

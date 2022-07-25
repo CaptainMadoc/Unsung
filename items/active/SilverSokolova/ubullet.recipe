@@ -1,0 +1,5 @@
+{
+  "input" : ["plantfibre"],
+  "output" : ["uammo",50,{"projectileType":"ubullet"}],
+  "groups" : ["craftinganvil"]
+}
