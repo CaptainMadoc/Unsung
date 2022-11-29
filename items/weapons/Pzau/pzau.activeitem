@@ -1,10 +1,10 @@
 {
-  "itemName" : "utest2",
-  "price" : 960,
+  "itemName" : "pzau",
+  "price" : 1,
   "maxStack" : 1000,
   "rarity" : "Common",
-  "description" : "",
-  "shortdescription" : "",
+  "description" : "Short, dagger-like blades shot from the hand.",
+  "shortdescription" : "Pzau",
   "tooltipKind" : "gun",
   "category" : "assaultRifle",
   "twoHanded" : false,
@@ -13,12 +13,12 @@
   "durabilityHit" : 1,
   "level" : 1,
 
-  "inventoryIcon" : "utest2.png",
+  "inventoryIcon" : "pzau.png",
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "utest2.png",
+    "middle" : "pzau.png",
     "barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
@@ -36,7 +36,7 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/guns/test/gunfiretest2.lua"],
+    "scripts" : ["/items/weapons/pzau/pzaufire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.11,
